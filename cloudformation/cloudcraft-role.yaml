@@ -1,0 +1,112 @@
+AWSTemplateFormatVersion: 2010-09-09
+
+Description: Cloudcraft IAM role and policy for the architecture review
+
+Parameters:
+  CloudcraftExternalID:
+    Type: String
+    Default: badf895d-4c55-47db-81ba-cf6d9e16f97f
+
+Resources: 
+
+  CloudcraftRole:
+    Type: AWS::IAM::Role
+    Properties:
+      Path: /
+      RoleName: cloudcraft_role_cf
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              AWS:
+                - arn:aws:iam::968898580625:root
+            Action:
+              - sts:AssumeRole
+            Condition:
+              StringEquals:
+                sts:ExternalId: !Ref CloudcraftExternalID
+      Policies:
+        - PolicyName: cloudcraft_role_policy_cf
+          PolicyDocument:
+            Version: 2012-10-17
+            Statement:
+              - Effect: "Allow"
+                Action:
+                    - apigateway:Get
+                    - application-autoscaling:Describe*
+                    - autoscaling-plans:Describe*
+                    - athena:List*
+                    - athena:Batch*
+                    - athena:Get*
+                    - autoscaling:Describe*
+                    - batch:List*
+                    - batch:Describe*
+                    - cloudfront:Get*
+                    - cloudfront:List*
+                    - cloudtrail:Describe*
+                    - cloudtrail:Get*
+                    - cloudtrail:List*
+                    - cloudwatch:Describe*
+                    - cloudwatch:Get*
+                    - cloudwatch:List*
+                    - config:Deliver*
+                    - config:Describe*
+                    - config:Get*
+                    - config:List*
+                    - datapipeline:Describe*
+                    - datapipeline:EvaluateExpression
+                    - datapipeline:Get*
+                    - datapipeline:List*
+                    - datapipeline:QueryObjects
+                    - datapipeline:Validate*
+                    - dynamodb:DescribeTable
+                    - dynamodb:ListTables
+                    - dynamodb:ListTagsOfResource
+                    - ec2:Describe*
+                    - elasticache:Describe*
+                    - elasticache:List*
+                    - elasticfilesystem:Describe*
+                    - elasticloadbalancing:Describe*
+                    - emr:Describe*
+                    - emr:List*
+                    - es:Describe*
+                    - es:List*
+                    - kinesis:Describe*
+                    - kinesis:List*
+                    - lambda:List*
+                    - rds:Describe*
+                    - rds:ListTagsForResource
+                    - redshift:Describe*
+                    - route53:Get*
+                    - route53:List*
+                    - route53domains:Check*
+                    - route53domains:Get*
+                    - route53domains:List*
+                    - route53domains:View*
+                    - s3:GetBucketAcl
+                    - s3:GetBucketLocation
+                    - s3:GetBucketNotification
+                    - s3:GetBucketTagging
+                    - s3:GetEncryptionConfiguration
+                    - s3:List*
+                    - serverlessrepo:List*
+                    - serverlessrepo:Get*
+                    - serverlessrepo:SearchApplications
+                    - servicecatalog:List*
+                    - servicecatalog:Scan*
+                    - servicecatalog:Search*
+                    - servicecatalog:Describe*
+                    - servicediscovery:Get*
+                    - servicediscovery:List*
+                    - ses:Get*
+                    - ses:List*
+                    - sns:GetTopicAttributes
+                    - sns:List*
+                    - sqs:GetQueueAttributes
+                    - sqs:List*
+                    - tag:Get*
+                    - waf:Get*
+                    - waf:List*
+                Resource:
+                  - "*"
