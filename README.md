@@ -1,12 +1,19 @@
 # aws-cloudcraft-role
 
-Terraform Template to install cloudcraft role and policy in an AWS account, enabling CloudCraft to access that AWS account for live documentation
+Terraform and CloudFormation Template to install cloudcraft role and policy in an AWS account, enabling CloudCraft to access that AWS account for live documentation
 
-## How to use this Template
+## Prepare to use these Templates
 
 1. Checkout git repository
 ```
 git clone git@iteragit.iteratec.de:DevOps/aws-cloudcraft-role.git
+cd aws-cloudcraft-role
+```
+
+## How to use the Terraform Template
+1. switch to terraform directory
+```
+cd Terraform
 ```
 
 2. provide AWS credentials for the AWS provider to access the correct AWS account
