@@ -1,3 +1,8 @@
+variable "aws_account_alias" {
+  description = "meaningful alias name for the AWS account"
+  default     = "to be defined"
+}
+
 variable "aws_region" {
   description = "The AWS region."
   default     = "eu-central-1"
