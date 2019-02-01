@@ -59,6 +59,11 @@ Resources:
                   - cloudfront:GetDistribution
                   - cloudfront:ListCloudFrontOriginAccessIdentities
                   - cloudfront:ListDistributions
+                  - cloudwatch:DescribeAlarmHistory
+                  - cloudwatch:DescribeAlarms
+                  - cloudwatch:DescribeAlarmsForMetric
+                  - cloudwatch:ListDashboards
+                  - cloudwatch:ListMetrics
                   - dynamodb:DescribeLimits
                   - dynamodb:DescribeReservedCapacity
                   - dynamodb:DescribeReservedCapacityOfferings
