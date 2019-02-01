@@ -1,0 +1,26 @@
+Amazon Machine Learning (machinelearning) : https://docs.aws.amazon.com/de_de/machine-learning/latest/APIReference/API_DescribeBatchPredictions.html
+- machinelearning:CreateBatchPrediction 	Generates predictions for a group of observations.	*	Global Conditions
+- machinelearning:CreateDataSourceFromRDS	Creates a DataSource object from an Amazon Relational Database Service (Amazon RDS).	*	Global Conditions
+- machinelearning:CreateDataSourceFromRedshift	Creates a DataSource from a database hosted on an Amazon Redshift cluster.	*	Global Conditions
+- machinelearning:CreateDataSourceFromS3 	Creates a DataSource object.	*	Global Conditions
+- machinelearning:CreateEvaluation 	Creates a new Evaluation of an MLModel.	*	Global Conditions
+- machinelearning:CreateMLModel 	Creates a new MLModel using the DataSource and the recipe as information sources.	*	Global Conditions
+- machinelearning:CreateRealtimeEndpoint 	Creates a real-time endpoint for the MLModel.	arn:aws:machinelearning:$region:$account:mlmodel/$mlmodel-id	Global Conditions
+- machinelearning:DeleteBatchPrediction 	Assigns the DELETED status to a BatchPrediction, rendering it unusable.	arn:aws:machinelearning:$region:$account:batchprediction/$batchprediction-id	Global Conditions
+- machinelearning:DeleteDataSource 	Assigns the DELETED status to a DataSource, rendering it unusable.	arn:aws:machinelearning:$region:$account:datasource/$datasource-id	Global Conditions
+- machinelearning:DeleteEvaluation 	Assigns the DELETED status to an Evaluation, rendering it unusable.	arn:aws:machinelearning:$region:$account:evaluation/$evaluation-id	Global Conditions
+- machinelearning:DeleteMLModel 	Assigns the DELETED status to an MLModel, rendering it unusable.	arn:aws:machinelearning:$region:$account:mlmodel/$mlmodel-id	Global Conditions
+- machinelearning:DeleteRealtimeEndpoint 	Deletes a real time endpoint of an MLModel.	arn:aws:machinelearning:$region:$account:mlmodel/$mlmodel-id	Global Conditions
+machinelearning:DescribeBatchPredictions 	Returns a list of BatchPrediction operations that match the search criteria in the request.	*	Global Conditions
+machinelearning:DescribeDataSources 	Returns a list of DataSource that match the search criteria in the request.	*	Global Conditions
+machinelearning:DescribeEvaluations 	Returns a list of DescribeEvaluations that match the search criteria in the request.	*	Global Conditions
+machinelearning:DescribeMLModels 	Returns a list of MLModel that match the search criteria in the request.	*	Global Conditions
+- machinelearning:GetBatchPrediction 	Returns a BatchPrediction that includes detailed metadata, status, and data file information for a Batch Prediction request.	arn:aws:machinelearning:$region:$account:batchprediction/$batchprediction-id	Global Conditions
+- machinelearning:GetDataSource 	Returns a DataSource that includes metadata and data file information, as well as the current status of the DataSource.	arn:aws:machinelearning:$region:$account:datasource/$datasource-id	Global Conditions
+- machinelearning:GetEvaluation 	Returns an Evaluation that includes metadata as well as the current status of the Evaluation.	arn:aws:machinelearning:$region:$account:evaluation/$evaluation-id	Global Conditions
+- machinelearning:GetMLModel 	Returns an MLModel that includes detailed metadata, data source information, and the current status of the MLModel.	arn:aws:machinelearning:$region:$account:mlmodel/$mlmodel-id	Global Conditions
+- machinelearning:Predict 	Generates a prediction for the observation using the specified ML Model.	arn:aws:machinelearning:$region:$account:mlmodel/$mlmodel-id	Global Conditions
+- machinelearning:UpdateBatchPrediction 	Updates the BatchPredictionName of a BatchPrediction.	arn:aws:machinelearning:$region:$account:batchprediction/$batchprediction-id	Global Conditions
+- machinelearning:UpdateDataSource 	Updates the DataSourceName of a DataSource.	arn:aws:machinelearning:$region:$account:datasource/$datasource-id	Global Conditions
+- machinelearning:UpdateEvaluation 	Updates the EvaluationName of an Evaluation.	arn:aws:machinelearning:$region:$account:evaluation/$evaluation-id	Global Conditions
+- machinelearning:UpdateMLModel 	Updates the MLModelName and the ScoreThreshold of an MLModel.	arn:aws:machinelearning:$region:$account:mlmodel/$mlmodel-id	Global Conditions

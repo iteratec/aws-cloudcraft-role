@@ -1,0 +1,66 @@
+Amazon Redshift (redshift) : https://docs.aws.amazon.com/de_de/redshift/latest/APIReference/API_DescribeClusters.html
+- redshift:AuthorizeClusterSecurityGroupIngress	???	arn:aws:redshift:$region:$account:securitygroup:$security-group-name	Global Conditions
+- redshift:AuthorizeSnapshotAccess 	???	arn:aws:redshift:$region:$account:cluster:$cluster-name	Global Conditions
+- redshift:AuthorizeSnapshotAccess 	???	arn:aws:redshift:$region:$account:snapshot:$cluster-name/$snapshot-name	Global Conditions
+- redshift:CancelQuerySession 	???	???	???	Global Conditions
+- redshift:CopyClusterSnapshot 	???	arn:aws:redshift:$region:$account:snapshot:$cluster-name/$source-snapshot-name	arn:aws:redshift:$region:$account:snapshot:$cluster-name/$target-snapshot-name	Global Conditions
+- redshift:CreateCluster 	???	arn:aws:redshift:$region:$account:cluster:$cluster-name	redshift:RequestTag	Global Conditions
+- redshift:CreateClusterParameterGroup 	???	arn:aws:redshift:$region:$account:parametergroup:$parameter-group-name	redshift:RequestTag	Global Conditions
+- redshift:CreateClusterSecurityGroup 	???	arn:aws:redshift:$region:$account:securitygroup:$security-group-name	redshift:RequestTag	Global Conditions
+- redshift:CreateClusterSnapshot 	???	arn:aws:redshift:$region:$account:snapshot:$cluster-name/$snapshot-name	redshift:RequestTag	Global Conditions
+- redshift:CreateClusterSubnetGroup 	???	arn:aws:redshift:$region:$account:subnetgroup:$subnet-group-name	redshift:RequestTag	Global Conditions
+- redshift:CreateEventSubscription 	???	arn:aws:redshift:$region:$account:eventsubscription:$event-subscription-name	Global Conditions
+- redshift:CreateHsmClientCertificate 	???	arn:aws:redshift:$region:$account:hsmclientcertificate:$hsm-client-certificate-id	redshift:RequestTag	Global Conditions
+- redshift:CreateHsmConfiguration 	???	arn:aws:redshift:$region:$account:hsmconfiguration:$hsm-configuration-id	redshift:RequestTag	Global Conditions
+- redshift:CreateSnapshotCopyGrant 	???	arn:aws:redshift:$region:$account:snapshotcopygrant:$snapshot-copy-grant-name	redshift:RequestTag	Global Conditions
+- redshift:CreateTags 	???	arn:aws:redshift:$region:$account:cluster:$cluster-name	arn:aws:redshift:$region:$account:securitygroup:$security-group-name	arn:aws:redshift:$region:$account:hsmclientcertificate:$hsm-client-certificate-id	arn:aws:redshift:$region:$account:hsmconfiguration:$hsm-configuration-id	arn:aws:redshift:$region:$account:parametergroup:$parameter-group-name	arn:aws:redshift:$region:$account:snapshot:$cluster-name/$snapshot-name	arn:aws:redshift:$region:$account:snapshotcopygrant:$snapshot-copy-grant-name	arn:aws:redshift:$region:$account:subnetgroup:$subnet-group-name	redshift:RequestTag	Global Conditions
+- redshift:DeleteCluster 	???	arn:aws:redshift:$region:$account:cluster:$cluster-name	redshift:ResourceTag	Global Conditions
+- redshift:DeleteClusterParameterGroup 	???	arn:aws:redshift:$region:$account:parametergroup:$parameter-group-name	redshift:ResourceTag	Global Conditions
+- redshift:DeleteClusterSecurityGroup 	???	arn:aws:redshift:$region:$account:securitygroup:$security-group-name	redshift:ResourceTag	Global Conditions
+- redshift:DeleteClusterSnapshot 	???	arn:aws:redshift:$region:$account:snapshot:$cluster-name/$snapshot-name	redshift:ResourceTag	Global Conditions
+- redshift:DeleteClusterSubnetGroup 	???	arn:aws:redshift:$region:$account:subnetgroup:$subnet-group-name	redshift:ResourceTag	Global Conditions
+- redshift:DeleteEventSubscription 	???	arn:aws:redshift:$region:$account:eventsubscription:$event-subscription-name	Global Conditions
+- redshift:DeleteHsmClientCertificate 	???	arn:aws:redshift:$region:$account:hsmclientcertificate:$hsm-client-certificate-id	redshift:ResourceTag	Global Conditions
+- redshift:DeleteHsmConfiguration 	???	arn:aws:redshift:$region:$account:hsmconfiguration:$hsm-configuration-id	redshift:ResourceTag	Global Conditions
+- redshift:DeleteTags 	???	arn:aws:redshift:$region:$account:cluster:$cluster-name	arn:aws:redshift:$region:$account:securitygroup:$security-group-name	arn:aws:redshift:$region:$account:hsmclientcertificate:$hsm-client-certificate-id	arn:aws:redshift:$region:$account:hsmconfiguration:$hsm-configuration-id	arn:aws:redshift:$region:$account:parametergroup:$parameter-group-name	arn:aws:redshift:$region:$account:snapshot:$cluster-name/$snapshot-name	arn:aws:redshift:$region:$account:snapshotcopygrant:$snapshot-copy-grant-name	arn:aws:redshift:$region:$account:subnetgroup:$subnet-group-name	redshift:ResourceTag	Global Conditions
+- redshift:DeleteCluster 	???	arn:aws:redshift:$region:$account:cluster:$cluster-name	redshift:ResourceTag	Global Conditions
+redshift:DescribeClusterParameterGroups 	???	*	redshift:ResourceTag	Global Conditions
+redshift:DescribeClusterParameters 	???	arn:aws:redshift:$region:$account:parametergroup:$parameter-group-name	Global Conditions
+redshift:DescribeClusterSecurityGroups 	???	*	Global Conditions
+redshift:DescribeClusterSnapshots 	???	*	Global Conditions
+redshift:DescribeClusterSubnetGroups 	???	*	Global Conditions
+redshift:DescribeClusterVersions 	???	*	Global Conditions
+redshift:DescribeClusters 	???	*	Global Conditions
+redshift:DescribeDefaultClusterParameters 	???	*	Global Conditions
+redshift:DescribeEventCategories 	???	*	Global Conditions
+redshift:DescribeEventSubscriptions 	???	*	Global Conditions
+redshift:DescribeEvents 	???	*	Global Conditions
+redshift:DescribeHsmClientCertificates 	???	*	Global Conditions
+redshift:DescribeHsmConfigurations 	???	*	Global Conditions
+redshift:DescribeLoggingStatus 	???	*	Global Conditions
+redshift:DescribeOrderableClusterOptions 	???	*	Global Conditions
+redshift:DescribeReservedNodeOfferings 	???	*	Global Conditions
+redshift:DescribeReservedNodes 	???	*	Global Conditions
+redshift:DescribeResize 	???	*	Global Conditions
+redshift:DescribeSnapshotCopyGrants 	???	*	Global Conditions
+redshift:DescribeTableRestoreStatus 	???	*	Global Conditions
+redshift:DescribeTags 	???	*	Global Conditions
+- redshift:DisableLogging 	???	arn:aws:redshift:$region:$account:cluster:$cluster-name	redshift:ResourceTag	Global Conditions
+- redshift:DisableSnapshotCopy 	???	arn:aws:redshift:$region:$account:cluster:$cluster-name	redshift:ResourceTag	Global Conditions
+- redshift:EnableLogging 	???	arn:aws:redshift:$region:$account:cluster:$cluster-name	redshift:ResourceTag	Global Conditions
+- redshift:EnableSnapshotCopy 	???	arn:aws:redshift:$region:$account:cluster:$cluster-name	redshift:ResourceTag	Global Conditions
+- redshift:ModifyCluster 	???	arn:aws:redshift:$region:$account:cluster:$cluster-name	redshift:ResourceTag	Global Conditions
+- redshift:ModifyClusterIamRoles 	???	arn:aws:redshift:$region:$account:cluster:$cluster-name	redshift:ResourceTag	Global Conditions
+- redshift:ModifyClusterParameterGroup 	???	arn:aws:redshift:$region:$account:parametergroup:$parameter-group-name	redshift:ResourceTag	Global Conditions
+- redshift:ModifyClusterSubnetGroup 	???	arn:aws:redshift:$region:$account:subnetgroup:$subnet-group-name	redshift:ResourceTag	Global Conditions
+- redshift:ModifyEventSubscription 	???	arn:aws:redshift:$region:$account:eventsubscription:$event-subscription-name	redshift:ResourceTag	Global Conditions
+- redshift:ModifySnapshotCopyRetentionPeriod	???	arn:aws:redshift:$region:$account:cluster:$cluster-name	redshift:ResourceTag	Global Conditions
+- redshift:PurchaseReservedNodeOffering 	???	*	Global Conditions
+- redshift:RebootCluster 	???	arn:aws:redshift:$region:$account:cluster:$cluster-name	redshift:ResourceTag	Global Conditions
+- redshift:ResetClusterParameterGroup 	???	arn:aws:redshift:$region:$account:parametergroup:$parameter-group-name	redshift:ResourceTag	Global Conditions
+- redshift:RestoreFromClusterSnapshot 	???	arn:aws:redshift:$region:$account:cluster:$target-cluster-name	arn:aws:redshift:$region:$account:snapshot:$snapshot-cluster-name/$snapshot-name	redshift:ResourceTag	Global Conditions
+- redshift:RestoreTableFromClusterSnapshot 	???	arn:aws:redshift:$region:$account:snapshot:$cluster-name/$snapshot-name	redshift:ResourceTag	Global Conditions
+- redshift:RevokeClusterSecurityGroupIngress	???	arn:aws:redshift:$region:$account:securitygroup:$security-group-name	redshift:ResourceTag	Global Conditions
+- redshift:RevokeSnapshotAccess 	???	arn:aws:redshift:$region:$account:snapshot:$cluster-name/$snapshot-name	redshift:ResourceTag	Global Conditions
+- redshift:RotateEncryptionKey 	???	arn:aws:redshift:$region:$account:cluster:$cluster-name	redshift:ResourceTag	Global Conditions
+- redshift:ViewQueriesInConsole 	???	???	???	Global Conditions

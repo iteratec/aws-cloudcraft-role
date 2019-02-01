@@ -1,0 +1,18 @@
+Amazon Simple Queue Service (sqs) : https://docs.aws.amazon.com/de_de/AWSSimpleQueueService/latest/APIReference/API_ListQueues.html
+- sqs:AddPermission 	Adds a permission to a queue for a specific principal.	arn:aws:sqs:$region:$account:$queuename	Global Conditions
+- sqs:ChangeMessageVisibility 	Changes the visibility timeout of a specified message in a queue to a new value.	arn:aws:sqs:$region:$account:$queuename	Global Conditions
+- sqs:ChangeMessageVisibilityBatch 	Changes the visibility timeout of multiple messages.	arn:aws:sqs:$region:$account:$queuename	Global Conditions
+- sqs:CreateQueue 	Creates a new queue, or returns the URL of an existing one.	arn:aws:sqs:$region:$account:$queuename	Global Conditions
+- sqs:DeleteMessage 	Deletes the specified message from the specified queue.	arn:aws:sqs:$region:$account:$queuename	Global Conditions
+- sqs:DeleteMessageBatch 	Deletes up to ten messages from the specified queue.	arn:aws:sqs:$region:$account:$queuename	Global Conditions
+- sqs:DeleteQueue 	Deletes the queue specified by the queue URL, regardless of whether the queue is empty.	arn:aws:sqs:$region:$account:$queuename	Global Conditions
+sqs:GetQueueAttributes 	Gets attributes for the specified queue.	arn:aws:sqs:$region:$account:$queuename	Global Conditions
+sqs:GetQueueUrl 	Returns the URL of an existing queue.	arn:aws:sqs:$region:$account:$queuename	Global Conditions
+sqs:ListDeadLetterSourceQueues 	Returns a list of your queues that have the RedrivePolicy queue attribute configured with a dead letter queue.	arn:aws:sqs:$region:$account:$queuename	Global Conditions
+sqs:ListQueues 	Returns a list of your queues.	arn:aws:sqs:$region:$account:*	Global Conditions
+- sqs:PurgeQueue 	Deletes the messages in a queue specified by the queue URL.	arn:aws:sqs:$region:$account:$queuename	Global Conditions
+- sqs:ReceiveMessage 	Retrieves one or more messages, with a maximum limit of 10 messages, from the specified queue.	arn:aws:sqs:$region:$account:$queuename	Global Conditions
+- sqs:RemovePermission 	Revokes any permissions in the queue policy that matches the specified Label parameter.	arn:aws:sqs:$region:$account:$queuename	Global Conditions
+- sqs:SendMessage 	Delivers a message to the specified queue.	arn:aws:sqs:$region:$account:$queuename	Global Conditions
+- sqs:SendMessageBatch 	Delivers up to ten messages to the specified queue.	arn:aws:sqs:$region:$account:$queuename	Global Conditions
+- sqs:SetQueueAttributes 	Sets the value of one or more queue attributes.	arn:aws:sqs:$region:$account:$queuename	Global Conditions

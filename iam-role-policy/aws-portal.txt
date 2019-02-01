@@ -1,0 +1,9 @@
+Billing and Cost Management (aws-portal) : https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html
+- aws-portal:ModifyAccount 	Allow or deny IAM users permission to modify Account Settings.	*	Global Conditions
+- aws-portal:ModifyBilling 	Allow or deny IAM users permission to modify the following Billing and Cost Management console pages.	*	Global Conditions
+- aws-portal:ModifyPaymentMethods 	Allow or deny IAM users permission to modify Payment Methods.	*	Global Conditions
+- aws-portal:ViewAccount 	Allow or deny IAM users permission to view Account Settings.	*	Global Conditions
+- aws-portal:ViewBilling 	Allow or deny IAM users permission to view the following Billing and Cost Management console pages.	*	Global Conditions
+- aws-portal:ViewBudget 	Allow or deny IAM users permission to view Budgets.	*	Global Conditions
+- aws-portal:ViewPaymentMethods 	Allow or deny IAM users permission to view Payment Methods.	*	Global Conditions
+aws-portal:ViewUsage 	Allow or deny IAM users permission to view AWS usage Reports.	*	Global Conditions

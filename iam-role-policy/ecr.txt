@@ -1,0 +1,18 @@
+Amazon EC2 Container Registry (ecr) : https://docs.aws.amazon.com/de_de/AmazonECR/latest/APIReference/API_DescribeRepositories.html
+- ecr:BatchCheckLayerAvailability 	Check the availability of multiple image layers in a specified registry and repository.	arn:aws:ecr:$region:$account:repository/$repository-name	Global Conditions
+- ecr:BatchDeleteImage 	Deletes a list of specified images within a specified repository.	arn:aws:ecr:$region:$account:repository/$repository-name	Global Conditions
+- ecr:BatchGetImage 	Gets detailed information for specified images within a specified repository.	arn:aws:ecr:$region:$account:repository/$repository-name	Global Conditions
+- ecr:CompleteLayerUpload 	Inform Amazon ECR that the image layer upload for a specified registry, repository name, and upload ID, has completed.	arn:aws:ecr:$region:$account:repository/$repository-name	Global Conditions
+- ecr:CreateRepository 	Creates an image repository.	*	Global Conditions
+- ecr:DeleteRepository 	Deletes an existing image repository.	arn:aws:ecr:$region:$account:repository/$repository-name	Global Conditions
+- ecr:DeleteRepositoryPolicy 	Deletes the repository policy from a specified repository.	arn:aws:ecr:$region:$account:repository/$repository-name	Global Conditions
+ecr:DescribeImages 	Describes images in a repository.	arn:aws:ecr:$region:$account:repository/$repository-name	Global Conditions
+ecr:DescribeRepositories 	Describes image repositories in a registry.	arn:aws:ecr:$region:$account:repository/$repository-name	Global Conditions
+- ecr:GetAuthorizationToken 	Retrieves a token that is valid for a specified registry for 12 hours.	*	Global Conditions
+- ecr:GetDownloadUrlForLayer 	Retrieves the pre-signed Amazon S3 download URL corresponding to an image layer.	arn:aws:ecr:$region:$account:repository/$repository-name	Global Conditions
+- ecr:GetRepositoryPolicy 	Retrieves the repository policy for a specified repository.	arn:aws:ecr:$region:$account:repository/$repository-name	Global Conditions
+- ecr:InitiateLayerUpload 	Notify Amazon ECR that you intend to upload an image layer.	arn:aws:ecr:$region:$account:repository/$repository-name	Global Conditions
+ecr:ListImages 	Lists all the image IDs for a given repository.	arn:aws:ecr:$region:$account:repository/$repository-name	Global Conditions
+- ecr:PutImage 	Creates or updates the image manifest associated with an image.	arn:aws:ecr:$region:$account:repository/$repository-name	Global Conditions
+- ecr:SetRepositoryPolicy 	Applies a repository policy on a specified repository to control access permissions.	arn:aws:ecr:$region:$account:repository/$repository-name	Global Conditions
+- ecr:UploadLayerPart 	Uploads an image layer part to Amazon ECR.	arn:aws:ecr:$region:$account:repository/$repository-name	Global Conditions

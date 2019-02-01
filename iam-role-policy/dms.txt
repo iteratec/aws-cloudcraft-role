@@ -1,0 +1,30 @@
+AWS Database Migration Service (dms) : https://docs.aws.amazon.com/de_de/dms/latest/APIReference/API_DescribeAccountAttributes.html
+- dms:AddTagsToResource	Adds metadata tags to a DMS resource, including replication instance, endpoint, security group, and migration task.	???	Global Conditions
+- dms:CreateEndpoint	Creates an endpoint using the provided settings.	???	Global Conditions
+- dms:CreateReplicationInstance	Creates the replication instance using the specified parameters.	???	Global Conditions
+- dms:CreateReplicationSubnetGroup	Creates a replication subnet group given a list of the subnet IDs in a VPC.	???	Global Conditions
+- dms:CreateReplicationTask	Creates a replication task using the specified parameters.	???	Global Conditions
+- dms:DeleteEndpoint	Deletes the specified endpoint.	???	Global Conditions
+- dms:DeleteReplicationInstance	Deletes the specified replication instance.	???	Global Conditions
+- dms:DeleteReplicationSubnetGroup	Deletes a subnet group.	???	Global Conditions
+- dms:DeleteReplicationTask	Deletes the specified replication task.	???	Global Conditions
+dms:DescribeAccountAttributes	Lists all of the AWS DMS attributes for a customer account.	???	Global Conditions
+dms:DescribeConnections	Describes the status of the connections that have been made between the replication instance and an endpoint.	???	Global Conditions
+dms:DescribeEndpointTypes	Returns information about the type of endpoints available.	???	Global Conditions
+dms:DescribeEndpoints	Returns information about the endpoints for your account in the current region.	???	Global Conditions
+dms:DescribeOrderableReplicationInstances	Returns information about the replication instance types that can be created in the specified region.	???	Global Conditions
+dms:DescribeRefreshSchemasStatus	Returns the status of the RefreshSchemas operation.	???	Global Conditions
+dms:DescribeReplicationInstances	Returns information about replication instances for your account in the current region.	???	Global Conditions
+dms:DescribeReplicationSubnetGroups	Returns information about the replication subnet groups.	???	Global Conditions
+dms:DescribeReplicationTasks	Returns information about replication tasks for your account in the current region.	???	Global Conditions
+dms:DescribeSchemas	Returns information about the schema for the specified endpoint.	???	Global Conditions
+dms:DescribeTableStatistics	Returns table statistics on the database migration task, including table name, rows inserted, rows updated, and rows deleted.	???	Global Conditions
+- dms:ListTagsForResource	Lists all tags for an AWS DMS resource.	???	Global Conditions
+- dms:ModifyEndpoint	Modifies the specified endpoint.	???	Global Conditions
+- dms:ModifyReplicationInstance	Modifies the replication instance to apply new settings.	???	Global Conditions
+- dms:ModifyReplicationSubnetGroup	Modifies the settings for the specified replication subnet group.	???	Global Conditions
+- dms:RefreshSchemas	Populates the schema for the specified endpoint.	???	Global Conditions
+- dms:RemoveTagsFromResource	Removes metadata tags from a DMS resource.	???	Global Conditions
+- dms:StartReplicationTask	Starts the replication task.	???	Global Conditions
+- dms:StopReplicationTask	Stops the replication task.	???	Global Conditions
+- dms:TestConnection	Tests the connection between the replication instance and the endpoint.	???	Global Conditions

@@ -1,0 +1,14 @@
+Amazon Kinesis Analytics (kinesisanalytics) : https://docs.aws.amazon.com/de_de/kinesisanalytics/latest/dev/API_DescribeApplication.html
+- kinesisanalytics:AddApplicationInput 	Adds a streaming source to your Amazon Kinesis application.	arn:aws:kinesisanalytics:$region:$account:application/$application-name	Global Conditions
+- kinesisanalytics:AddApplicationOutput 	Adds an external destination to your Amazon Kinesis Analytics application.	arn:aws:kinesisanalytics:$region:$account:application/$application-name	Global Conditions
+- kinesisanalytics:AddApplicationReferenceDataSource	Adds a reference data source to an existing application.	arn:aws:kinesisanalytics:$region:$account:application/$application-name	Global Conditions
+- kinesisanalytics:CreateApplication 	Creates an Amazon Kinesis Analytics application.	arn:aws:kinesisanalytics:$region:$account:application/$application-name	Global Conditions
+- kinesisanalytics:DeleteApplication 	Deletes the specified application.	arn:aws:kinesisanalytics:$region:$account:application/$application-name	Global Conditions
+- kinesisanalytics:DeleteApplicationOutput 	Deletes output destination configuration from your application configuration.	arn:aws:kinesisanalytics:$region:$account:application/$application-name	Global Conditions
+- kinesisanalytics:DeleteApplicationReferenceDataSource	Deletes a reference data source configuration from the specified application configuration.	arn:aws:kinesisanalytics:$region:$account:application/$application-name	Global Conditions
+kinesisanalytics:DescribeApplication 	Returns information about a specific Amazon Kinesis Analytics application.	arn:aws:kinesisanalytics:$region:$account:application/$application-name	Global Conditions
+- kinesisanalytics:DiscoverInputSchema 	Infers a schema by evaluating sample records on the specified streaming source (Amazon Kinesis stream or Amazon Kinesis Firehose delivery stream).	*	Global Conditions
+kinesisanalytics:ListApplications 	Returns a list of Amazon Kinesis Analytics applications in your account.	*	Global Conditions
+- kinesisanalytics:StartApplication 	Starts the specified Amazon Kinesis Analytics application.	arn:aws:kinesisanalytics:$region:$account:application/$application-name	Global Conditions
+- kinesisanalytics:StopApplication 	Stops the application from processing input data.	arn:aws:kinesisanalytics:$region:$account:application/$application-name	Global Conditions
+- kinesisanalytics:UpdateApplication 	Updates an existing Amazon Kinesis Analytics application.	arn:aws:kinesisanalytics:$region:$account:application/$application-name	Global Conditions

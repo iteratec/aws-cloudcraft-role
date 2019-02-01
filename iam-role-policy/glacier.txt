@@ -1,0 +1,48 @@
+Amazon Glacier (glacier) : https://docs.aws.amazon.com/de_de/amazonglacier/latest/dev/api-describe-job-get.html
+- glacier:AbortVaultLock 	This operation aborts the vault locking process if the vault lock is not in the Locked state.	*	Global Conditions
+- glacier:AddTagsToVault 	This operation adds the specified tags to a vault.	arn:aws:glacier:$region:$account:vaults/$vault-name
+- glacier:ResourceTag/$tag-key	Global Conditions
+- glacier:AbortMultipartUpload 	This multipart upload operation aborts a multipart upload identified by the upload ID.	arn:aws:glacier:$region:$account:vaults/$vault-name	Global Conditions
+- glacier:CompleteMultipartUpload 	You call this multipart upload operation to inform Amazon Glacier that all the archive parts have been uploaded and Amazon Glacier can now assemble the archive from the uploaded parts.	arn:aws:glacier:$region:$account:vaults/$vault-name
+- glacier:ResourceTag/$tag-key	Global Conditions
+- glacier:CompleteVaultLock 	This operation completes the vault locking process by transitioning the vault lock from the InProgress state to the Locked state, which causes the vault lock policy to become unchangeable.	*	Global Conditions
+- glacier:CreateVault 	This operation creates a new vault with the specified name.	*	Global Conditions
+- glacier:DeleteArchive 	This operation deletes an archive from a vault.	arn:aws:glacier:$region:$account:vaults/$vault-name
+- glacier:ArchiveAgeInDays
+- glacier:ResourceTag/$tag-key	Global Conditions
+- glacier:DeleteVault 	This operation deletes a vault.	arn:aws:glacier:$region:$account:vaults/$vault-name
+- glacier:ResourceTag/$tag-key	Global Conditions
+- glacier:DeleteVaultAccessPolicy 	This operation deletes the access policy associated with the specified vault.	arn:aws:glacier:$region:$account:vaults/$vault-name
+- glacier:ResourceTag/$tag-key	Global Conditions
+- glacier:DeleteVaultNotifications 	This operation deletes the notification configuration set for a vault Set Vault Notification Configuration (PUT notification-configuration).	arn:aws:glacier:$region:$account:vaults/$vault-name
+- glacier:ResourceTag/$tag-key	Global Conditions
+glacier:DescribeJob 	This operation returns information about a job you previously initiated, including the job initiation date, the user who initiated the job, the job status code/message and the Amazon Simple Notification Service (Amazon SNS) topic to notify after Amazon Glacier completes the job.	arn:aws:glacier:$region:$account:vaults/$vault-name	Global Conditions
+glacier:DescribeVault 	This operation returns information about a vault, including the vault Amazon Resource Name (ARN), the date the vault was created, the number of archives contained within the vault, and the total size of all the archives in the vault.	arn:aws:glacier:$region:$account:vaults/$vault-name	Global Conditions
+- glacier:GetDataRetrievalPolicy 	This operation returns the current data retrieval policy for the account and region specified in the GET request.	arn:aws:glacier:$region:$account:policies/retrieval-limit-policy	Global Conditions
+- glacier:GetJobOutput 	This operation downloads the output of the job you initiated using Initiate Job (POST jobs).	arn:aws:glacier:$region:$account:vaults/$vault-name	Global Conditions
+- glacier:GetVaultAccessPolicy 	This operation retrieves the access-policy subresource set on the vault—for more information on setting this subresource, see Set Vault Access Policy (PUT access-policy).	arn:aws:glacier:$region:$account:vaults/$vault-name	Global Conditions
+- glacier:GetVaultLock 	.	arn:aws:glacier:$region:$account:vaults/$vault-name	Global Conditions
+- glacier:GetVaultNotifications 	This operation retrieves the notification-configuration subresource set on the vault (see Set Vault Notification Configuration (PUT notification-configuration).	arn:aws:glacier:$region:$account:vaults/$vault-name	Global Conditions
+- glacier:InitiateJob 	This operation initiates a job of the specified type, which can be an archive retrieval or vault inventory retrieval.	arn:aws:glacier:$region:$account:vaults/$vault-name
+- glacier:ArchiveAgeInDays
+- glacier:ResourceTag/$tag-key	Global Conditions
+- glacier:InitiateMultipartUpload 	This operation initiates a multipart upload (see Uploading Large Archives in Parts (Multipart Upload)).	arn:aws:glacier:$region:$account:vaults/$vault-name
+- glacier:ResourceTag/$tag-key	Global Conditions
+- glacier:InitiateVaultLock 	.	-
+- glacier:ResourceTag/$tag-key	Global Conditions
+glacier:ListJobs 	This operation lists jobs for a vault including jobs that are in-progress and jobs that have recently finished.	arn:aws:glacier:$region:$account:vaults/$vault-name	Global Conditions
+glacier:ListMultipartUploads 	This multipart upload operation lists in-progress multipart uploads for the specified vault.	arn:aws:glacier:$region:$account:vaults/$vault-name	Global Conditions
+glacier:ListParts 	This multipart upload operation lists the parts of an archive that have been uploaded in a specific multipart upload identified by an upload ID.	arn:aws:glacier:$region:$account:vaults/$vault-name	Global Conditions
+glacier:ListTagsForVault 	This operation lists all the tags attached to a vault.	arn:aws:glacier:$region:$account:vaults/$vault-name	Global Conditions
+glacier:ListVaults 	This operation lists all vaults owned by the calling user’s account.	*	Global Conditions
+- glacier:RemoveTagsFromVault 	This operation removes one or more tags from the set of tags attached to a vault.	arn:aws:glacier:$region:$account:vaults/$vault-name
+- glacier:ResourceTag/$tag-key	Global Conditions
+- glacier:SetDataRetrievalPolicy 	This operation sets and then enacts a data retrieval policy in the region specified in the PUT request.	arn:aws:glacier:$region:$account:policies/retrieval-limit-policy	Global Conditions
+- glacier:SetVaultAccessPolicy 	This operation configures an access policy for a vault and will overwrite an existing policy.	arn:aws:glacier:$region:$account:vaults/$vault-name
+- glacier:ResourceTag/$tag-key	Global Conditions
+- glacier:SetVaultNotifications 	Retrieving an archive and a vault inventory are asynchronous operations in Amazon Glacier for which you must first initiate a job and wait for the job to complete before you can download the job output.	arn:aws:glacier:$region:$account:vaults/$vault-name
+- glacier:ResourceTag/$tag-key	Global Conditions
+- glacier:UploadArchive 	This operation adds an archive to a vault.	arn:aws:glacier:$region:$account:vaults/$vault-name
+- glacier:ResourceTag/$tag-key	Global Conditions
+- glacier:UploadMultipartPart 	This multipart upload operation uploads a part of an archive.	arn:aws:glacier:$region:$account:vaults/$vault-name
+- glacier:ResourceTag/$tag-key	Global Conditions

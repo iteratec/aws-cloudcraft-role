@@ -1,0 +1,4 @@
+AWS Cost and Usage Report (cur) : https://docs.aws.amazon.com/de_de/awsaccountbilling/latest/aboutv2/delete-report-definition.html
+- cur:DeleteReportDefinition 	Deletes an AWS Cost and Usage report.	*	Global Conditions
+cur:DescribeReportDefinitions 	Describes your AWS Cost and Usage reports.	*	Global Conditions
+- cur:PutReportDefinition 	Creates an AWS Cost and Usage report.	*	Global Conditions

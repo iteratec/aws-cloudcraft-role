@@ -1,0 +1,11 @@
+AWS Certificate Manager (acm) : https://docs.aws.amazon.com/acm/latest/APIReference/API_DescribeCertificate.html
+- acm:AddTagsToCertificate 	Adds one or more tags to an ACM Certificate.	arn:aws:acm:$region:$account:certificate/$certificate-id	Global Conditions
+- acm:DeleteCertificate 	Deletes an ACM Certificate and its associated private key.	arn:aws:acm:$region:$account:certificate/$certificate-id	Global Conditions
+acm:DescribeCertificate 	Returns a list of the fields contained in the specified ACM Certificate.	arn:aws:acm:$region:$account:certificate/$certificate-id	Global Conditions
+- acm:GetCertificate 	Retrieves an ACM Certificate and certificate chain for the certificate specified by an ARN.	arn:aws:acm:$region:$account:certificate/$certificate-id	Global Conditions
+- acm:ImportCertificate 	Imports an SSL/TLS certificate into AWS Certificate Manager (ACM) to use with ACM's integrated AWS services.	arn:aws:acm:$region:$account:certificate/$certificate-id	Global Conditions
+acm:ListCertificates 	Retrieves a list of ACM Certificates and the domain name for each.	*	Global Conditions
+- acm:ListTagsForCertificate 	Lists the tags that have been applied to the ACM Certificate.	arn:aws:acm:$region:$account:certificate/$certificate-id	Global Conditions
+- acm:RemoveTagsFromCertificate 	Remove one or more tags from an ACM Certificate.	arn:aws:acm:$region:$account:certificate/$certificate-id	Global Conditions
+- acm:RequestCertificate 	Requests an ACM Certificate for use with other AWS services.	*	Global Conditions
+- acm:ResendValidationEmail 	Resends the email that requests domain ownership validation.	arn:aws:acm:$region:$account:certificate/$certificate-id	Global Conditions

@@ -1,0 +1,27 @@
+Amazon CloudWatch Logs (logs) : https://docs.aws.amazon.com/de_de/AmazonCloudWatchLogs/latest/APIReference/API_DescribeDestinations.html
+- logs:CancelExportTask 	Cancels an export task if it is in PENDING or RUNNING state.	???	Global Conditions
+- logs:CreateExportTask 	Creates an ExportTask which allows you to efficiently export data from a Log Group to your Amazon S3 bucket.	???	Global Conditions
+- logs:CreateLogGroup 	Creates a new log group with the specified name.	???	Global Conditions
+- logs:CreateLogStream 	Creates a new log stream in the specified log group.	???	Global Conditions
+- logs:DeleteDestination 	Deletes the destination with the specified name and eventually disables all the subscription filters that publish to it.	???	Global Conditions
+- logs:DeleteLogGroup 	Deletes the log group with the specified name and permanently deletes all the archived log events associated with it.	???	Global Conditions
+- logs:DeleteLogStream 	Deletes a log stream and permanently deletes all the archived log events associated with it.	???	Global Conditions
+- logs:DeleteMetricFilter 	Deletes a metric filter associated with the specified log group.	???	Global Conditions
+- logs:DeleteRetentionPolicy 	Deletes the retention policy of the specified log group.	???	Global Conditions
+- logs:DeleteSubscriptionFilter 	Deletes a subscription filter associated with the specified log group.	???	Global Conditions
+logs:DescribeDestinations 	Returns all the destinations that are associated with the AWS account making the request.	???	Global Conditions
+logs:DescribeExportTasks 	Returns all the export tasks that are associated with the AWS account making the request.	???	Global Conditions
+logs:DescribeLogGroups 	Returns all the log groups that are associated with the AWS account making the request.	???	Global Conditions
+logs:DescribeLogStreams 	Returns all the log streams that are associated with the specified log group.	???	Global Conditions
+logs:DescribeMetricFilters 	Returns all the metrics filters associated with the specified log group.	???	Global Conditions
+logs:DescribeSubscriptionFilters 	Returns all the subscription filters associated with the specified log group.	???	Global Conditions
+- logs:FilterLogEvents 	Retrieves log events, optionally filtered by a filter pattern from the specified log group.	???	Global Conditions
+- logs:GetLogEvents 	Retrieves log events from the specified log stream.	???	Global Conditions
+logs:ListTagsLogGroup 	Lists the tags for the specified log group.	???	Global Conditions
+- logs:PutDestination 	Creates or updates a Destination.	???	Global Conditions
+- logs:PutDestinationPolicy 	Creates or updates an access policy associated with an existing Destination.	???	Global Conditions
+- logs:PutLogEvents 	Uploads a batch of log events to the specified log stream.	???	Global Conditions
+- logs:PutMetricFilter 	Creates or updates a metric filter and associates it with the specified log group.	???	Global Conditions
+- logs:PutRetentionPolicy 	Sets the retention of the specified log group.	???	Global Conditions
+- logs:PutSubscriptionFilter 	Creates or updates a subscription filter and associates it with the specified log group.	???	Global Conditions
+- logs:TestMetricFilter 	Tests the filter pattern of a metric filter against a sample of log event messages.	???	Global Conditions

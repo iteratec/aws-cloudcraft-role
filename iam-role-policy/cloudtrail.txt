@@ -1,0 +1,13 @@
+AWS CloudTrail (cloudtrail) : https://docs.aws.amazon.com/de_de/awscloudtrail/latest/APIReference/API_AddTags.html
+- cloudtrail:AddTags 	Adds one or more tags to a trail, up to a limit of 50.	???	Global Conditions
+- cloudtrail:CreateTrail 	Creates a trail that specifies the settings for delivery of log data to an Amazon S3 bucket.	???	Global Conditions
+- cloudtrail:DeleteTrail 	Deletes a trail.	???	Global Conditions
+cloudtrail:DescribeTrails 	Retrieves settings for the trail associated with the current region for your account.	???	Global Conditions
+cloudtrail:GetTrailStatus 	Returns a JSON-formatted list of information about the specified trail.	???	Global Conditions
+- cloudtrail:ListPublicKeys 	Returns all public keys whose private keys were used to sign the digest files within the specified time range.	???	Global Conditions
+- cloudtrail:ListTags 	Lists the tags for the trail in the current region.	???	Global Conditions
+- cloudtrail:LookupEvents 	Looks up API activity events captured by CloudTrail that create, update, or delete resources in your account.	???	Global Conditions
+- cloudtrail:RemoveTags 	Removes the specified tags from a trail.	???	Global Conditions
+- cloudtrail:StartLogging 	Starts the recording of AWS API calls and log file delivery for a trail.	arn:aws:cloudtrail:$region:$account:trail/$trailname	Global Conditions
+- cloudtrail:StopLogging 	Suspends the recording of AWS API calls and log file delivery for the specified trail.	arn:aws:cloudtrail:$region:$account:trail/$trailname	Global Conditions
+- cloudtrail:UpdateTrail 	Updates the settings that specify delivery of log files.	???	Global Conditions

@@ -1,0 +1,23 @@
+Amazon Kinesis Streams (kinesis) : https://docs.aws.amazon.com/de_de/kinesis/latest/APIReference/API_DescribeLimits.html
+- kinesis:AddTagsToStream 	Adds or updates tags for the specified Amazon Kinesis stream.	arn:aws:kinesis:$region:$account:stream/$stream-name	Global Conditions
+- kinesis:CreateStream 	Creates an Amazon Kinesis stream.	arn:aws:kinesis:$region:$account:stream/$stream-name	Global Conditions
+- kinesis:DecreaseStreamRetentionPeriod 	Decreases the Amazon Kinesis stream's retention period, which is the length of time data records are accessible after they are added to the stream.	arn:aws:kinesis:$region:$account:stream/$stream-name	Global Conditions
+- kinesis:DeleteStream 	Deletes an Amazon Kinesis stream and all its shards and data.	arn:aws:kinesis:$region:$account:stream/$stream-name	Global Conditions
+kinesis:DescribeLimits 	Describes the shard limits and usage for the account.	*	Global Conditions
+kinesis:DescribeStream 	Describes the specified Amazon Kinesis stream.	arn:aws:kinesis:$region:$account:stream/$stream-name	Global Conditions
+kinesis:DescribeStreamSummary 	Provides a summarized description of the specified Kinesis stream without the shard list.	???	Global Conditions
+- kinesis:DisableEnhancedMonitoring 	Disables enhanced monitoring.	*	Global Conditions
+- kinesis:EnableEnhancedMonitoring 	Enables enhanced Kinesis stream monitoring for shard-level metrics.	*	Global Conditions
+- kinesis:GetRecords 	Gets data records from an Amazon Kinesis stream's shard.	*	Global Conditions
+- kinesis:GetShardIterator 	Gets an Amazon Kinesis shard iterator.	arn:aws:kinesis:$region:$account:stream/$stream-name	Global Conditions
+- kinesis:IncreaseStreamRetentionPeriod 	Increases the Amazon Kinesis stream's retention period, which is the length of time data records are accessible after they are added to the stream.	arn:aws:kinesis:$region:$account:stream/$stream-name	Global Conditions
+kinesis:ListStreams 	Lists your Amazon Kinesis streams.	*	Global Conditions
+kinesis:ListTagsForStream 	Lists the tags for the specified Amazon Kinesis stream.	arn:aws:kinesis:$region:$account:stream/$stream-name	Global Conditions
+- kinesis:MergeShards 	Merges two adjacent shards in an Amazon Kinesis stream and combines them into a single shard to reduce the stream's capacity to ingest and transport data.	arn:aws:kinesis:$region:$account:stream/$stream-name	Global Conditions
+- kinesis:PutRecord 	Writes a single data record into an Amazon Kinesis stream.	arn:aws:kinesis:$region:$account:stream/$stream-name	Global Conditions
+- kinesis:PutRecords 	Writes multiple data records into an Amazon Kinesis stream in a single call (also referred to as a PutRecords request).	arn:aws:kinesis:$region:$account:stream/$stream-name	Global Conditions
+- kinesis:RemoveTagsFromStream 	Removes tags from the specified Amazon Kinesis stream.	arn:aws:kinesis:$region:$account:stream/$stream-name	Global Conditions
+- kinesis:SplitShard 	Splits a shard into two new shards in the Amazon Kinesis stream to increase the stream's capacity to ingest and transport data.	arn:aws:kinesis:$region:$account:stream/$stream-name	Global Conditions
+- kinesis:StartStreamEncryption 	Enables or updates server-side encryption using an AWS KMS key for a specified stream.	???	Global Conditions
+- kinesis:StopStreamEncryption 	Disables server-side encryption for a specified stream.	???	Global Conditions
+- kinesis:UpdateShardCount 	Update the shard count.	*	Global Conditions

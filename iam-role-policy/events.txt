@@ -1,0 +1,17 @@
+Amazon CloudWatch Events (events) : https://docs.aws.amazon.com/de_de/AmazonCloudWatchEvents/latest/APIReference/API_DescribeRule.html
+- events:DeleteRule 	Deletes a rule.	arn:$partition:events:$region:$account:rule/$rulename	???	Global Conditions
+events:DescribeRule 	Describes the details of the specified rule.	arn:$partition:events:$region:$account:rule/$rulename	???	Global Conditions
+- events:DisableRule 	Disables a rule.	arn:$partition:events:$region:$account:rule/$rulename	???	Global Conditions
+- events:EnableRule 	Enables a rule.	arn:$partition:events:$region:$account:rule/$rulename	???	Global Conditions
+events:ListRuleNamesByTarget 	Lists the names of the rules that the given target is put to.	arn:$partition:events:$region:$account:rule/$rulename	???	Global Conditions
+events:ListRules 	Lists the Amazon CloudWatch Events rules in your account.	arn:$partition:events:$region:$account:rule/$rulename	???	Global Conditions
+events:ListTargetsByRule 	Lists of targets assigned to the rule.	arn:$partition:events:$region:$account:rule/$rulename	???	Global Conditions
+- events:PutEvents 	Sends custom events to Amazon CloudWatch Events so that they can be matched to rules.	*	???	Global Conditions
+- events:PutRule 	Creates or updates a rule.	*
+- events:source
+- events:detail-type
+- events:detail.userIdentity.principalId
+- events:TargetArn	Global Conditions
+- events:PutTargets 	Adds target(s) to a rule.	*	???	Global Conditions
+- events:RemoveTargets 	Removes target(s) from a rule so that when the rule is triggered, those targets will no longer be invoked.	arn:$partition:events:$region:$account:rule/$rulename	???	Global Conditions
+- events:TestEventPattern 	Tests whether an event pattern matches the provided event.	*	???	Global Conditions

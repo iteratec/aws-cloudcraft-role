@@ -1,0 +1,8 @@
+Application Auto Scaling (application-autoscaling) : https://docs.aws.amazon.com/autoscaling/application/APIReference/API_DescribeScalableTargets.html
+- application-autoscaling:DeleteScalingPolicy	Deletes the specified Application Auto Scaling scaling policy.	*	Global Conditions
+- application-autoscaling:DeregisterScalableTarget 	Deregisters a scalable target.	*	Global Conditions
+application-autoscaling:DescribeScalableTargets 	Provides descriptive information about the scalable targets in the specified namespace.	*	Global Conditions
+application-autoscaling:DescribeScalingActivities 	Provides descriptive information about the scaling activities in the specified namespace from the previous six weeks.	*	Global Conditions
+application-autoscaling:DescribeScalingPolicies 	Provides descriptive information about the scaling policies in the specified namespace.	*	Global Conditions
+- application-autoscaling:PutScalingPolicy 	Creates or updates a policy for an Application Auto Scaling scalable target.	*	Global Conditions
+- application-autoscaling:RegisterScalableTarget 	Registers or updates a scalable target.	*	Global Conditions

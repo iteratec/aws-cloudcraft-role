@@ -1,0 +1,29 @@
+Amazon Route 53 Domains (route53domains) : https://docs.aws.amazon.com/de_de/Route53/latest/APIReference/API_domains_GetDomainDetail.html
+- route53domains:CheckDomainAvailability 	This operation checks the availability of one domain name.	arn:aws:route53domains:::*	Global Conditions
+- route53domains:DeleteDomain 	???	arn:aws:route53domains:::*	Global Conditions
+- route53domains:DeleteTagsForDomain 	This operation deletes the specified tags for a domain.	arn:aws:route53domains:::tags/*	Global Conditions
+- route53domains:DisableDomainAutoRenew 	This operation disables automatic renewal of domain registration for the specified domain.	arn:aws:route53domains:::*	Global Conditions
+- route53domains:DisableDomainTransferLock	This operation removes the transfer lock on the domain (specifically the clientTransferProhibited status) to allow domain transfers.	arn:aws:route53domains:::*	Global Conditions
+- route53domains:EnableDomainAutoRenew 	This operation configures Amazon Route 53 to automatically renew the specified domain before the domain registration expires.	arn:aws:route53domains:::*	Global Conditions
+- route53domains:EnableDomainTransferLock	This operation sets the transfer lock on the domain (specifically the clientTransferProhibited status) to prevent domain transfers.	arn:aws:route53domains:::*	Global Conditions
+- route53domains:GetContactReachabilityStatus	This operation returns information about whether the registrant contact has responded.	arn:aws:route53domains:::*	Global Conditions
+route53domains:GetDomainDetail 	This operation returns detailed information about the domain.	arn:aws:route53domains:::*	Global Conditions
+route53domains:GetDomainSuggestions 	This operation returns a list of suggested domain names.	arn:aws:route53domains:::*	Global Conditions
+- route53domains:GetOperationDetail 	This operation returns the current status of an operation that is not completed.	arn:aws:route53domains:::*	Global Conditions
+route53domains:ListDomains 	This operation returns all the domain names that were registered by using Amazon Route 53 for the current AWS account.	arn:aws:route53domains:::*	Global Conditions
+route53domains:ListOperations 	This operation returns the operation IDs of operations that are not yet complete.	arn:aws:route53domains:::*	Global Conditions
+route53domains:ListTagsForDomain 	This operation lists all of the tags that are associated with a specified domain.	arn:aws:route53domains:::tags/*	Global Conditions
+- route53domains:RegisterDomain 	This operation registers a domain.	arn:aws:route53domains:::*	Global Conditions
+- route53domains:RenewDomain 	This operation renews a domain for the specified number of years.	arn:aws:route53domains:::*	Global Conditions
+- route53domains:ResendContactReachabilityEmail	This operation resends the confirmation email to the current email address for the registrant contact.	arn:aws:route53domains:::*	Global Conditions
+- route53domains:RetrieveDomainAuthCode 	This operation returns the AuthCode for the domain.	arn:aws:route53domains:::*	Global Conditions
+- route53domains:TransferDomain 	This method transfers a domain from another registrar to Amazon Route 53.	arn:aws:route53domains:::*	Global Conditions
+- route53domains:UpdateDomainContact 	This operation updates the contact information for a particular domain.	arn:aws:route53domains:::*	Global Conditions
+- route53domains:UpdateDomainContactPrivacy	This operation updates the specified domain contact's privacy setting.	arn:aws:route53domains:::*	Global Conditions
+- route53domains:UpdateDomainNameservers	This operation replaces the current set of name servers for the domain with the specified set of name servers.	arn:aws:route53domains:::*	Global Conditions
+- route53domains:UpdateTagsForDomain 	This operation adds or updates tags for a specified domain.	arn:aws:route53domains:::tags/*	Global Conditions
+route53domains:ViewBilling 	Returns all the domain-related billing records for the current AWS account for a specified period	arn:aws:route53domains:::*	Global Conditions
+- route53domains:ChangeAutoRenew 	This permission is required for DisableDomainAutoRenew and EnableDomainAutoRenew.	arn:aws:route53domains:::*	Global Conditions
+- route53domains:ListDnssec 	(console only)	arn:aws:route53domains:::*	Global Conditions
+- route53domains:AddDnssec 	(console only)	arn:aws:route53domains:::*	Global Conditions
+- route53domains:RemoveDnssec 	(console only)	arn:aws:route53domains:::*	Global Conditions

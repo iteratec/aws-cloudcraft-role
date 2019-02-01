@@ -1,0 +1,39 @@
+Amazon ElastiCache (elasticache) : https://docs.aws.amazon.com/de_de/AmazonElastiCache/latest/APIReference/API_DescribeCacheClusters.html
+- elasticache:AddTagsToResource 	The AddTagsToResource action adds up to 10 cost allocation tags to the named resource.	*	Global Conditions
+- elasticache:AuthorizeCacheSecurityGroupIngress	The AuthorizeCacheSecurityGroupIngress action allows network ingress to a cache security group.	*	Global Conditions
+- elasticache:CopySnapshot 	The CopySnapshot action makes a copy of an existing snapshot.	*	Global Conditions
+- elasticache:CreateCacheCluster 	The CreateCacheCluster action creates a cache cluster.	*	Global Conditions
+- elasticache:CreateCacheParameterGroup 	The CreateCacheParameterGroup action creates a new cache parameter group.	*	Global Conditions
+- elasticache:CreateCacheSecurityGroup 	The CreateCacheSecurityGroup action creates a new cache security group.	*	Global Conditions
+- elasticache:CreateCacheSubnetGroup 	The CreateCacheSubnetGroup action creates a new cache subnet group.	*	Global Conditions
+- elasticache:CreateReplicationGroup 	The CreateReplicationGroup action creates a replication group.	*	Global Conditions
+- elasticache:CreateSnapshot 	The CreateSnapshot action creates a copy of an entire cache cluster at a specific moment in time.	*	Global Conditions
+- elasticache:DeleteCacheCluster 	The DeleteCacheCluster action deletes a previously provisioned cache cluster.	*	Global Conditions
+- elasticache:DeleteCacheParameterGroup 	The DeleteCacheParameterGroup action deletes the specified cache parameter group.	*	Global Conditions
+- elasticache:DeleteCacheSecurityGroup 	The DeleteCacheSecurityGroup action deletes a cache security group.	*	Global Conditions
+- elasticache:DeleteCacheSubnetGroup 	The DeleteCacheSubnetGroup action deletes a cache subnet group.	*	Global Conditions
+- elasticache:DeleteReplicationGroup 	The DeleteReplicationGroup action deletes an existing replication group.	*	Global Conditions
+- elasticache:DeleteSnapshot 	The DeleteSnapshot action deletes an existing snapshot.	*	Global Conditions
+elasticache:DescribeCacheClusters 	The DescribeCacheClusters action returns information about all provisioned cache clusters if no cache cluster identifier is specified, or about a specific cache cluster if a cache cluster identifier is supplied.	*	Global Conditions
+elasticache:DescribeCacheEngineVersions 	The DescribeCacheEngineVersions action returns a list of the available cache engines and their versions.	*	Global Conditions
+elasticache:DescribeCacheParameterGroups	The DescribeCacheParameterGroups action returns a list of cache parameter group descriptions.	*	Global Conditions
+elasticache:DescribeCacheParameters 	The DescribeCacheParameters action returns the detailed parameter list for a particular cache parameter group.	*	Global Conditions
+elasticache:DescribeCacheSecurityGroups 	The DescribeCacheSecurityGroups action returns a list of cache security group descriptions.	*	Global Conditions
+elasticache:DescribeCacheSubnetGroups 	The DescribeCacheSubnetGroups action returns a list of cache subnet group descriptions.	*	Global Conditions
+elasticache:DescribeEngineDefaultParameters	The DescribeEngineDefaultParameters action returns the default engine and system parameter information for the specified cache engine.	*	Global Conditions
+elasticache:DescribeEvents 	The DescribeEvents action returns events related to cache clusters, cache security groups, and cache parameter groups.	*	Global Conditions
+elasticache:DescribeReplicationGroups 	The DescribeReplicationGroups action returns information about a particular replication group.	*	Global Conditions
+elasticache:DescribeReservedCacheNodes 	The DescribeReservedCacheNodes action returns information about reserved cache nodes for this account, or about a specified reserved cache node.	*	Global Conditions
+elasticache:DescribeReservedCacheNodesOfferings	The DescribeReservedCacheNodesOfferings action lists available reserved cache node offerings.	*	Global Conditions
+elasticache:DescribeSnapshots 	The DescribeSnapshots action returns information about cache cluster snapshots.	*	Global Conditions
+elasticache:ListAllowedNodeTypeModifications	The ListAllowedNodeTypeModifications action lists all available node types that you can scale your Redis cluster's or replication group's current node type up to.	*	Global Conditions
+elasticache:ListTagsForResource 	The ListTagsForResource action lists all cost allocation tags currently on the named resource.	*	Global Conditions
+- elasticache:ModifyCacheCluster 	The ModifyCacheCluster action modifies the settings for a cache cluster.	*	Global Conditions
+- elasticache:ModifyCacheParameterGroup 	The ModifyCacheParameterGroup action modifies the parameters of a cache parameter group.	*	Global Conditions
+- elasticache:ModifyCacheSubnetGroup 	The ModifyCacheSubnetGroup action modifies an existing cache subnet group.	*	Global Conditions
+- elasticache:ModifyReplicationGroup 	The ModifyReplicationGroup action modifies the settings for a replication group.	*	Global Conditions
+- elasticache:PurchaseReservedCacheNodesOffering	The PurchaseReservedCacheNodesOffering action allows you to purchase a reserved cache node offering.	*	Global Conditions
+- elasticache:RebootCacheCluster 	The RebootCacheCluster action reboots some, or all, of the cache nodes within a provisioned cache cluster.	*	Global Conditions
+- elasticache:RemoveTagsFromResource 	The RemoveTagsFromResource action removes the tags identified by the TagKeys list from the named resource.	*	Global Conditions
+- elasticache:ResetCacheParameterGroup 	The ResetCacheParameterGroup action modifies the parameters of a cache parameter group to the engine or system default value.	*	Global Conditions
+- elasticache:RevokeCacheSecurityGroupIngress	The RevokeCacheSecurityGroupIngress action revokes ingress from a cache security group.	*	Global Conditions

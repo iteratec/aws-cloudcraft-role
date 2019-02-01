@@ -1,0 +1,3 @@
+Amazon API Gateway (execute-api) : 
+- execute-api:Invoke 	Invoke an API upon a client request.	arn:aws:execute-api:$region:$account:$api-id/$stage-name/$http-verb/$resource-path	Global Conditions
+- execute-api:InvalidateCache 	Invalidate API cache upon a client request.	arn:aws:execute-api:$region:$account:$api-id/$stage-name/$http-verb/$resource-path	Global Conditions

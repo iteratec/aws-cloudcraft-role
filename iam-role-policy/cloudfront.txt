@@ -1,0 +1,26 @@
+Amazon CloudFront (cloudfront) : https://docs.aws.amazon.com/de_de/cloudfront/latest/APIReference/Welcome.html
+- cloudfront:CreateCloudFrontOriginAccessIdentity	This action creates a new CloudFront origin access identity.	*	Global Conditions
+- cloudfront:CreateDistribution 	This action creates a new web distribution.	*	Global Conditions
+- cloudfront:CreateInvalidation 	This action creates a new invalidation batch request.	*	Global Conditions
+- cloudfront:CreateStreamingDistribution 	This action creates a new RTMP distribution.	*	Global Conditions
+- cloudfront:DeleteCloudFrontOriginAccessIdentity	This action deletes a CloudFront origin access identity.	*	Global Conditions
+- cloudfront:DeleteDistribution 	This action deletes a web distribution.	*	Global Conditions
+- cloudfront:DeleteStreamingDistribution 	This action deletes an RTMP distribution.	*	Global Conditions
+cloudfront:GetCloudFrontOriginAccessIdentity	???	*	Global Conditions
+- cloudfront:GetCloudFrontOriginAccessIdentityConfig	???	*	Global Conditions
+cloudfront:GetDistribution 	???	*	Global Conditions
+- cloudfront:GetDistributionConfig 	???	*	Global Conditions
+- cloudfront:GetInvalidation 	???	*	Global Conditions
+- cloudfront:GetStreamingDistribution 	???	*	Global Conditions
+- cloudfront:GetStreamingDistributionConfig 	???	*	Global Conditions
+cloudfront:ListCloudFrontOriginAccessIdentities	???	*	Global Conditions
+cloudfront:ListDistributions 	???	*	Global Conditions
+- cloudfront:ListDistributionsByWebACLId 	???	*	Global Conditions
+- cloudfront:ListInvalidations 	???	*	Global Conditions
+- cloudfront:ListStreamingDistributions 	???	*	Global Conditions
+- cloudfront:UpdateCloudFrontOriginAccessIdentity	This action sets the configuration for a CloudFront origin access identity.	*	Global Conditions
+- cloudfront:UpdateDistribution 	This action updates the configuration for a web distribution.	*	Global Conditions
+- cloudfront:UpdateStreamingDistribution 	This action updates the configuration for an RTMP distribution.	*	Global Conditions
+- cloudfront:ListTagsForResource 	List tags for a CloudFront resource.	*	Global Conditions
+- cloudfront:TagResource 	Add tags to a CloudFront resource.	*	Global Conditions
+- cloudfront:UntagResource 	Remove tags from a CloudFront resource.	*	Global Conditions

@@ -1,0 +1,25 @@
+AWS Lambda (lambda) : https://docs.aws.amazon.com/de_de/lambda/latest/dg/API_ListAliases.html
+- lambda:AddPermission 	Adds a permission to the resource policy associated with the specified AWS Lambda function.	arn:aws:lambda:$region:$account:function:$function-name	Global Conditions
+- lambda:CreateAlias 	Creates an alias that points to the specified Lambda function version.	arn:aws:lambda:$region:$account:function:$function-name	Global Conditions
+- lambda:CreateEventSourceMapping 	Identifies a stream as an event source for a Lambda function.	*	Global Conditions
+- lambda:CreateFunction 	Creates a new Lambda function.	*	Global Conditions
+- lambda:DeleteAlias 	Deletes the specified Lambda function alias.	arn:aws:lambda:$region:$account:function:$function-name	Global Conditions
+- lambda:DeleteEventSourceMapping 	Removes an event source mapping.	arn:aws:lambda:$region:$account:event-source-mapping:$event-source-mapping-uuid	Global Conditions
+- lambda:DeleteFunction 	Deletes the specified Lambda function code and configuration.	arn:aws:lambda:$region:$account:function:$function-name	Global Conditions
+- lambda:GetAlias 	Returns the specified alias information such as the alias ARN, description, and function version it is pointing to.	arn:aws:lambda:$region:$account:function:$function-name	Global Conditions
+- lambda:GetEventSourceMapping 	Returns configuration information for the specified event source mapping (see CreateEventSourceMapping).	*	Global Conditions
+- lambda:GetFunction 	Returns the configuration information of the Lambda function and a presigned URL link to the .	arn:aws:lambda:$region:$account:function:$function-name	Global Conditions
+- lambda:GetFunctionConfiguration 	Returns the configuration information of the Lambda function.	arn:aws:lambda:$region:$account:function:$function-name	Global Conditions
+lambda:GetPolicy 	Returns the resource policy associated with the specified Lambda function.	arn:aws:lambda:$region:$account:function:$function-name	Global Conditions
+- lambda:InvokeFunction 	Invokes a specific Lambda function.	arn:aws:lambda:$region:$account:function:$function-name	Global Conditions
+- lambda:InvokeAsync 	This API is deprecated. We recommend you use Invoke API	arn:aws:lambda:$region:$account:function:$function-name	Global Conditions
+lambda:ListAliases 	Returns list of aliases created for a Lambda function.	arn:aws:lambda:$region:$account:function:$function-name	Global Conditions
+lambda:ListEventSourceMappings 	Returns a list of event source mappings you created using the CreateEventSourceMapping (see CreateEventSourceMapping).	*	Global Conditions
+lambda:ListFunctions 	Returns a list of your Lambda functions.	*	Global Conditions
+lambda:ListVersionsByFunction 	List all versions of a function.	arn:aws:lambda:$region:$account:function:$function-name	Global Conditions
+- lambda:PublishVersion 	Publishes a version of your function from the current snapshot of $LATEST.	arn:aws:lambda:$region:$account:function:$function-name	Global Conditions
+- lambda:RemovePermission 	You can remove individual permissions from an resource policy associated with a Lambda function by providing a statement ID that you provided when you added the permission.	arn:aws:lambda:$region:$account:function:$function-name	Global Conditions
+- lambda:UpdateAlias 	Using this API you can update the function version to which the alias points and the alias description.	arn:aws:lambda:$region:$account:function:$function-name	Global Conditions
+- lambda:UpdateEventSourceMapping 	You can update an event source mapping.	arn:aws:lambda:$region:$account:event-source-mapping:$event-source-mapping-uuid	Global Conditions
+- lambda:UpdateFunctionCode 	Updates the code for the specified Lambda function.	arn:aws:lambda:$region:$account:function:$function-name	Global Conditions
+- lambda:UpdateFunctionConfiguration 	Updates the configuration parameters for the specified Lambda function by using the values provided in the request.	arn:aws:lambda:$region:$account:function:$function-name	Global Conditions

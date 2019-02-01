@@ -1,0 +1,49 @@
+Amazon SES Simple EMail Service (ses) : https://docs.aws.amazon.com/de_de/ses/latest/APIReference/API_ListIdentities.html
+- ses:CloneReceiptRuleSet 	Creates a receipt rule set by cloning an existing one.	???	Global Conditions
+- ses:CreateReceiptFilter 	Creates a new IP address filter.	???	Global Conditions
+- ses:CreateReceiptRule 	Creates a receipt rule.	???	Global Conditions
+- ses:CreateReceiptRuleSet 	Creates an empty receipt rule set.	???	Global Conditions
+- ses:DeleteIdentity 	Deletes the specified identity (an email address or a domain) from the list of verified identities.	???	Global Conditions
+- ses:DeleteIdentityPolicy 	Deletes the specified sending authorization policy for the given identity (an email address or a domain).	???	Global Conditions
+- ses:DeleteReceiptFilter 	Deletes the specified IP address filter.	???	Global Conditions
+- ses:DeleteReceiptRule 	Deletes the specified receipt rule.	???	Global Conditions
+- ses:DeleteReceiptRuleSet 	Deletes the specified receipt rule set and all of the receipt rules it contains.	???	Global Conditions
+- ses:DeleteVerifiedEmailAddress 	Deletes the specified email address from the list of verified addresses.	???	Global Conditions
+- ses:DescribeActiveReceiptRuleSet 	Returns the metadata and receipt rules for the receipt rule set that is currently active.	???	Global Conditions
+- ses:DescribeReceiptRule 	Returns the details of the specified receipt rule.	???	Global Conditions
+- ses:DescribeReceiptRuleSet 	Returns the details of the specified receipt rule set.	???	Global Conditions
+- ses:GetIdentityDkimAttributes 	Returns the current status of Easy DKIM signing for an entity.	???	Global Conditions
+- ses:GetIdentityNotificationAttributes 	Given a list of verified identities (email addresses and/or domains), returns a structure describing identity notification attributes.	???	Global Conditions
+- ses:GetIdentityPolicies 	Returns the requested sending authorization policies for the given identity (an email address or a domain).	???	Global Conditions
+- ses:GetIdentityVerificationAttributes 	Given a list of identities (email addresses and/or domains), returns the verification status and (for domain identities) the verification token for each identity.	???	Global Conditions
+- ses:GetSendQuota 	Returns the user's current sending limits.	???	Global Conditions
+- ses:GetSendStatistics 	Returns the user's sending statistics.	???	Global Conditions
+- ses:ListIdentities 	Returns a list containing all of the identities (email addresses and domains) for your AWS account, regardless of verification status.	???	Global Conditions
+- ses:ListIdentityPolicies 	Returns a list of sending authorization policies that are attached to the given identity (an email address or a domain).	???	Global Conditions
+- ses:ListReceiptFilters 	Lists the IP address filters associated with your AWS account.	???	Global Conditions
+- ses:ListReceiptRuleSets 	Lists the receipt rule sets that exist under your AWS account.	???	Global Conditions
+- ses:ListVerifiedEmailAddresses 	Returns a list containing all of the email addresses that have been verified.	???	Global Conditions
+- ses:PutIdentityPolicy 	Adds or updates a sending authorization policy for the specified identity (an email address or a domain).	???	Global Conditions
+- ses:ReorderReceiptRuleSet 	Reorders the receipt rules within a receipt rule set.	???	Global Conditions
+- ses:SendBounce 	Generates and sends a bounce message to the sender of an email you received through Amazon SES.	???
+- ses:FromAddress	Global Conditions
+- ses:SendEmail 	Composes an email message based on input data, and then immediately queues the message for sending.	arn:aws:ses:$region:$account:identity/$identity
+- ses:Recipients
+- ses:FromAddress
+- ses:FromDisplayName
+- ses:FeedbackAddress	Global Conditions
+- ses:SendRawEmail 	Sends an email message, with header and content specified by the client.	arn:aws:ses:$region:$account:identity/$identity
+- ses:Recipients
+- ses:FromAddress
+- ses:FromDisplayName
+- ses:FeedbackAddress	Global Conditions
+- ses:SetActiveReceiptRuleSet 	Sets the specified receipt rule set as the active receipt rule set.	???	Global Conditions
+- ses:SetIdentityDkimEnabled 	???	???	Global Conditions
+- ses:SetIdentityNotificationTopic 	Given an identity (an email address or a domain), sets the Amazon Simple Notification Service (Amazon SNS) topic to which Amazon SES will publish bounce, complaint, and/or delivery notifications for emails sent with that identity as the Source.	???	Global Conditions
+- ses:SetIdentityFeedbackForwardingEnabled	Given an identity (an email address or a domain), enables or disables whether Amazon SES forwards bounce and complaint notifications as email.	???	Global Conditions
+- ses:SetReceiptRulePosition 	Sets the position of the specified receipt rule in the receipt rule set.	???	Global Conditions
+- ses:UpdateReceiptRule 	Updates a receipt rule.	???	Global Conditions
+- ses:VerifyDomainDkim 	Returns a set of DKIM tokens for a domain.	???	Global Conditions
+- ses:VerifyDomainIdentity 	Verifies a domain.	???	Global Conditions
+- ses:VerifyEmailAddress 	Verifies an email address.	???	Global Conditions
+- ses:VerifyEmailIdentity 	Verifies an email address.	???	Global Conditions

@@ -1,0 +1,10 @@
+AWS Shield Advanced (shield) : https://docs.aws.amazon.com/de_de/waf/latest/DDOSAPIReference/API_DescribeProtection.html
+- shield:CreateProtection 	Enables AWS Shield Advanced for a specific AWS resource.	???	Global Conditions
+- shield:CreateSubscription 	Activates AWS Shield Advanced for an account.	???	Global Conditions
+- shield:DeleteProtection 	Deletes an AWS Shield Advanced Protection.	???	Global Conditions
+- shield:DeleteSubscription 	Removes AWS Shield Advanced from an account.	???	Global Conditions
+- shield:DescribeAttack 	Describes the details of a DDoS attack.	???	Global Conditions
+shield:DescribeProtection 	Lists the details of a Protection object.	???	Global Conditions
+shield:DescribeSubscription 	Provides details about the AWS Shield Advanced subscription for an account.	???	Global Conditions
+- shield:ListAttacks 	Returns all ongoing DDoS attacks or all DDoS attacks during a specified time period.	???	Global Conditions
+shield:ListProtections 	Lists all Protection objects for the account.	???	Global Conditions

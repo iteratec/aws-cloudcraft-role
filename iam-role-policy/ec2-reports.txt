@@ -1,0 +1,3 @@
+Amazon EC2 Usage Reports (ec2-reports) : https://docs.aws.amazon.com/de_de/AWSEC2/latest/UserGuide/usage-reports.html
+ec2-reports:ViewReservedInstanceUtilizationReport	View the Reserved Instances utilization report.	*	Global Conditions
+ec2-reports:ViewInstanceUsageReport 	View the instance usage report.	*	Global Conditions

@@ -1,0 +1,32 @@
+AWS CloudFormation (cloudformation) : https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_CancelUpdateStack.html
+- cloudformation:CancelUpdateStack 	Cancels an update on the specified stack.	arn:aws:cloudformation:$region:$account:stack/$stack-name/*	Global Conditions
+- cloudformation:ContinueUpdateRollback 	For a specified stack that is in the UPDATE_ROLLBACK_FAILED state, continues rolling it back to the UPDATE_ROLLBACK_COMPLETE state.	arn:aws:cloudformation:$region:$account:stack/$stack-name/*	Global Conditions
+- cloudformation:CreateChangeSet 	Creates a list of changes for a stack.	arn:aws:cloudformation:$region:$account:stack/$stack-name/*	Global Conditions
+- cloudformation:CreateStack 	Creates a stack as specified in the template.	arn:aws:cloudformation:$region:$account:stack/$stack-name/*
+- cloudformation:TemplateUrl
+- cloudformation:StackPolicyUrl
+- cloudformation:ResourceTypes	Global Conditions
+- cloudformation:CreateUploadBucket 	???	*	Global Conditions
+- cloudformation:DeleteStack 	Deletes a specified stack.	arn:aws:cloudformation:$region:$account:stack/$stack-name/*	Global Conditions
+- cloudformation:DescribeAccountLimits 	Retrieves your account's AWS CloudFormation limits, such as the maximum number of stacks that you can create in your account.	*	Global Conditions
+- cloudformation:DescribeChangeSet 	Returns the inputs for the change set and a list of changes that AWS CloudFormation will make if you execute the change set.	*	Global Conditions
+- cloudformation:DescribeStackEvents 	Returns all stack related events for a specified stack in reverse chronological order.	arn:aws:cloudformation:$region:$account:stack/$stack-name/*	Global Conditions
+- cloudformation:DescribeStackResource 	Returns a description of the specified resource in the specified stack.	arn:aws:cloudformation:$region:$account:stack/$stack-name/*	Global Conditions
+- cloudformation:DescribeStackResources 	Returns AWS resource descriptions for running and deleted stacks.	arn:aws:cloudformation:$region:$account:stack/$stack-name/*	Global Conditions
+- cloudformation:DescribeStacks 	Returns the description for the specified stack; if no stack name was specified, then it returns the description for all the stacks created.	arn:aws:cloudformation:$region:$account:stack/$stack-name/*	Global Conditions
+- cloudformation:EstimateTemplateCost 	Returns the estimated monthly cost of a template.	*	Global Conditions
+- cloudformation:ExecuteChangeSet 	Updates a stack using the input information that was provided when the specified change set was created.	arn:aws:cloudformation:$region:$account:stack/$stack-name/*	Global Conditions
+- cloudformation:GetStackPolicy 	Returns the stack policy for a specified stack.	arn:aws:cloudformation:$region:$account:stack/$stack-name/*	Global Conditions
+- cloudformation:GetTemplate 	Returns the template body for a specified stack.	arn:aws:cloudformation:$region:$account:stack/$stack-name/*	Global Conditions
+- cloudformation:GetTemplateSummary 	Returns information about a new or existing template.	*	Global Conditions
+- cloudformation:ListChangeSets 	Returns the ID and status of each active change set for a stack.	arn:aws:cloudformation:$region:$account:stack/$stack-name/*	Global Conditions
+- cloudformation:ListStackResources 	Returns descriptions of all resources of the specified stack.	arn:aws:cloudformation:$region:$account:stack/$stack-name/*	Global Conditions
+- cloudformation:ListStacks 	Returns the summary information for stacks whose status matches the specified StackStatusFilter.	*	Global Conditions
+- cloudformation:PreviewStackUpdate 	???	*	Global Conditions
+- cloudformation:SetStackPolicy 	Sets a stack policy for a specified stack.	arn:aws:cloudformation:$region:$account:stack/$stack-name/*	Global Conditions
+- cloudformation:SignalResource 	Sends a signal to the specified resource with a success or failure status.	arn:aws:cloudformation:$region:$account:stack/$stack-name/*	Global Conditions
+- cloudformation:UpdateStack 	Updates a stack as specified in the template.	arn:aws:cloudformation:$region:$account:stack/$stack-name/*
+- cloudformation:TemplateUrl
+- cloudformation:StackPolicyUrl
+- cloudformation:ResourceTypes	Global Conditions
+- cloudformation:ValidateTemplate 	Validates a specified template.	*	Global Conditions

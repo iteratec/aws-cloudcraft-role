@@ -1,0 +1,18 @@
+AWS CloudHSM (cloudhsm) : https://docs.aws.amazon.com/de_de/cloudhsm/classic/APIReference/Welcome.html, https://docs.aws.amazon.com/de_de/cloudhsm/latest/APIReference/Welcome.html
+- cloudhsm:CreateLunaClient 	Creates an HSM client.	*	Global Conditions
+- cloudhsm:CreateHapg 	Creates a high-availability partition group.	*	Global Conditions
+- cloudhsm:CreateHsm 	Creates an uninitialized HSM instance.	*	Global Conditions
+- cloudhsm:DeleteLunaClient 	Deletes a client.	*	Global Conditions
+- cloudhsm:DeleteHapg 	Deletes a high-availability partition group.	*	Global Conditions
+- cloudhsm:DeleteHsm 	Deletes an HSM.	*	Global Conditions
+cloudhsm:DescribeLunaClient 	Retrieves information about an HSM client.	*	Global Conditions
+cloudhsm:DescribeHapg 	Retrieves information about a high-availability partition group.	*	Global Conditions
+cloudhsm:DescribeHsm 	Retrieves information about an HSM.	*	Global Conditions
+- cloudhsm:GetConfig 	Gets the configuration files necessary to connect to all high availability partition groups the client is associated with.	*	Global Conditions
+cloudhsm:ListAvailableZones 	Lists the Availability Zones that have available AWS CloudHSM capacity.	*	Global Conditions
+cloudhsm:ListLunaClients 	Lists all of the clients.	*	Global Conditions
+cloudhsm:ListHapgs 	Lists the high-availability partition groups for the account.	*	Global Conditions
+cloudhsm:ListHsms 	Retrieves the identifiers of all of the HSMs provisioned for the current customer.	*	Global Conditions
+- cloudhsm:ModifyLunaClient 	Modifies the certificate used by the client.	*	Global Conditions
+- cloudhsm:ModifyHapg 	Modifies an existing high-availability partition group.	*	Global Conditions
+- cloudhsm:ModifyHsm 	Modifies an HSM.	*	Global Conditions

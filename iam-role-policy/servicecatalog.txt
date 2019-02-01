@@ -1,0 +1,44 @@
+AWS Service Catalog (servicecatalog) : https://docs.aws.amazon.com/de_de/servicecatalog/latest/dg/API_DescribeConstraint.html
+- servicecatalog:AcceptPortfolioShare 	Accepts an offer to share a portfolio.	???	???	Global Conditions
+- servicecatalog:AssociatePrincipalWithPortfolio	Associates the specified principal ARN with the specified portfolio.	???	???	Global Conditions
+- servicecatalog:AssociateProductWithPortfolio	Associates a product with a portfolio.	???	???	Global Conditions
+- servicecatalog:CreateConstraint 	Creates a new constraint.	???	???	Global Conditions
+- servicecatalog:CreatePortfolio 	Creates a new portfolio.	???	???	Global Conditions
+- servicecatalog:CreatePortfolioShare 	Creates a new portfolio share.	???	???	Global Conditions
+- servicecatalog:CreateProduct 	Creates a new product.	???	???	Global Conditions
+- servicecatalog:CreateProvisioningArtifact 	Create a new provisioning artifact for the specified product.	???	???	Global Conditions
+- servicecatalog:DeleteConstraint 	Deletes the specified constraint.	???	???	Global Conditions
+- servicecatalog:DeletePortfolio 	Deletes the specified portfolio.	???	???	Global Conditions
+- servicecatalog:DeletePortfolioShare 	Deletes the specified portfolio share.	???	???	Global Conditions
+- servicecatalog:DeleteProduct 	Deletes the specified product.	???	???	Global Conditions
+- servicecatalog:DeleteProvisioningArtifact 	Deletes the specified provisioning artifact.	???	???	Global Conditions
+servicecatalog:DescribeConstraint 	Retrieves detailed information for a specified constraint.	???	???	Global Conditions
+servicecatalog:DescribePortfolio 	Retrieves detailed information and any tags associated with the specified portfolio.	???	???	Global Conditions
+servicecatalog:DescribeProduct 	Retrieves information about a specified product.	???	???	Global Conditions
+servicecatalog:DescribeProductAsAdmin 	Retrieves information about a specified product, run with administrator access.	???	???	Global Conditions
+servicecatalog:DescribeProductView 	Retrieves information about a specified product.	???	???	Global Conditions
+servicecatalog:DescribeProvisioningArtifact 	Retrieves detailed information about the specified provisioning artifact.	???	???	Global Conditions
+servicecatalog:DescribeProvisioningParameters	Provides information about parameters required to provision a specified product in a specified manner.	???	???	Global Conditions
+servicecatalog:DescribeRecord 	Retrieves a paginated list of the full details of a specific request.	???	???	Global Conditions
+- servicecatalog:DisassociatePrincipalFromPortfolio	Disassociates a previously associated principal ARN from a specified portfolio.	???	???	Global Conditions
+- servicecatalog:DisassociateProductFromPortfolio	Disassociates the specified product from the specified portfolio.	???	???	Global Conditions
+servicecatalog:ListAcceptedPortfolioShares 	Lists details of all portfolios for which sharing was accepted by this account.	???	???	Global Conditions
+servicecatalog:ListConstraintsForPortfolio 	Retrieves detailed constraint information for the specified portfolio and product.	???	???	Global Conditions
+- servicecatalog:ListLaunchPaths 	Returns a paginated list of all paths to a specified product.	???	???	Global Conditions
+- servicecatalog:ListPortfolioAccess 	Lists the account IDs that have been authorized sharing of the specified portfolio.	???	???	Global Conditions
+servicecatalog:ListPortfolios 	Lists all portfolios in the catalog.	???	???	Global Conditions
+servicecatalog:ListPortfoliosForProduct 	Lists all portfolios that the specified product is associated with.	???	???	Global Conditions
+servicecatalog:ListPrincipalsForPortfolio 	Lists all principal ARNs associated with the specified portfolio.	???	???	Global Conditions
+servicecatalog:ListProvisioningArtifacts 	Lists all provisioning artifacts associated with the specified product.	???	???	Global Conditions
+- servicecatalog:ListRecordHistory 	Returns a paginated list of all performed requests, in the form of RecordDetails objects that are filtered as specified.	???	???	Global Conditions
+- servicecatalog:ProvisionProduct 	Requests a Provision of a specified product.	???	???	Global Conditions
+- servicecatalog:RejectPortfolioShare 	Rejects an offer to share a portfolio.	???	???	Global Conditions
+- servicecatalog:ScanProvisionedProducts 	Returns a paginated list of all the ProvisionedProduct objects that are currently available (not terminated).	???	???	Global Conditions
+- servicecatalog:SearchProducts 	Returns a paginated list all of the Products objects to which the caller has access.	???	???	Global Conditions
+- servicecatalog:SearchProductsAsAdmin 	Retrieves summary and status information about all products created within the caller's account.	???	???	Global Conditions
+- servicecatalog:TerminateProvisionedProduct	Requests termination of an existing ProvisionedProduct object.	???	???	Global Conditions
+- servicecatalog:UpdateConstraint 	Updates an existing constraint.	???	???	Global Conditions
+- servicecatalog:UpdatePortfolio 	Updates the specified portfolio's details.	???	???	Global Conditions
+- servicecatalog:UpdateProduct 	Updates an existing product.	???	???	Global Conditions
+- servicecatalog:UpdateProvisionedProduct 	Requests updates to the configuration of an existing ProvisionedProduct object.	???	???	Global Conditions
+- servicecatalog:UpdateProvisioningArtifact 	Updates an existing provisioning artifact's information.	???	???	Global Conditions

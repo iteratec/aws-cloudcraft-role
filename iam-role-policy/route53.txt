@@ -1,0 +1,56 @@
+Amazon Route 53 (route53) : https://docs.aws.amazon.com/de_de/Route53/latest/APIReference/API_GetHostedZone.html
+- route53:AssociateVPCWithHostedZone 	This action associates an additional Amazon VPC with a private hosted zone.	arn:aws:route53:::hostedzone/$hosted-zone-id/associatevpc	Global Conditions
+- route53:ChangeResourceRecordSets 	Use ChangeResourceRecordSets to create, update, or delete your authoritative DNS information on all Amazon Route 53 DNS servers.	arn:aws:route53:::hostedzone/$hosted-zone-id	Global Conditions
+- route53:ChangeTagsForResource 	Adds, edits, or deletes tags for a health check or a hosted zone.	arn:aws:route53:::tags/healthcheck/$health-check-id	arn:aws:route53:::tags/hostedzone/$hosted-zone-id	Global Conditions
+- route53:CreateHealthCheck 	Creates a new health check.	*	Global Conditions
+- route53:CreateHostedZone 	This action creates a public hosted zone, which you use to specify how the Domain Name System (DNS) routes traffic on the Internet for a domain, such as example.	*	Global Conditions
+- route53:CreateQueryLoggingConfig 	Creates a configuration for DNS query logging. After you create a query logging configuration, Amazon Route 53 begins to publish log data to an Amazon CloudWatch Logs log group.	*	Global Conditions
+- route53:CreateReusableDelegationSet 	This action creates a delegation set (a group of four name servers) that can be reused by multiple hosted zones.	*	Global Conditions
+- route53:CreateTrafficPolicy 	Creates a traffic policy, which you use to create multiple DNS resource record sets for one domain name (such as example.	*	Global Conditions
+- route53:CreateTrafficPolicyInstance 	Creates resource record sets in a specified hosted zone based on the settings in a specified traffic policy version.	*	Global Conditions
+- route53:CreateTrafficPolicyVersion 	Creates a new version of an existing traffic policy.	*	Global Conditions
+- route53:CreateVPCAssociationAuthorization	Authorizes the AWS account that created a specified VPC to submit an AssociateVPCWithHostedZone request to associate the VPC with a specified hosted zone that was created by a different account.	*	Global Conditions
+- route53:DeleteHealthCheck 	This action deletes a health check.	*	Global Conditions
+- route53:DeleteHostedZone 	This action deletes a hosted zone.	*	Global Conditions
+- route53:DeleteQueryLoggingConfig 	Deletes a configuration for DNS query logging.	*	Global Conditions
+- route53:DeleteReusableDelegationSet 	This action deletes a reusable delegation set.	*	Global Conditions
+- route53:DeleteTrafficPolicy 	Deletes the specified version of a traffic policy.	*	Global Conditions
+- route53:DeleteTrafficPolicyInstance 	Deletes a traffic policy instance and all of the resource record sets that Amazon Route 53 created when you created the instance.	*	Global Conditions
+- route53:DeleteVPCAssociationAuthorization	Removes authorization to submit an AssociateVPCWithHostedZone request to associate a specified VPC with a hosted zone that was created by a different account.	*	Global Conditions
+- route53:DisassociateVPCFromHostedZone 	This action disassociates an Amazon Virtual Private Cloud from an Amazon Route 53 private hosted zone.	*	Global Conditions
+- route53:GetChange 	This action returns the current status of a change batch request.	*	Global Conditions
+- route53:GetCheckerIpRanges 	Gets a list of the IP ranges used by Amazon Route 53 health checkers to check the health of your resources.	*	Global Conditions
+- route53:GetGeoLocation 	Gets information about whether a specified geographic location is supported for Amazon Route 53 geolocation resource record sets.	*	Global Conditions
+- route53:GetHealthCheck 	This action gets information about a specified health check.	*	Global Conditions
+- route53:GetHealthCheckCount 	Gets the total number of health checks for the current AWS account.	*	Global Conditions
+- route53:GetHealthCheckLastFailureReason 	This action gets the reason that a specified health check failed most recently.	*	Global Conditions
+- route53:GetHealthCheckStatus 	This action gets the current status of a specified health check endpoint as reported by each of the Amazon Route 53 health checkers.	*	Global Conditions
+route53:GetHostedZone 	To retrieve information about a public hosted zone, including the four name servers assigned to the hosted zone, send a GET request to the 2013-04-01/hostedzone/Amazon Route 53 hosted zone ID resource.	*	Global Conditions
+route53:GetHostedZoneCount 	Gets the total number of public and private hosted zones for the current AWS account.	*	Global Conditions
+- route53:GetQueryLoggingConfig 	Gets information about a specified configuration for DNS query logging.	*	Global Conditions
+- route53:GetReusableDelegationSet 	Retrieves information about a specified reusable delegation set, including the four name servers that are assigned to the delegation set.	*	Global Conditions
+- route53:GetTrafficPolicy 	Gets information about a specific traffic policy version.	*	Global Conditions
+- route53:GetTrafficPolicyInstance 	Gets information about a specified traffic policy instance.	*	Global Conditions
+- route53:GetTrafficPolicyInstanceCount 	Gets the number of traffic policy instances that are associated with the current AWS account.	*	Global Conditions
+route53:ListGeoLocations 	Retrieves a list of supported geo locations.	*	Global Conditions
+route53:ListHealthChecks 	This action gets a list of the health checks that are associated with the current AWS account.	*	Global Conditions
+route53:ListHostedZones 	To retrieve a list of your public and private hosted zones, send a GET request to the 2013-04-01/hostedzone resource.	*	Global Conditions
+route53:ListHostedZonesByName 	To retrieve a list of your public and private hosted zones in ASCII order by domain name, send a GET request to the 2013-04-01/hostedzonesbyname resource.	*	Global Conditions
+route53:ListQueryLoggingConfigs 	Lists the configurations for DNS query logging that are associated with the current AWS account or the configuration that is associated with a specified hosted zone.	*	Global Conditions
+route53:ListResourceRecordSets 	To list your resource record sets, send a GET request to the 2013-04-01/hostedzone/Amazon Route 53 hosted zone ID/rrset resource.	*	Global Conditions
+route53:ListReusableDelegationSets 	To retrieve a list of the reusable delegation sets that are associated with the current AWS account, send a GET request to the 2013-04-01/delegationset resource.	*	Global Conditions
+route53:ListTagsForResource 	Lists tags for one health check or hosted zone.	arn:aws:route53:::tags/healthcheck/$health-check-id	arn:aws:route53:::tags/hostedzone/$hosted-zone-id	Global Conditions
+route53:ListTagsForResources 	Lists tags for up to 10 health checks or hosted zones.	arn:aws:route53:::tags/healthcheck/*	arn:aws:route53:::tags/hostedzone/*	Global Conditions
+route53:ListTrafficPolicies 	Gets information about the latest version for every traffic policy that is associated with the current AWS account.	*	Global Conditions
+route53:ListTrafficPolicyInstances 	Gets information about the traffic policy instances that you created by using the current AWS account.	*	Global Conditions
+route53:ListTrafficPolicyInstancesByHostedZone	Gets information about the traffic policy instances that you created in a specified hosted zone.	*	Global Conditions
+route53:ListTrafficPolicyInstancesByPolicy 	Gets information about the traffic policy instances that you created by using a specify traffic policy version.	*	Global Conditions
+route53:ListTrafficPolicyVersions 	Gets information about all of the versions for a specified traffic policy.	*	Global Conditions
+- route53:ListVPCAssociationAuthorizations 	Gets a list of the VPCs that were created by other accounts and that can be associated with a specified hosted zone because you've submitted one or more CreateVPCAssociationAuthorization requests.	*	Global Conditions
+- route53:TestDNSAnswer 	Gets the value that Amazon Route 53 returns in response to a DNS request for a specified record name and type.	*	Global Conditions
+- route53:UpdateHealthCheck 	Updates an existing health check.	*	Global Conditions
+- route53:UpdateHostedZoneComment 	To update the comment for a hosted zone, send a POST request to the /2013-04-01/hostedzone/hosted zone ID resource.	*	Global Conditions
+- route53:UpdateTrafficPolicyComment 	Updates the comment for a specified traffic policy version.	*	Global Conditions
+- route53:UpdateTrafficPolicyInstance 	Updates the resource record sets in a specified hosted zone that were created based on the settings in a specified traffic policy version.	*	Global Conditions
+- route53:DisableDomainAutoRenew 	This operation disables automatic renewal of your domain registration before the expiration date. (Deprecated in favor of route53domains:DisableDomainAutoRenew?)	*	Global Conditions
+- route53:EnableDomainAutoRenew 	This operation enables automatic renewal of your domain registration before the expiration date. (Deprecated in favor of route53domains:EnableDomainAutoRenew?)	*	Global Conditions

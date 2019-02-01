@@ -1,0 +1,18 @@
+AWS Snowball (snowball) : https://docs.aws.amazon.com/de_de/snowball/latest/api-reference/API_DescribeAddress.html
+- snowball:CancelCluster 	Cancels a cluster job.	???	???	Global Conditions
+- snowball:CancelJob 	Cancels the specified job.	???	???	Global Conditions
+- snowball:CreateAddress 	Creates an address for a Snowball to be shipped to.	???	???	Global Conditions
+- snowball:CreateCluster 	Creates an empty cluster.	???	???	Global Conditions
+- snowball:CreateJob 	Creates a job to import or export data between Amazon S3 and your on-premises data center.	???	???	Global Conditions
+snowball:DescribeAddress 	Takes an AddressId and returns specific details about that address in the form of an Address object.	???	???	Global Conditions
+snowball:DescribeAddresses 	Returns a specified number of ADDRESS objects.	???	???	Global Conditions
+snowball:DescribeCluster 	Returns information about a specific cluster including shipping information, cluster status, and other important metadata.	???	???	Global Conditions
+snowball:DescribeJob 	Returns information about a specific job including shipping information, job status, and other important metadata.	???	???	Global Conditions
+- snowball:GetJobManifest 	Returns a link to an Amazon S3 presigned URL for the manifest file associated with the specified JobId value.	???	???	Global Conditions
+- snowball:GetJobUnlockCode 	Returns the UnlockCode code value for the specified job.	???	???	Global Conditions
+- snowball:GetSnowballUsage 	Returns information about the Snowball service limit for your account, and also the number of Snowballs your account has in use.	???	???	Global Conditions
+snowball:ListClusterJobs 	Returns an array of JobListEntry objects of the specified length.	???	???	Global Conditions
+snowball:ListClusters 	Returns an array of ClusterListEntry objects of the specified length.	???	???	Global Conditions
+snowball:ListJobs 	Returns an array of JobListEntry objects of the specified length.	???	???	Global Conditions
+- snowball:UpdateCluster 	While a cluster's ClusterState value is in the AwaitingQuorum state, you can update some of the information associated with a cluster.	???	???	Global Conditions
+- snowball:UpdateJob 	While a job's JobState value is New, you can update some of the information associated with a job.	???	???	Global Conditions

@@ -1,0 +1,28 @@
+Amazon Simple Notification Service (sns) : https://docs.aws.amazon.com/de_de/sns/latest/api/API_ListTopics.html
+- sns:AddPermission 	Adds a statement to a topic's access control policy, granting access for the specified AWS accounts to the specified actions.	???	???	Global Conditions
+- sns:ConfirmSubscription 	Verifies an endpoint owner's intent to receive messages by validating the token sent to the endpoint by an earlier Subscribe action.	???	???	Global Conditions
+- sns:CreatePlatformApplication 	Creates a platform application object for one of the supported push notification services, such as APNS and GCM, to which devices and mobile apps may register.	???	???	Global Conditions
+- sns:CreatePlatformEndpoint 	Creates an endpoint for a device and mobile app on one of the supported push notification services, such as GCM and APNS.	???	???	Global Conditions
+- sns:CreateTopic 	Creates a topic to which notifications can be published.	???	???	Global Conditions
+- sns:DeleteEndpoint 	Deletes the endpoint for a device and mobile app from Amazon SNS.	???	???	Global Conditions
+- sns:DeletePlatformApplication 	Deletes a platform application object for one of the supported push notification services, such as APNS and GCM.	???	???	Global Conditions
+- sns:DeleteTopic 	Deletes a topic and all its subscriptions.	???	???	Global Conditions
+- sns:GetEndpointAttributes 	Retrieves the endpoint attributes for a device on one of the supported push notification services, such as GCM and APNS.	???	???	Global Conditions
+- sns:GetPlatformApplicationAttributes 	Retrieves the attributes of the platform application object for the supported push notification services, such as APNS and GCM.	???	???	Global Conditions
+sns:GetSubscriptionAttributes 	Returns all of the properties of a subscription.	???	???	Global Conditions
+sns:GetTopicAttributes 	Returns all of the properties of a topic.	???	???	Global Conditions
+sns:ListEndpointsByPlatformApplication 	Lists the endpoints and endpoint attributes for devices in a supported push notification service, such as GCM and APNS.	???	???	Global Conditions
+sns:ListPlatformApplications 	Lists the platform application objects for the supported push notification services, such as APNS and GCM.	???	???	Global Conditions
+sns:ListSubscriptions 	Returns a list of the requester's subscriptions.	???	???	Global Conditions
+sns:ListSubscriptionsByTopic 	Returns a list of the subscriptions to a specific topic.	???	???	Global Conditions
+sns:ListTopics 	Returns a list of the requester's topics.	???	???	Global Conditions
+- sns:Publish 	Sends a message to all of a topic's subscribed endpoints.	arn:aws:sns:$region:$account:$topic-name	???	Global Conditions
+- sns:RemovePermission 	Removes a statement from a topic's access control policy.	???	???	Global Conditions
+- sns:SetEndpointAttributes 	Sets the attributes for an endpoint for a device on one of the supported push notification services, such as GCM and APNS.	???	???	Global Conditions
+- sns:SetPlatformApplicationAttributes 	Sets the attributes of the platform application object for the supported push notification services, such as APNS and GCM.	???	???	Global Conditions
+- sns:SetSubscriptionAttributes 	Allows a subscription owner to set an attribute of the topic to a new value.	???	???	Global Conditions
+- sns:SetTopicAttributes 	Allows a topic owner to set an attribute of the topic to a new value.	???	???	Global Conditions
+- sns:Subscribe 	Prepares to subscribe an endpoint by sending the endpoint a confirmation message.	???
+- sns:Endpoint
+- sns:Protocol	Global Conditions
+- sns:Unsubscribe 	Deletes a subscription.	???	???	Global Conditions

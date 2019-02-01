@@ -1,0 +1,138 @@
+Amazon Relational Database Service (rds) : https://docs.aws.amazon.com/de_de/AmazonRDS/latest/APIReference/API_DescribeAccountAttributes.html
+- rds:AddSourceIdentifierToSubscription 	Adds a source identifier to an existing RDS event notification subscription.	arn:aws:rds:$region:$account:es:$subscription-name	rds:es-tag	Global Conditions
+- rds:AddTagsToResource 	Adds metadata tags to an Amazon RDS resource.	arn:aws:rds:$region:$account:db:$db-instance-name	rds:db-tag	Global Conditions
+- rds:AddTagsToResource 	Adds metadata tags to an Amazon RDS resource.	arn:aws:rds:$region:$account:og:$option-group-name	rds:og-tag	Global Conditions
+- rds:AddTagsToResource 	Adds metadata tags to an Amazon RDS resource.	arn:aws:rds:$region:$account:pg:$parameter-group-name	rds:pg-tag	Global Conditions
+- rds:AddTagsToResource 	Adds metadata tags to an Amazon RDS resource.	arn:aws:rds:$region:$account:secgrp:$security-group-name	rds:secgrp-tag	Global Conditions
+- rds:AddTagsToResource 	Adds metadata tags to an Amazon RDS resource.	arn:aws:rds:$region:$account:subgrp:$subnet-group-name	rds:subgrp-tag	Global Conditions
+- rds:AddTagsToResource 	Adds metadata tags to an Amazon RDS resource.	arn:aws:rds:$region:$account:snapshot:$snapshot-name	rds:snapshot-tag	Global Conditions
+- rds:AddTagsToResource 	Adds metadata tags to an Amazon RDS resource.	arn:aws:rds:$region:$account:es:$subscription-name	rds:es-tag	Global Conditions
+- rds:AddTagsToResource 	Adds metadata tags to an Amazon RDS resource.	arn:aws:rds:$region:$account:ri:$reserved-db-instance-name	rds:ri-tag	Global Conditions
+- rds:ApplyPendingMaintenanceAction 	Applies a pending maintenance action to a resource (for example, to a DB instance).	arn:aws:rds:$region:$account:db:$db-instance-name	rds:db-tag	Global Conditions
+- rds:AuthorizeDBSecurityGroupIngress 	Enables ingress to a DBSecurityGroup using one of two forms of authorization.	arn:aws:rds:$region:$account:secgrp:$security-group-name	rds:secgrp-tag	Global Conditions
+- rds:CopyDBClusterSnapshot 	Creates a snapshot of a DB cluster.	arn:aws:rds:$region:$account:cluster-snapshot:$cluster-snapshot-name	rds:cluster-snapshot-tag	Global Conditions
+- rds:CopyDBParameterGroup 	Copies the specified DB parameter group.	arn:aws:rds:$region:$account:pg:$parameter-group-name	rds:pg-tag	Global Conditions
+- rds:CopyDBSnapshot 	Copies the specified DB snapshot.	arn:aws:rds:$region:$account:snapshot:$snapshot-name	rds:snapshot-tag	Global Conditions
+- rds:CopyOptionGroup 	Copies the specified option group.	arn:aws:rds:$region:$account:og:$option-group-name	rds:og-tag	Global Conditions
+- rds:CreateDBCluster 	Creates a new Amazon Aurora DB cluster.	arn:aws:rds:$region:$account:cluster:$db-cluster-name	rds:DatabaseEngine	rds:DatabaseName	rds:cluster-tag	Global Conditions
+- rds:CreateDBCluster 	Creates a new Amazon Aurora DB cluster.	arn:aws:rds:$region:$account:og:$option-group-name	rds:og-tag	Global Conditions
+- rds:CreateDBCluster 	Creates a new Amazon Aurora DB cluster.	arn:aws:rds:$region:$account:cluster-pg:$cluster-parameter-group-name	rds:cluster-pg-tag	Global Conditions
+- rds:CreateDBCluster 	Creates a new Amazon Aurora DB cluster.	arn:aws:rds:$region:$account:subgrp:$subnet-group-name	rds:subgrp-tag	Global Conditions
+- rds:CreateDBClusterParameterGroup 	Creates a new DB cluster parameter group.	arn:aws:rds:$region:$account:cluster-pg:$cluster-parameter-group-name	rds:cluster-pg-tag	Global Conditions
+- rds:CreateDBClusterSnapshot 	Creates a snapshot of a DB cluster.	arn:aws:rds:$region:$account:cluster:$db-cluster-name	rds:cluster-tag	Global Conditions
+- rds:CreateDBClusterSnapshot 	Creates a snapshot of a DB cluster.	arn:aws:rds:$region:$account:cluster-snapshot:$cluster-snapshot-name	rds:cluster-snapshot-tag	Global Conditions
+- rds:CreateDBInstance 	Creates a new DB instance.	arn:aws:rds:$region:$account:db:$db-instance-name	rds:DatabaseClass	rds:DatabaseEngine	rds:DatabaseName	rds:MultiAz	rds:Piops	rds:StorageSize	rds:Vpc	rds:db-tag	Global Conditions
+- rds:CreateDBInstance 	Creates a new DB instance.	arn:aws:rds:$region:$account:og:$option-group-name	rds:og-tag	Global Conditions
+- rds:CreateDBInstance 	Creates a new DB instance.	arn:aws:rds:$region:$account:pg:$parameter-group-name	rds:pg-tag	Global Conditions
+- rds:CreateDBInstance 	Creates a new DB instance.	arn:aws:rds:$region:$account:secgrp:$security-group-name	rds:secgrp-tag	Global Conditions
+- rds:CreateDBInstance 	Creates a new DB instance.	arn:aws:rds:$region:$account:subgrp:$subnet-group-name	rds:subgrp-tag	Global Conditions
+- rds:CreateDBInstanceReadReplica 	Creates a DB instance for a DB instance running MySQL, MariaDB, or PostgreSQL that acts as a Read Replica of a source DB instance.	arn:aws:rds:$region:$account:db:$db-instance-name	rds:DatabaseClass	rds:Piops	rds:db-tag	Global Conditions
+- rds:CreateDBInstanceReadReplica 	Creates a DB instance for a DB instance running MySQL, MariaDB, or PostgreSQL that acts as a Read Replica of a source DB instance.	arn:aws:rds:$region:$account:og:$option-group-name	rds:og-tag	Global Conditions
+- rds:CreateDBInstanceReadReplica 	Creates a DB instance for a DB instance running MySQL, MariaDB, or PostgreSQL that acts as a Read Replica of a source DB instance.	arn:aws:rds:$region:$account:subgrp:$subnet-group-name	rds:subgrp-tag	Global Conditions
+- rds:CreateDBParameterGroup 	Creates a new DB parameter group.	arn:aws:rds:$region:$account:pg:$parameter-group-name	rds:pg-tag	Global Conditions
+- rds:CreateDBSecurityGroup 	Creates a new DB security group.	arn:aws:rds:$region:$account:secgrp:$security-group-name	rds:secgrp-tag	Global Conditions
+- rds:CreateDBSnapshot 	Creates a DBSnapshot.	arn:aws:rds:$region:$account:db:$db-instance-name	rds:db-tag	Global Conditions
+- rds:CreateDBSnapshot 	Creates a DBSnapshot.	arn:aws:rds:$region:$account:snapshot:$snapshot-name	rds:snapshot-tag	Global Conditions
+- rds:CreateDBSubnetGroup 	Creates a new DB subnet group.	arn:aws:rds:$region:$account:subgrp:$subnet-group-name	rds:subgrp-tag	Global Conditions
+- rds:CreateEventSubscription 	Creates an RDS event notification subscription.	arn:aws:rds:$region:$account:es:$subscription-name	rds:es-tag	Global Conditions
+- rds:CreateOptionGroup 	Creates a new option group.	arn:aws:rds:$region:$account:og:$option-group-name	rds:og-tag	Global Conditions
+- rds:DeleteDBCluster 	The DeleteDBCluster action deletes a previously provisioned DB cluster.	arn:aws:rds:$region:$account:cluster:$db-cluster-name	rds:cluster-tag	Global Conditions
+- rds:DeleteDBCluster 	The DeleteDBCluster action deletes a previously provisioned DB cluster.	arn:aws:rds:$region:$account:cluster-snapshot:$cluster-snapshot-name	rds:cluster-snapshot-tag	Global Conditions
+- rds:DeleteDBClusterParameterGroup 	Deletes a specified DB cluster parameter group.	arn:aws:rds:$region:$account:cluster-pg:$cluster-parameter-group-name	rds:cluster-pg-tag	Global Conditions
+- rds:DeleteDBClusterSnapshot 	Deletes a DB cluster snapshot.	arn:aws:rds:$region:$account:cluster-snapshot:$cluster-snapshot-name	rds:cluster-snapshot-tag	Global Conditions
+- rds:DeleteDBInstance 	The DeleteDBInstance action deletes a previously provisioned DB instance.	arn:aws:rds:$region:$account:db:$db-instance-name	rds:db-tag	Global Conditions
+- rds:DeleteDBParameterGroup 	Deletes a specified DBParameterGroup.	arn:aws:rds:$region:$account:pg:$parameter-group-name	rds:pg-tag	Global Conditions
+- rds:DeleteDBSecurityGroup 	Deletes a DB security group.	arn:aws:rds:$region:$account:secgrp:$security-group-name	rds:secgrp-tag	Global Conditions
+- rds:DeleteDBSnapshot 	Deletes a DBSnapshot.	arn:aws:rds:$region:$account:snapshot:$snapshot-name	rds:snapshot-tag	Global Conditions
+- rds:DeleteDBSubnetGroup 	Deletes a DB subnet group.	arn:aws:rds:$region:$account:subgrp:$subnet-group-name	rds:subgrp-tag	Global Conditions
+- rds:DeleteEventSubscription 	Deletes an RDS event notification subscription.	arn:aws:rds:$region:$account:es:$subscription-name	rds:es-tag	Global Conditions
+- rds:DeleteOptionGroup 	Deletes an existing option group.	arn:aws:rds:$region:$account:og:$option-group-name	rds:og-tag	Global Conditions
+rds:DescribeAccountAttributes 	Lists all of the attributes for a customer account.	*	Global Conditions
+rds:DescribeCertificates 	Lists the set of CA certificates provided by Amazon RDS for this AWS account.	*	Global Conditions
+rds:DescribeDBClusterParameterGroups 	Returns a list of DBClusterParameterGroup descriptions.	arn:aws:rds:$region:$account:cluster-pg:$cluster-parameter-group-name	rds:cluster-pg-tag	Global Conditions
+rds:DescribeDBClusterParameters 	Returns the detailed parameter list for a particular DB cluster parameter group.	arn:aws:rds:$region:$account:cluster-pg:$cluster-parameter-group-name	rds:cluster-pg-tag	Global Conditions
+rds:DescribeDBClusters 	Returns information about provisioned Aurora DB clusters.	arn:aws:rds:$region:$account:cluster:$db-cluster-name	rds:cluster-tag	Global Conditions
+rds:DescribeDBClusterSnapshotAttributes 	Returns a list of DB cluster snapshot attribute names and values for a manual DB cluster snapshot.	arn:aws:rds:$region:$account:cluster-snapshot:$cluster-snapshot-name	rds:cluster-snapshot-tag	Global Conditions
+rds:DescribeDBEngineVersions 	Returns a list of the available DB engines.	arn:aws:rds:$region:$account:pg:$parameter-group-name	rds:pg-tag	Global Conditions
+rds:DescribeDBInstances 	Returns information about provisioned RDS instances.	*	Global Conditions
+rds:DescribeDBLogFiles 	Returns a list of DB log files for the DB instance.	arn:aws:rds:$region:$account:db:$db-instance-name	rds:db-tag	Global Conditions
+rds:DescribeDBParameterGroups 	Returns a list of DBParameterGroup descriptions.	arn:aws:rds:$region:$account:pg:$parameter-group-name	rds:pg-tag	Global Conditions
+rds:DescribeDBParameters 	Returns the detailed parameter list for a particular DB parameter group.	arn:aws:rds:$region:$account:pg:$parameter-group-name	rds:pg-tag	Global Conditions
+rds:DescribeDBSecurityGroups 	Returns a list of DBSecurityGroup descriptions.	arn:aws:rds:$region:$account:secgrp:$security-group-name	rds:secgrp-tag	Global Conditions
+rds:DescribeDBSnapshotAttributes 	Returns a list of DB snapshot attribute names and values for a manual DB snapshot.	arn:aws:rds:$region:$account:snapshot:$snapshot-name	rds:snapshot-tag	Global Conditions
+rds:DescribeDBSnapshots 	Returns information about DB snapshots.	arn:aws:rds:$region:$account:db:$db-instance-name	rds:db-tag	Global Conditions
+rds:DescribeDBSnapshots 	Returns information about DB snapshots.	arn:aws:rds:$region:$account:snapshot:$snapshot-name	rds:snapshot-tag	Global Conditions
+rds:DescribeDBSubnetGroups 	Returns a list of DBSubnetGroup descriptions.	arn:aws:rds:$region:$account:subgrp:$subnet-group-name	rds:subgrp-tag	Global Conditions
+rds:DescribeEngineDefaultClusterParameters	Returns the default engine and system parameter information for the cluster database engine.	*	Global Conditions
+rds:DescribeEngineDefaultParameters 	Returns the default engine and system parameter information for the specified database engine.	*	Global Conditions
+rds:DescribeEventCategories 	Displays a list of categories for all event source types, or, if specified, for a specified source type.	*	Global Conditions
+rds:DescribeEvents 	Returns events related to DB instances, DB security groups, DB snapshots, and DB parameter groups for the past 14 days.	*	Global Conditions
+rds:DescribeEventSubscriptions 	Lists all the subscription descriptions for a customer account.	arn:aws:rds:$region:$account:es:$subscription-name	rds:es-tag	Global Conditions
+rds:DescribeOptionGroupOptions 	Describes all available options.	arn:aws:rds:$region:$account:og:$option-group-name	rds:og-tag	Global Conditions
+rds:DescribeOptionGroups 	Describes the available option groups.	arn:aws:rds:$region:$account:og:$option-group-name	rds:og-tag	Global Conditions
+rds:DescribeOrderableDBInstanceOptions 	Returns a list of orderable DB instance options for the specified engine.	*	Global Conditions
+rds:DescribePendingMaintenanceActions 	Returns a list of resources (for example, DB instances) that have at least one pending maintenance action.	arn:aws:rds:$region:$account:db:$db-instance-name	rds:DatabaseClass	rds:DatabaseEngine	rds:DatabaseName	rds:MultiAz	rds:Piops	rds:StorageSize	rds:Vpc	rds:db-tag	Global Conditions
+rds:DescribeReservedDBInstances 	Returns information about reserved DB instances for this account, or about a specified reserved DB instance.	arn:aws:rds:$region:$account:ri:$reserved-db-instance-name	rds:DatabaseClass	rds:MultiAz	rds:ri-tag	Global Conditions
+rds:DescribeReservedDBInstancesOfferings	Lists available reserved DB instance offerings.	arn:aws:rds:$region:$account:db:$db-instance-name	rds:DatabaseClass	rds:MultiAz	Global Conditions
+- rds:DownloadCompleteDBLogFile 	Downloads the contents of the specified database log file.	*	Global Conditions
+- rds:DownloadDBLogFilePortion 	Downloads all or a portion of the specified log file, up to 1 MB in size.	arn:aws:rds:$region:$account:db:$db-instance-name	rds:db-tag	Global Conditions
+- rds:FailoverDBCluster 	Forces a failover for a DB cluster.	arn:aws:rds:$region:$account:cluster:$db-cluster-name	rds:cluster-tag	Global Conditions
+rds:ListTagsForResource 	Lists all tags on an Amazon RDS resource.	arn:aws:rds:$region:$account:db:$db-instance-name	rds:db-tag	Global Conditions
+- rds:ListTagsForResource 	Lists all tags on an Amazon RDS resource.	arn:aws:rds:$region:$account:og:$option-group-name	rds:og-tag	Global Conditions
+- rds:ListTagsForResource 	Lists all tags on an Amazon RDS resource.	arn:aws:rds:$region:$account:pg:$parameter-group-name	rds:pg-tag	Global Conditions
+- rds:ListTagsForResource 	Lists all tags on an Amazon RDS resource.	arn:aws:rds:$region:$account:secgrp:$security-group-name	rds:secgrp-tag	Global Conditions
+- rds:ListTagsForResource 	Lists all tags on an Amazon RDS resource.	arn:aws:rds:$region:$account:subgrp:$subnet-group-name	rds:subgrp-tag	Global Conditions
+- rds:ListTagsForResource 	Lists all tags on an Amazon RDS resource.	arn:aws:rds:$region:$account:snapshot:$snapshot-name	rds:snapshot-tag	Global Conditions
+- rds:ListTagsForResource 	Lists all tags on an Amazon RDS resource.	arn:aws:rds:$region:$account:es:$subscription-name	rds:es-tag	Global Conditions
+- rds:ListTagsForResource 	Lists all tags on an Amazon RDS resource.	arn:aws:rds:$region:$account:ri:$reserved-db-instance-name	rds:ri-tag	Global Conditions
+- rds:ModifyDBCluster 	Modify a setting for an Amazon Aurora DB cluster.	arn:aws:rds:$region:$account:cluster:$db-cluster-name	rds:Vpc	rds:cluster-tag	Global Conditions
+- rds:ModifyDBCluster 	Modify a setting for an Amazon Aurora DB cluster.	arn:aws:rds:$region:$account:og:$option-group-name	rds:og-tag	Global Conditions
+- rds:ModifyDBCluster 	Modify a setting for an Amazon Aurora DB cluster.	arn:aws:rds:$region:$account:cluster-pg:$cluster-parameter-group-name	rds:cluster-pg-tag	Global Conditions
+- rds:ModifyDBClusterParameterGroup 	???	arn:aws:rds:$region:$account:cluster-pg:$cluster-parameter-group-name	rds:cluster-pg-tag	Global Conditions
+- rds:ModifyDBClusterSnapshotAttribute 	Adds an attribute and values to, or removes an attribute and values from, a manual DB cluster snapshot.	arn:aws:rds:$region:$account:cluster-snapshot:$cluster-snapshot-name	rds:cluster-snapshot-tag	Global Conditions
+- rds:ModifyDBInstance 	Modify settings for a DB instance.	arn:aws:rds:$region:$account:db:$db-instance-name	rds:DatabaseClass	rds:MultiAz	rds:Piops	rds:StorageSize	rds:Vpc	rds:db-tag	Global Conditions
+- rds:ModifyDBInstance 	Modify settings for a DB instance.	arn:aws:rds:$region:$account:og:$option-group-name	rds:og-tag	Global Conditions
+- rds:ModifyDBInstance 	Modify settings for a DB instance.	arn:aws:rds:$region:$account:pg:$parameter-group-name	rds:pg-tag	Global Conditions
+- rds:ModifyDBInstance 	Modify settings for a DB instance.	arn:aws:rds:$region:$account:secgrp:$security-group-name	rds:secgrp-tag	Global Conditions
+- rds:ModifyDBParameterGroup 	Modifies the parameters of a DB parameter group.	arn:aws:rds:$region:$account:pg:$parameter-group-name	rds:pg-tag	Global Conditions
+- rds:ModifyDBSnapshotAttribute 	Adds an attribute and values to, or removes an attribute and values from, a manual DB snapshot.	arn:aws:rds:$region:$account:snapshot:$snapshot-name	rds:snapshot-tag	Global Conditions
+- rds:ModifyDBSubnetGroup 	Modifies an existing DB subnet group.	arn:aws:rds:$region:$account:subgrp:$subnet-group-name	rds:subgrp-tag	Global Conditions
+- rds:ModifyEventSubscription 	Modifies an existing RDS event notification subscription.	arn:aws:rds:$region:$account:es:$subscription-name	rds:es-tag	Global Conditions
+- rds:ModifyOptionGroup 	Modifies an existing option group.	arn:aws:rds:$region:$account:og:$option-group-name	rds:og-tag	Global Conditions
+- rds:PromoteReadReplica 	Promotes a Read Replica DB instance to a standalone DB instance.	arn:aws:rds:$region:$account:db:$db-instance-name	rds:db-tag	Global Conditions
+- rds:PromoteReadReplicaDBCluster 	Promotes a Read Replica DB cluster to a standalone DB cluster.	arn:aws:rds:$region:$account:cluster:$db-cluster-name	Global Conditions
+- rds:PurchaseReservedDBInstancesOffering 	Purchases a reserved DB instance offering.	*	Global Conditions
+- rds:RebootDBInstance 	Rebooting a DB instance restarts the database engine service.	arn:aws:rds:$region:$account:db:$db-instance-name	rds:db-tag	Global Conditions
+- rds:RemoveSourceIdentifierFromSubscription	Removes a source identifier from an existing RDS event notification subscription.	arn:aws:rds:$region:$account:es:$subscription-name	rds:es-tag	Global Conditions
+- rds:RemoveTagsFromResource 	Removes metadata tags from an Amazon RDS resource.	arn:aws:rds:$region:$account:db:$db-instance-name	rds:db-tag	Global Conditions
+- rds:RemoveTagsFromResource 	Removes metadata tags from an Amazon RDS resource.	arn:aws:rds:$region:$account:og:$option-group-name	rds:og-tag	Global Conditions
+- rds:RemoveTagsFromResource 	Removes metadata tags from an Amazon RDS resource.	arn:aws:rds:$region:$account:pg:$parameter-group-name	rds:pg-tag	Global Conditions
+- rds:RemoveTagsFromResource 	Removes metadata tags from an Amazon RDS resource.	arn:aws:rds:$region:$account:secgrp:$security-group-name	rds:secgrp-tag	Global Conditions
+- rds:RemoveTagsFromResource 	Removes metadata tags from an Amazon RDS resource.	arn:aws:rds:$region:$account:subgrp:$subnet-group-name	rds:subgrp-tag	Global Conditions
+- rds:RemoveTagsFromResource 	Removes metadata tags from an Amazon RDS resource.	arn:aws:rds:$region:$account:snapshot:$snapshot-name	rds:snapshot-tag	Global Conditions
+- rds:RemoveTagsFromResource 	Removes metadata tags from an Amazon RDS resource.	arn:aws:rds:$region:$account:es:$subscription-name	rds:es-tag	Global Conditions
+- rds:RemoveTagsFromResource 	Removes metadata tags from an Amazon RDS resource.	arn:aws:rds:$region:$account:ri:$reserved-db-instance-name	rds:ri-tag	Global Conditions
+- rds:ResetDBClusterParameterGroup 	Modifies the parameters of a DB cluster parameter group to the default value.	arn:aws:rds:$region:$account:cluster-pg:$cluster-parameter-group-name	rds:cluster-pg-tag	Global Conditions
+- rds:ResetDBParameterGroup 	Modifies the parameters of a DB parameter group to the engine/system default value.	arn:aws:rds:$region:$account:pg:$parameter-group-name	rds:pg-tag	Global Conditions
+- rds:RestoreDBClusterFromS3 	Creates an Amazon Aurora DB cluster from data stored in an Amazon S3 bucket.	arn:aws:rds:$region:$account:cluster:$db-cluster-instance-name	rds:DatabaseEngine	rds:DatabaseName	rds:cluster-tag	Global Conditions
+- rds:RestoreDBClusterFromS3 	Creates an Amazon Aurora DB cluster from data stored in an Amazon S3 bucket.	arn:aws:rds:$region:$account:cluster-pg:$cluster-parameter-group-name	rds:cluster-pg-tag	Global Conditions
+- rds:RestoreDBClusterFromS3 	Creates an Amazon Aurora DB cluster from data stored in an Amazon S3 bucket.	arn:aws:rds:$region:$account:og:$option-group-name	rds:og-tag	Global Conditions
+- rds:RestoreDBClusterFromS3 	Creates an Amazon Aurora DB cluster from data stored in an Amazon S3 bucket.	arn:aws:rds:$region:$account:subgrp:$subnet-group-name	rds:subgrp-tag	Global Conditions
+- rds:RestoreDBClusterFromSnapshot 	Creates a new DB cluster from a DB cluster snapshot.	arn:aws:rds:$region:$account:cluster:$db-cluster-instance-name	rds:DatabaseEngine	rds:DatabaseName	rds:cluster-tag	Global Conditions
+- rds:RestoreDBClusterFromSnapshot 	Creates a new DB cluster from a DB cluster snapshot.	arn:aws:rds:$region:$account:og:$option-group-name	rds:og-tag	Global Conditions
+- rds:RestoreDBClusterFromSnapshot 	Creates a new DB cluster from a DB cluster snapshot.	arn:aws:rds:$region:$account:cluster-snapshot:$cluster-snapshot-name	rds:cluster-snapshot-tag	Global Conditions
+- rds:RestoreDBClusterToPointInTime 	Restores a DB cluster to an arbitrary point in time.	arn:aws:rds:$region:$account:cluster:$db-cluster-instance-name	rds:cluster-tag	Global Conditions
+- rds:RestoreDBClusterToPointInTime 	Restores a DB cluster to an arbitrary point in time.	arn:aws:rds:$region:$account:og:$option-group-name	rds:og-tag	Global Conditions
+- rds:RestoreDBClusterToPointInTime 	Restores a DB cluster to an arbitrary point in time.	arn:aws:rds:$region:$account:subgrp:$subnet-group-name	rds:subgrp-tag	Global Conditions
+- rds:RestoreDBInstanceFromDBSnapshot 	Creates a new DB instance from a DB snapshot.	arn:aws:rds:$region:$account:db:$db-instance-name	rds:DatabaseClass	rds:DatabaseEngine	rds:DatabaseName	rds:MultiAz	rds:Piops	rds:Vpc	rds:db-tag	Global Conditions
+- rds:RestoreDBInstanceFromDBSnapshot 	Creates a new DB instance from a DB snapshot.	arn:aws:rds:$region:$account:og:$option-group-name	rds:og-tag	Global Conditions
+- rds:RestoreDBInstanceFromDBSnapshot 	Creates a new DB instance from a DB snapshot.	arn:aws:rds:$region:$account:snapshot:$snapshot-name	rds:snapshot-tag	Global Conditions
+- rds:RestoreDBInstanceFromDBSnapshot 	Creates a new DB instance from a DB snapshot.	arn:aws:rds:$region:$account:subgrp:$subnet-group-name	rds:subgrp-tag	Global Conditions
+- rds:RestoreDBInstanceToPointInTime 	Restores a DB instance to an arbitrary point in time.	arn:aws:rds:$region:$account:db:$db-instance-name	rds:DatabaseClass	rds:DatabaseEngine	rds:DatabaseName	rds:MultiAz	rds:Piops	rds:Vpc	rds:db-tag	Global Conditions
+- rds:RestoreDBInstanceToPointInTime 	Restores a DB instance to an arbitrary point in time.	arn:aws:rds:$region:$account:og:$option-group-name	rds:og-tag	Global Conditions
+- rds:RestoreDBInstanceToPointInTime 	Restores a DB instance to an arbitrary point in time.	arn:aws:rds:$region:$account:snapshot:$snapshot-name	rds:snapshot-tag	Global Conditions
+- rds:RestoreDBInstanceToPointInTime 	Restores a DB instance to an arbitrary point in time.	arn:aws:rds:$region:$account:subgrp:$subnet-group-name	rds:subgrp-tag	Global Conditions
+- rds:RevokeDBSecurityGroupIngress 	Revokes ingress from a DBSecurityGroup for previously authorized IP ranges or EC2 or VPC Security Groups.	arn:aws:rds:$region:$account:secgrp:$security-group-name	rds:secgrp-tag	Global Conditions
+- rds:DescribeDBClusterSnapshots 	Returns information about DB cluster snapshots.	*	.	Global Conditions
+- rds:StartDBInstance 	Starts a DB instance that was stopped.	*	Global Conditions
+- rds:StopDBInstance 	Stops a DB instance.	*	Global Conditions

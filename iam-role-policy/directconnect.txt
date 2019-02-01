@@ -1,0 +1,20 @@
+AWS Direct Connect (directconnect) : https://docs.aws.amazon.com/de_de/directconnect/latest/APIReference/API_DescribeConnections.html
+- directconnect:AllocateConnectionOnInterconnect	Creates a hosted connection on an interconnect.	*	Global Conditions
+- directconnect:AllocatePrivateVirtualInterface	Provisions a private virtual interface to be owned by a different customer.	*	Global Conditions
+- directconnect:AllocatePublicVirtualInterface 	Provisions a public virtual interface to be owned by a different customer.	*	Global Conditions
+- directconnect:ConfirmConnection 	Confirm the creation of a hosted connection on an interconnect.	*	Global Conditions
+- directconnect:ConfirmPrivateVirtualInterface	Accept ownership of a private virtual interface created by another customer.	*	Global Conditions
+- directconnect:ConfirmPublicVirtualInterface 	Accept ownership of a public virtual interface created by another customer.	*	Global Conditions
+- directconnect:CreateConnection 	Creates a new connection between the customer network and a specific AWS Direct Connect location.	*	Global Conditions
+- directconnect:CreateInterconnect 	Creates a new interconnect between a AWS Direct Connect partner's network and a specific AWS Direct Connect location.	*	Global Conditions
+- directconnect:CreatePrivateVirtualInterface 	Creates a new private virtual interface.	*	Global Conditions
+- directconnect:CreatePublicVirtualInterface 	Creates a new public virtual interface.	*	Global Conditions
+- directconnect:DeleteConnection 	Deletes the connection.	*	Global Conditions
+- directconnect:DeleteInterconnect 	Deletes the specified interconnect.	*	Global Conditions
+- directconnect:DeleteVirtualInterface 	Deletes a virtual interface.	*	Global Conditions
+directconnect:DescribeConnections 	Displays all connections in this region.	*	Global Conditions
+directconnect:DescribeConnectionsOnInterconnect	Return a list of connections that have been provisioned on the given interconnect.	*	Global Conditions
+directconnect:DescribeInterconnects 	Returns a list of interconnects owned by the AWS account.	*	Global Conditions
+directconnect:DescribeLocations 	Returns the list of AWS Direct Connect locations in the current AWS region.	*	Global Conditions
+directconnect:DescribeVirtualGateways 	Returns a list of virtual private gateways owned by the AWS account.	*	Global Conditions
+directconnect:DescribeVirtualInterfaces 	Displays all virtual interfaces for an AWS account.	*	Global Conditions

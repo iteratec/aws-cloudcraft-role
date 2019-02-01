@@ -1,0 +1,17 @@
+AWS Batch (batch) : https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeComputeEnvironments.html
+- batch:CancelJob 	Cancels jobs in an AWS Batch job queue.	???	Global Conditions
+- batch:CreateComputeEnvironment 	Creates an AWS Batch compute environment.	???	Global Conditions
+- batch:CreateJobQueue 	Creates an AWS Batch job queue.	???	Global Conditions
+- batch:DeleteComputeEnvironment 	Deletes an AWS Batch compute environment.	???	Global Conditions
+- batch:DeleteJobQueue 	Deletes the specified job queue.	???	Global Conditions
+- batch:DeregisterJobDefinition 	Deregisters an AWS Batch job definition.	???	Global Conditions
+batch:DescribeComputeEnvironments 	Describes one or more of your compute environments.	???	Global Conditions
+batch:DescribeJobDefinitions 	Describes a list of job definitions.	???	Global Conditions
+batch:DescribeJobQueues 	Describes one or more of your job queues.	???	Global Conditions
+batch:DescribeJobs 	Describes a list of AWS Batch jobs.	???	Global Conditions
+batch:ListJobs 	Returns a list of task jobs for a specified job queue.	???	Global Conditions
+- batch:RegisterJobDefinition 	Registers an AWS Batch job definition.	???	Global Conditions
+- batch:SubmitJob 	Submits an AWS Batch job from a job definition.	???	Global Conditions
+- batch:TerminateJob 	Terminates jobs in a job queue.	???	Global Conditions
+- batch:UpdateComputeEnvironment 	Updates an AWS Batch compute environment.	???	Global Conditions
+- batch:UpdateJobQueue 	Updates a job queue.	???	Global Conditions

@@ -1,0 +1,39 @@
+AWS Web Application Firewall (waf) : https://docs.aws.amazon.com/de_de/waf/latest/APIReference/API_ListWebACLs.html
+- waf:CreateByteMatchSet 	Creates a ByteMatchSet.	arn:aws:waf:$region:$account:bytematchset/$entity-id	Global Conditions
+- waf:CreateIPSet 	Creates an IPSet, which you use to specify which web requests you want to allow or block based on the IP addresses that the requests originate from.	arn:aws:waf:$region:$account:ipset/$entity-id	Global Conditions
+- waf:CreateRule 	Creates a Rule, which contains the IPSet objects, ByteMatchSet objects, and other predicates that identify the requests that you want to block.	arn:aws:waf:$region:$account:rule/$entity-id	Global Conditions
+- waf:CreateSizeConstraintSet 	Creates a SizeConstraintSet.	arn:aws:waf:$region:$account:sizeconstraintset/$entity-id	Global Conditions
+- waf:CreateSqlInjectionMatchSet 	Creates a SqlInjectionMatchSet, which you use to allow, block, or count requests that contain snippets of SQL code in a specified part of web requests.	arn:aws:waf:$region:$account:sqlinjectionmatchset/$entity-id	Global Conditions
+- waf:CreateWebACL 	Creates a WebACL, which contains the Rules that identify the CloudFront web requests that you want to allow, block, or count.	arn:aws:waf:$region:$account:webacl/$entity-id	Global Conditions
+- waf:CreateXssMatchSet 	Creates an XssMatchSet, which you use to allow, block, or count requests that contain cross-site scripting attacks in the specified part of web requests.	arn:aws:waf:$region:$account:xssmatchset/$entity-id	Global Conditions
+- waf:DeleteByteMatchSet 	Permanently deletes a ByteMatchSet.	arn:aws:waf:$region:$account:bytematchset/$entity-id	Global Conditions
+- waf:DeleteIPSet 	Permanently deletes an IPSet.	arn:aws:waf:$region:$account:ipset/$entity-id	Global Conditions
+- waf:DeleteRule 	Permanently deletes a Rule.	arn:aws:waf:$region:$account:rule/$entity-id	Global Conditions
+- waf:DeleteSizeConstraintSet 	Permanently deletes a SizeConstraintSet.	arn:aws:waf:$region:$account:sizeconstraintset/$entity-id	Global Conditions
+- waf:DeleteSqlInjectionMatchSet 	Permanently deletes a SqlInjectionMatchSet.	arn:aws:waf:$region:$account:sqlinjectionmatchset/$entity-id	Global Conditions
+- waf:DeleteWebACL 	Permanently deletes a WebACL.	arn:aws:waf:$region:$account:webacl/$entity-id	Global Conditions
+- waf:DeleteXssMatchSet 	Permanently deletes an XssMatchSet.	arn:aws:waf:$region:$account:xssmatchset/$entity-id	Global Conditions
+- waf:GetByteMatchSet 	Returns the ByteMatchSet specified by ByteMatchSetId.	arn:aws:waf:$region:$account:bytematchset/$entity-id	Global Conditions
+- waf:GetChangeToken 	When you want to create, update, or delete AWS WAF objects, get a change token and include the change token in the create, update, or delete request.	arn:aws:waf:$region:$account:changetoken/$entity-id	Global Conditions
+- waf:GetChangeTokenStatus 	Returns the status of a ChangeToken that you got by calling GetChangeToken.	arn:aws:waf:$region:$account:changetoken/$entity-id	Global Conditions
+- waf:GetIPSet 	Returns the IPSet that is specified by IPSetId.	arn:aws:waf:$region:$account:ipset/$entity-id	Global Conditions
+- waf:GetRule 	Returns the Rule that is specified by the RuleId that you included in the GetRule request.	arn:aws:waf:$region:$account:rule/$entity-id	Global Conditions
+- waf:GetSampledRequests 	Gets detailed information about a specified number of requests--a sample--that AWS WAF randomly selects from among the first 5,000 requests that your AWS resource received during a time range that you choose.	arn:aws:waf:$region:$account:rule/$entity-id	arn:aws:waf:$region:$account:webacl/$entity-id	Global Conditions
+- waf:GetSizeConstraintSet 	Returns the SizeConstraintSet specified by SizeConstraintSetId.	arn:aws:waf:$region:$account:sizeconstraintset/$entity-id	Global Conditions
+- waf:GetSqlInjectionMatchSet 	Returns the SqlInjectionMatchSet that is specified by SqlInjectionMatchSetId.	arn:aws:waf:$region:$account:sqlinjectionmatchset/$entity-id	Global Conditions
+- waf:GetWebACL 	Returns the WebACL that is specified by WebACLId.	arn:aws:waf:$region:$account:webacl/$entity-id	Global Conditions
+- waf:GetXssMatchSet 	Returns the XssMatchSet that is specified by XssMatchSetId.	arn:aws:waf:$region:$account:xssmatchset/$entity-id	Global Conditions
+- waf:ListByteMatchSets 	Returns an array of ByteMatchSetSummary objects.	arn:aws:waf:$region:$account:bytematchset/$entity-id	Global Conditions
+- waf:ListIPSets 	Returns an array of IPSetSummary objects in the response.	arn:aws:waf:$region:$account:ipset/$entity-id	Global Conditions
+- waf:ListRules 	Returns an array of RuleSummary objects.	arn:aws:waf:$region:$account:rule/$entity-id	Global Conditions
+- waf:ListSizeConstraintSets 	Returns an array of SizeConstraintSetSummary objects.	arn:aws:waf:$region:$account:sizeconstraintset/$entity-id	Global Conditions
+- waf:ListSqlInjectionMatchSets 	Returns an array of SqlInjectionMatchSet objects.	arn:aws:waf:$region:$account:sqlinjectionmatchset/$entity-id	Global Conditions
+waf:ListWebACLs 	Returns an array of WebACLSummary objects in the response.	arn:aws:waf:$region:$account:webacl/$entity-id	Global Conditions
+- waf:ListXssMatchSets 	Returns an array of XssMatchSet objects.	arn:aws:waf:$region:$account:xssmatchset/$entity-id	Global Conditions
+- waf:UpdateByteMatchSet 	Inserts or deletes ByteMatchTuple objects (filters) in a ByteMatchSet.	arn:aws:waf:$region:$account:bytematchset/$entity-id	Global Conditions
+- waf:UpdateIPSet 	Inserts or deletes IPSetDescriptor objects in an IPSet.	arn:aws:waf:$region:$account:ipset/$entity-id	Global Conditions
+- waf:UpdateRule 	Inserts or deletes Predicate objects in a Rule.	arn:aws:waf:$region:$account:rule/$entity-id	Global Conditions
+- waf:UpdateSizeConstraintSet 	Inserts or deletes SizeConstraint objects (filters) in a SizeConstraintSet.	arn:aws:waf:$region:$account:sizeconstraintset/$entity-id	Global Conditions
+- waf:UpdateSqlInjectionMatchSet 	Inserts or deletes SqlInjectionMatchTuple objects (filters) in a SqlInjectionMatchSet.	arn:aws:waf:$region:$account:sqlinjectionmatchset/$entity-id	Global Conditions
+- waf:UpdateWebACL 	Inserts or deletes ActivatedRule objects in a WebACL.	arn:aws:waf:$region:$account:webacl/$entity-id	Global Conditions
+- waf:UpdateXssMatchSet 	Inserts or deletes XssMatchTuple objects (filters) in an XssMatchSet.	arn:aws:waf:$region:$account:xssmatchset/$entity-id	Global Conditions

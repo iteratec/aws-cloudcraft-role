@@ -1,0 +1,12 @@
+Amazon Athena (athena) : https://docs.aws.amazon.com/athena/latest/APIReference/API_BatchGetNamedQuery.html
+- athena:BatchGetNamedQuery 	Returns the details of a single named query or a list of up to 50 queries.	*	Global Conditions
+- athena:BatchGetQueryExecution 	Returns the details of a single query execution or a list of up to 50 query executions.	*	Global Conditions
+- athena:CreateNamedQuery 	Creates a named query.	*	Global Conditions
+- athena:DeleteNamedQuery 	Deletes a named query.	*	Global Conditions
+- athena:GetNamedQuery 	Returns information about a single query.	*	Global Conditions
+- athena:GetQueryExecution 	Returns information about a single execution of a query.	*	Global Conditions
+- athena:GetQueryResults 	Returns the results of a single query execution specified by QueryExecutionId.	*	Global Conditions
+athena:ListNamedQueries 	Provides a list of all available query IDs.	*	Global Conditions
+- athena:ListQueryExecutions 	Provides a list of all available query execution IDs.	*	Global Conditions
+- athena:StartQueryExecution 	Runs (executes) the SQL query statements contained in the Query string.	*	Global Conditions
+- athena:StopQueryExecution 	Stops a query execution.	*	Global Conditions

@@ -1,0 +1,255 @@
+Amazon Elastic Compute Cloud (ec2)	: https://docs.aws.amazon.com/de_de/AWSEC2/latest/APIReference/API_DescribeAccountAttributes.html
+-	ec2:AcceptVpcPeeringConnection 	Accept a VPC peering connection request.	arn:aws:ec2:$region:$account:vpc/*	arn:aws:ec2:$region:$account:vpc/$vpc-id	ec2:Region	ec2:ResourceTag/$tag-key	ec2:Tenancy	Global Conditions
+- ec2:AcceptVpcPeeringConnection 	Accept a VPC peering connection request.	arn:aws:ec2:$region:$account:vpc-peering-connection/*	arn:aws:ec2:$region:$account:vpc-peering-connection/$vpc-peering-connection-id	ec2:AccepterVpc	ec2:Region	ec2:ResourceTag/$tag-key	ec2:RequesterVpc	Global Conditions
+- ec2:AssociateIamInstanceProfile 	Associates an IAM instance profile with a running or stopped instance.	arn:aws:ec2:$region:$account:instance/*	arn:aws:ec2:$region:$account:instance/$instance-id	ec2:AvailabilityZone	ec2:EbsOptimized	ec2:InstanceProfile	ec2:InstanceType	ec2:PlacementGroup	ec2:Region	ec2:ResourceTag/$tag-key	ec2:RootDeviceType	ec2:Tenancy	Global Conditions
+- ec2:AttachClassicLinkVpc 	Links an EC2-Classic instance to a ClassicLink-enabled VPC through one or more of the VPC's security groups.	arn:aws:ec2:$region:$account:instance/*	arn:aws:ec2:$region:$account:instance/$instance-id	ec2:AvailabilityZone	ec2:EbsOptimized	ec2:InstanceProfile	ec2:InstanceType	ec2:PlacementGroup	ec2:Region	ec2:ResourceTag/$tag-key	ec2:RootDeviceType	ec2:Tenancy	Global Conditions
+- ec2:AttachClassicLinkVpc 	Links an EC2-Classic instance to a ClassicLink-enabled VPC through one or more of the VPC's security groups.	arn:aws:ec2:$region:$account:security-group/*	arn:aws:ec2:$region:$account:security-group/$security-group-id	ec2:Region	ec2:ResourceTag/$tag-key	ec2:Vpc	Global Conditions
+- ec2:AttachClassicLinkVpc 	Links an EC2-Classic instance to a ClassicLink-enabled VPC through one or more of the VPC's security groups.	arn:aws:ec2:$region:$account:vpc/*	arn:aws:ec2:$region:$account:vpc/$vpc-id	ec2:Region	ec2:ResourceTag/$tag-key	ec2:Tenancy	Global Conditions
+- ec2:AttachVolume 	Attaches an EBS volume to a running or stopped instance and exposes it to the instance with the specified device name.	arn:aws:ec2:$region:$account:instance/*	arn:aws:ec2:$region:$account:instance/$instance-id	ec2:AvailabilityZone	ec2:EbsOptimized	ec2:InstanceProfile	ec2:InstanceType	ec2:PlacementGroup	ec2:Region	ec2:ResourceTag/$tag-key	ec2:RootDeviceType	ec2:Tenancy	Global Conditions
+- ec2:AttachVolume 	Attaches an EBS volume to a running or stopped instance and exposes it to the instance with the specified device name.	arn:aws:ec2:$region:$account:volume/*	arn:aws:ec2:$region:$account:volume/$volume-id	ec2:AvailabilityZone	ec2:Encrypted	ec2:ParentSnapshot	ec2:Region	ec2:ResourceTag/$tag-key	ec2:VolumeIops	ec2:VolumeSize	ec2:VolumeType	Global Conditions
+- ec2:AuthorizeSecurityGroupEgress 	[EC2-VPC only] Adds one or more egress rules to a security group for use with a VPC.	arn:aws:ec2:$region:$account:security-group/*	arn:aws:ec2:$region:$account:security-group/$security-group-id	ec2:Region	ec2:ResourceTag/$tag-key	ec2:Vpc	Global Conditions
+- ec2:AuthorizeSecurityGroupIngress 	Adds one or more ingress rules to a security group.	arn:aws:ec2:$region:$account:security-group/*	arn:aws:ec2:$region:$account:security-group/$security-group-id	ec2:Region	ec2:ResourceTag/$tag-key	ec2:Vpc	Global Conditions
+- ec2:CreateTags 	Adds or overwrites one or more tags for the specified Amazon EC2 resource or resources.	arn:aws:ec2:$region:$account:dhcp-options/*	arn:aws:ec2:$region:$account:dhcp-options/$dhcp-options-id	ec2:CreateAction	ec2:Region	ec2:ResourceTag/$tag-key	aws:RequestTag/$tag-key	aws:TagKeys	Global Conditions
+- ec2:CreateTags 	Adds or overwrites one or more tags for the specified Amazon EC2 resource or resources.	arn:aws:ec2:$region::image/*	arn:aws:ec2:$region::image/$image-id	ec2:CreateAction	ec2:ImageType	ec2:Owner	ec2:Public	ec2:Region	ec2:ResourceTag/$tag-key	ec2:RootDeviceType	aws:RequestTag/$tag-key	aws:TagKeys	Global Conditions
+- ec2:CreateTags 	Adds or overwrites one or more tags for the specified Amazon EC2 resource or resources.	arn:aws:ec2:$region:$account:instance/*	arn:aws:ec2:$region:$account:instance/$instance-id	ec2:AvailabilityZone	ec2:CreateAction	ec2:EbsOptimized	ec2:InstanceProfile	ec2:InstanceType	ec2:PlacementGroup	ec2:Region	ec2:ResourceTag/$tag-key	ec2:RootDeviceType	ec2:Tenancy	aws:RequestTag/$tag-key	aws:TagKeys	Global Conditions
+- ec2:CreateTags 	Adds or overwrites one or more tags for the specified Amazon EC2 resource or resources.	arn:aws:ec2:$region:$account:internet-gateway/*	arn:aws:ec2:$region:$account:internet-gateway/$igw-id	ec2:CreateAction	ec2:Region	ec2:ResourceTag/$tag-key	aws:RequestTag/$tag-key	aws:TagKeys	Global Conditions
+- ec2:CreateTags 	Adds or overwrites one or more tags for the specified Amazon EC2 resource or resources.	arn:aws:ec2:$region:$account:network-acl/*	arn:aws:ec2:$region:$account:network-acl/$nacl-id	ec2:CreateAction	ec2:Region	ec2:ResourceTag/$tag-key	ec2:Vpc	aws:RequestTag/$tag-key	aws:TagKeys	Global Conditions
+- ec2:CreateTags 	Adds or overwrites one or more tags for the specified Amazon EC2 resource or resources.	arn:aws:ec2:$region:$account:network-interface/*	arn:aws:ec2:$region:$account:network-interface/$eni-id	ec2:AvailabilityZone	ec2:CreateAction	ec2:Region	ec2:Subnet	ec2:ResourceTag/$tag-key	ec2:Vpc	aws:RequestTag/$tag-key	aws:TagKeys	Global Conditions
+- ec2:CreateTags 	Adds or overwrites one or more tags for the specified Amazon EC2 resource or resources.	arn:aws:ec2:$region:$account:reserved-instance/*	arn:aws:ec2:$region:$account:reserved-instance/$reservation-id	ec2:AvailabilityZone	ec2:CreateAction	ec2:InstanceType	ec2:ReservedInstancesOfferingType	ec2:Region	ec2:ResourceTag/$tag-key	ec2:Tenancy	aws:RequestTag/$tag-key	aws:TagKeys	Global Conditions
+- ec2:CreateTags 	Adds or overwrites one or more tags for the specified Amazon EC2 resource or resources.	arn:aws:ec2:$region:$account:route-table/*	arn:aws:ec2:$region:$account:route-table/$route-table-id	ec2:CreateAction	ec2:Region	ec2:ResourceTag/$tag-key	ec2:Vpc	aws:RequestTag/$tag-key	aws:TagKeys	Global Conditions
+- ec2:CreateTags 	Adds or overwrites one or more tags for the specified Amazon EC2 resource or resources.	arn:aws:ec2:$region:$account:security-group/*	arn:aws:ec2:$region:$account:security-group/$security-group-id	ec2:CreateAction	ec2:Region	ec2:ResourceTag/$tag-key	ec2:Vpc	aws:RequestTag/$tag-key	aws:TagKeys	Global Conditions
+- ec2:CreateTags 	Adds or overwrites one or more tags for the specified Amazon EC2 resource or resources.	arn:aws:ec2:$region::snapshot/*	arn:aws:ec2:$region::snapshot/$snapshot-id	ec2:CreateAction	ec2:Owner	ec2:ParentVolume	ec2:Region	ec2:ResourceTag/$tag-key	ec2:SnapshotTime	ec2:VolumeSize	aws:RequestTag/$tag-key	aws:TagKeys	Global Conditions
+- ec2:CreateTags 	Adds or overwrites one or more tags for the specified Amazon EC2 resource or resources.	arn:aws:ec2:$region:$account:spot-instance-request/*	arn:aws:ec2:$region:$account:spot-instance-request/$spot-instance-request-id	ec2:CreateAction	ec2:Region	ec2:ResourceTag/$tag-key	aws:RequestTag/$tag-key	aws:TagKeys	Global Conditions
+- ec2:CreateTags 	Adds or overwrites one or more tags for the specified Amazon EC2 resource or resources.	arn:aws:ec2:$region:$account:subnet/*	arn:aws:ec2:$region:$account:subnet/$subnet-id	ec2:AvailabilityZone	ec2:CreateAction	ec2:Region	ec2:ResourceTag/$tag-key	ec2:Vpc	aws:RequestTag/$tag-key	aws:TagKeys	Global Conditions
+- ec2:CreateTags 	Adds or overwrites one or more tags for the specified Amazon EC2 resource or resources.	arn:aws:ec2:$region:$account:volume/*	arn:aws:ec2:$region:$account:volume/$volume-id	ec2:AvailabilityZone	ec2:CreateAction	ec2:Encrypted	ec2:ParentSnapshot	ec2:Region	ec2:ResourceTag/$tag-key	ec2:VolumeIops	ec2:VolumeSize	ec2:VolumeType	aws:RequestTag/$tag-key	aws:TagKeys	Global Conditions
+- ec2:CreateTags 	Adds or overwrites one or more tags for the specified Amazon EC2 resource or resources.	arn:aws:ec2:$region:$account:vpc/*	arn:aws:ec2:$region:$account:vpc/$vpc-id	ec2:CreateAction	ec2:Region	ec2:ResourceTag/$tag-key	ec2:Tenancy	aws:RequestTag/$tag-key	aws:TagKeys	Global Conditions
+- ec2:CreateTags 	Adds or overwrites one or more tags for the specified Amazon EC2 resource or resources.	arn:aws:ec2:$region:$account:vpn-connection/*	arn:aws:ec2:$region:$account:vpn-connection/$vpn-connection-id	ec2:CreateAction	ec2:Region	ec2:ResourceTag/$tag-key	aws:RequestTag/$tag-key	aws:TagKeys	Global Conditions
+- ec2:CreateTags 	Adds or overwrites one or more tags for the specified Amazon EC2 resource or resources.	arn:aws:ec2:$region:$account:vpn-gateway/*	arn:aws:ec2:$region:$account:vpn-gateway/$vpn-gateway-id	ec2:CreateAction	ec2:Region	ec2:ResourceTag/$tag-key	aws:RequestTag/$tag-key	aws:TagKeys	Global Conditions
+- ec2:CreateVolume 	Creates an EBS volume that can be attached to an instance in the same Availability Zone.	arn:aws:ec2:region:account:volume/*	ec2:AvailabilityZone	ec2:Encrypted	ec2:ParentSnapshot	ec2:Region	ec2:VolumeIops	ec2:VolumeSize	ec2:VolumeType	aws:RequestTag/$tag-key	aws:TagKeys	Global Conditions
+- ec2:CreateVpcPeeringConnection 	Requests a VPC peering connection between two VPCs.	arn:aws:ec2:$region:$account:vpc/*	arn:aws:ec2:$region:$account:vpc/$vpc-id	ec2:ResourceTag/$tag-key	ec2:Region	ec2:Tenancy	Global Conditions
+- ec2:CreateVpcPeeringConnection 	Requests a VPC peering connection between two VPCs.	arn:aws:ec2:$region:$account:vpc-peering-connection/*	ec2:AccepterVpc	ec2:Region	ec2:RequesterVpc	Global Conditions
+- ec2:DeleteCustomerGateway 	Deletes the specified customer gateway.	arn:aws:ec2:$region:$account:customer-gateway/*	arn:aws:ec2:$region:$account:customer-gateway/$cgw-id	ec2:Region	ec2:ResourceTag/$tag-key	Global Conditions
+- ec2:DeleteDhcpOptions 	Deletes the specified set of DHCP options.	arn:aws:ec2:$region:$account:dhcp-options/*	arn:aws:ec2:$region:$account:dhcp-options/$dhcp-options-id	ec2:Region	ec2:ResourceTag/$tag-key	Global Conditions
+- ec2:DeleteInternetGateway 	Deletes the specified Internet gateway.	arn:aws:ec2:$region:$account:internet-gateway/*	arn:aws:ec2:$region:$account:internet-gateway/igw-id	ec2:Region	ec2:ResourceTag/$tag-key	Global Conditions
+- ec2:DeleteNetworkAcl 	Deletes the specified network ACL.	arn:aws:ec2:$region:$account:network-acl/*	arn:aws:ec2:$region:$account:network-acl/nacl-id	ec2:Region	ec2:ResourceTag/$tag-key	ec2:Vpc	Global Conditions
+- ec2:DeleteNetworkAclEntry 	Deletes the specified ingress or egress entry (rule) from the specified network ACL.	arn:aws:ec2:$region:$account:network-acl/*	arn:aws:ec2:$region:$account:network-acl/$nacl-id	ec2:Region	ec2:ResourceTag/$tag-key	ec2:Vpc	Global Conditions
+- ec2:DeleteRoute 	Deletes the specified route from the specified route table.	arn:aws:ec2:$region:$account:route-table/*	arn:aws:ec2:$region:$account:route-table/$route-table-id	ec2:Region	ec2:ResourceTag/$tag-key	ec2:Vpc	Global Conditions
+- ec2:DeleteRouteTable 	Deletes the specified route table.	arn:aws:ec2:$region:$account:route-table/*	arn:aws:ec2:$region:$account:route-table/$route-table-id	ec2:Region	ec2:ResourceTag/$tag-key	ec2:Vpc	Global Conditions
+- ec2:DeleteSecurityGroup 	Deletes a security group.	arn:aws:ec2:$region:$account:security-group/*	arn:aws:ec2:$region:$account:security-group/$security-group-id	ec2:Region	ec2:ResourceTag/$tag-key	ec2:Vpc	Global Conditions
+- ec2:DeleteTags 	Deletes the specified set of tags from the specified set of resources.	arn:aws:ec2:$region:$account:dhcp-options/*	arn:aws:ec2:$region:$account:dhcp-options/$dhcp-options-id	ec2:Region	ec2:ResourceTag/$tag-key	aws:RequestTag/$tag-key	aws:TagKeys	Global Conditions
+- ec2:DeleteTags 	Deletes the specified set of tags from the specified set of resources.	arn:aws:ec2:$region::image/*	arn:aws:ec2:$region::image/$image-id	ec2:Region	ec2:ResourceTag/$tag-key	aws:RequestTag/$tag-key	aws:TagKeys	Global Conditions
+- ec2:DeleteTags 	Deletes the specified set of tags from the specified set of resources.	arn:aws:ec2:$region:$account:instance/*	arn:aws:ec2:$region:$account:instance/$instance-id	ec2:Region	ec2:ResourceTag/$tag-key	aws:RequestTag/$tag-key	aws:TagKeys	Global Conditions
+- ec2:DeleteTags 	Deletes the specified set of tags from the specified set of resources.	arn:aws:ec2:$region:$account:internet-gateway/*	arn:aws:ec2:$region:$account:internet-gateway/$igw-id	ec2:Region	ec2:ResourceTag/$tag-key	aws:RequestTag/$tag-key	aws:TagKeys	Global Conditions
+- ec2:DeleteTags 	Deletes the specified set of tags from the specified set of resources.	arn:aws:ec2:$region:$account:network-acl/*	arn:aws:ec2:$region:$account:network-acl/$nacl-id	ec2:Region	ec2:ResourceTag/$tag-key	aws:RequestTag/$tag-key	aws:TagKeys	Global Conditions
+- ec2:DeleteTags 	Deletes the specified set of tags from the specified set of resources.	arn:aws:ec2:$region:$account:network-interface/*	arn:aws:ec2:$region:$account:network-interface$eni-id	ec2:Region	ec2:ResourceTag/$tag-key	aws:RequestTag/$tag-key	aws:TagKeys	Global Conditions
+- ec2:DeleteTags 	Deletes the specified set of tags from the specified set of resources.	arn:aws:ec2:$region:$account:reserved-instance/*	arn:aws:ec2:$region:$account:reserved-instance/$reservation-id	ec2:Region	ec2:ResourceTag/$tag-key	aws:RequestTag/$tag-key	aws:TagKeys	Global Conditions
+- ec2:DeleteTags 	Deletes the specified set of tags from the specified set of resources.	arn:aws:ec2:$region:$account:route-table/*	arn:aws:ec2:$region:$account:route-table/$route-table-id	ec2:Region	ec2:ResourceTag/$tag-key	aws:RequestTag/$tag-key	aws:TagKeys	Global Conditions
+- ec2:DeleteTags 	Deletes the specified set of tags from the specified set of resources.	arn:aws:ec2:$region:$account:security-group/*	arn:aws:ec2:$region:$account:security-group/$security-group-id	ec2:Region	ec2:ResourceTag/$tag-key	aws:RequestTag/$tag-key	aws:TagKeys	Global Conditions
+- ec2:DeleteTags 	Deletes the specified set of tags from the specified set of resources.	arn:aws:ec2:$region::snapshot/*	arn:aws:ec2:$region::snapshot/$snapshot-id	ec2:Region	ec2:ResourceTag/$tag-key	aws:RequestTag/$tag-key	aws:TagKeys	Global Conditions
+- ec2:DeleteTags 	Deletes the specified set of tags from the specified set of resources.	arn:aws:ec2:$region:$account:spot-instance-request/*	arn:aws:ec2:$region:$account:spot-instance-request/$spot-instance-request-id	ec2:Region	ec2:ResourceTag/$tag-key	aws:RequestTag/$tag-key	aws:TagKeys	Global Conditions
+- ec2:DeleteTags 	Deletes the specified set of tags from the specified set of resources.	arn:aws:ec2:$region:$account:subnet/*	arn:aws:ec2:$region:$account:subnet/$subnet-id	ec2:Region	ec2:ResourceTag/$tag-key	aws:RequestTag/$tag-key	aws:TagKeys	Global Conditions
+- ec2:DeleteTags 	Deletes the specified set of tags from the specified set of resources.	arn:aws:ec2:$region:$account:volume/*	arn:aws:ec2:$region:$account:volume/$volume-id	ec2:Region	ec2:ResourceTag/$tag-key	aws:RequestTag/$tag-key	aws:TagKeys	Global Conditions
+- ec2:DeleteTags 	Deletes the specified set of tags from the specified set of resources.	arn:aws:ec2:$region:$account:vpc/*	arn:aws:ec2:$region:$account:vpc/$vpc-id	ec2:Region	ec2:ResourceTag/$tag-key	aws:RequestTag/$tag-key	aws:TagKeys	Global Conditions
+- ec2:DeleteTags 	Deletes the specified set of tags from the specified set of resources.	arn:aws:ec2:$region:$account:vpn-connection/*	arn:aws:ec2:$region:$account:vpn-connection/$vpn-connection-id	ec2:Region	ec2:ResourceTag/$tag-key	aws:RequestTag/$tag-key	aws:TagKeys	Global Conditions
+- ec2:DeleteTags 	Deletes the specified set of tags from the specified set of resources.	arn:aws:ec2$region:$account:vpn-gateway/*	arn:aws:ec2$region:$account:vpn-gateway/$vpn-gateway-id	ec2:Region	ec2:ResourceTag/$tag-key	aws:RequestTag/$tag-key	aws:TagKeys	Global Conditions
+- ec2:DeleteVolume 	Deletes the specified EBS volume.	arn:aws:ec2:$region:$account:volume/*	arn:aws:ec2:$region:$account:volume/$volume-id	ec2:AvailabilityZone	ec2:Encrypted	ec2:ParentSnapshot	ec2:Region	ec2:ResourceTag/$tag-key	ec2:VolumeIops	ec2:VolumeSize	ec2:VolumeType	Global Conditions
+- ec2:DeleteVpcPeeringConnection 	Deletes a VPC peering connection.	arn:aws:ec2:$region:$account:vpc-peering-connection/*	arn:aws:ec2:$region:$account:vpc-peering-connection/$vpc-peering-connection-id	ec2:AccepterVpc	ec2:Region	ec2:ResourceTag/$tag-key	ec2:RequesterVpc	Global Conditions
+- ec2:DetachClassicLinkVpc 	Unlinks (detaches) a linked EC2-Classic instance from a VPC.	arn:aws:ec2:$region:$account:instance/*	arn:aws:ec2:$region:$account:instance/$instance-id	ec2:AvailabilityZone	ec2:EbsOptimized	ec2:InstanceProfile	ec2:InstanceType	ec2:PlacementGroup	ec2:Region	ec2:ResourceTag/$tag-key	ec2:RootDeviceType	ec2:Tenancy	Global Conditions
+- ec2:DetachClassicLinkVpc 	Unlinks (detaches) a linked EC2-Classic instance from a VPC.	arn:aws:ec2:$region:$account:vpc/*	arn:aws:ec2:$region:$account:vpc/$vpc-id	ec2:Region	ec2:ResourceTag/$tag-key	ec2:Tenancy	Global Conditions
+- ec2:DetachVolume 	Detaches an EBS volume from an instance.	arn:aws:ec2:$region:$account:instance/*	arn:aws:ec2:$region:$account:instance/$instance-id	ec2:AvailabilityZone	ec2:EbsOptimized	ec2:InstanceProfile	ec2:InstanceType	ec2:PlacementGroup	ec2:Region	ec2:ResourceTag/$tag-key	ec2:RootDeviceType	ec2:Tenancy	Global Conditions
+- ec2:DetachVolume 	Detaches an EBS volume from an instance.	arn:aws:ec2:$region:$account:volume/*	arn:aws:ec2:$region:$account:volume/$volume-id	ec2:AvailabilityZone	ec2:Encrypted	ec2:ParentSnapshot	ec2:Region	ec2:ResourceTag/$tag-key	ec2:VolumeIops	ec2:VolumeSize	ec2:VolumeType	Global Conditions
+- ec2:DisableVpcClassicLink 	Disables ClassicLink for a VPC.	arn:aws:ec2:$region:$account:vpc/*	arn:aws:ec2:$region:$account:vpc/$vpc-id	ec2:Region	ec2:ResourceTag/$tag-key	ec2:Tenancy	Global Conditions
+- ec2:DisassociateIamInstanceProfile 	Disassociates an IAM instance profile from a running or stopped instance.	arn:aws:ec2:$region:$account:instance/*	arn:aws:ec2:$region:$account:instance/$instance-id	ec2:AvailabilityZone	ec2:EbsOptimized	ec2:InstanceProfile	ec2:InstanceType	ec2:PlacementGroup	ec2:Region	ec2:ResourceTag/$tag-key	ec2:RootDeviceType	ec2:Tenancy	Global Conditions
+- ec2:EnableVpcClassicLink 	Enables a VPC for ClassicLink.	arn:aws:ec2:$region:$account:vpc/*	arn:aws:ec2:$region:$account:vpc/$vpc-id	ec2:Region	ec2:ResourceTag/$tag-key	ec2:Tenancy	Global Conditions
+- ec2:GetConsoleScreenshot 	Retrieve a JPG-format screenshot of a running instance to help with troubleshooting.	arn:aws:ec2:$region:$account:instance/*	arn:aws:ec2:$region:$account:instance/$instance-id	ec2:AvailabilityZone	ec2:EbsOptimized	ec2:InstanceProfile	ec2:InstanceType	ec2:PlacementGroup	ec2:Region	ec2:ResourceTag/$tag-key	ec2:RootDeviceType	ec2:Tenancy	Global Conditions
+- ec2:RebootInstances 	Requests a reboot of one or more instances.	arn:aws:ec2:$region:$account:instance/*	arn:aws:ec2:$region:$account:instance/$instance-id	ec2:AvailabilityZone	ec2:EbsOptimized	ec2:InstanceProfile	ec2:InstanceType	ec2:PlacementGroup	ec2:Region	ec2:ResourceTag/$tag-key	ec2:RootDeviceType	ec2:Tenancy	Global Conditions
+- ec2:RejectVpcPeeringConnection 	Rejects a VPC peering connection request.	arn:aws:ec2:$region:$account:vpc-peering-connection/*	arn:aws:ec2:$region:$account:vpc-peering-connection/$vpc-peering-connection-id	ec2:AccepterVpc	ec2:Region	ec2:ResourceTag/$tag-key	ec2:RequesterVpc	Global Conditions
+- ec2:ReplaceIamInstanceProfileAssociation 	Replaces an IAM instance profile for the specified running instance.	arn:aws:ec2:$region:$account:instance/*	arn:aws:ec2:$region:$account:instance/$instance-id	ec2:AvailabilityZone	ec2:EbsOptimized	ec2:InstanceProfile	ec2:InstanceType	ec2:PlacementGroup	ec2:Region	ec2:ResourceTag/$tag-key	ec2:RootDeviceType	ec2:Tenancy	Global Conditions
+- ec2:RevokeSecurityGroupEgress 	[EC2-VPC only] Removes one or more egress rules from a security group for EC2-VPC.	arn:aws:ec2:$region:$account:security-group/*	arn:aws:ec2:$region:$account:security-group/$security-group-id	ec2:Region	ec2:ResourceTag/$tag-key	ec2:Vpc	Global Conditions
+- ec2:RevokeSecurityGroupIngress 	Removes one or more ingress rules from a security group.	arn:aws:ec2:$region:$account:security-group/*	arn:aws:ec2:$region:$account:security-group/$security-group-id	ec2:Region	ec2:ResourceTag/$tag-key	ec2:Vpc	Global Conditions
+- ec2:RunInstances 	Launches the specified number of instances using an AMI for which you have permissions.	arn:aws:ec2:$region::image/*	arn:aws:ec2:$region::image/$image-id	ec2:ImageType	ec2:Owner	ec2:Public	ec2:Region	ec2:RootDeviceType	ec2:ResourceTag/$tag-key	Global Conditions
+- ec2:RunInstances 	Launches the specified number of instances using an AMI for which you have permissions.	arn:aws:ec2:$region:$account:instance/*	ec2:AvailabilityZone	ec2:EbsOptimized	ec2:InstanceProfile	ec2:InstanceType	ec2:PlacementGroup	ec2:Region	ec2:ResourceTag/$tag-key	ec2:RootDeviceType	ec2:Tenancy	Global Conditions
+- ec2:RunInstances 	Launches the specified number of instances using an AMI for which you have permissions.	arn:aws:ec2:$region:$account:key-pair/*	arn:aws:ec2:$region:$account:key-pair/$key-pair-name	ec2:Region	Global Conditions
+- ec2:RunInstances 	Launches the specified number of instances using an AMI for which you have permissions.	arn:aws:ec2:$region:$account:network-interface/*	arn:aws:ec2:$region:$account:network-interface/$eni-id	ec2:AvailabilityZone	ec2:Region	ec2:Subnet	ec2:ResourceTag/$tag-key	ec2:Vpc	Global Conditions
+- ec2:RunInstances 	Launches the specified number of instances using an AMI for which you have permissions.	arn:aws:ec2:$region:$account:placement-group/*	arn:aws:ec2:$region:$account:placement-group/$placement-group-name	ec2:Region	ec2:PlacementGroupStrategy	Global Conditions
+- ec2:RunInstances 	Launches the specified number of instances using an AMI for which you have permissions.	arn:aws:ec2:$region:$account:security-group/*	arn:aws:ec2:$region:$account:security-group/$security-group-id	ec2:Region	ec2:ResourceTag/$tag-key	ec2:Vpc	Global Conditions
+- ec2:RunInstances 	Launches the specified number of instances using an AMI for which you have permissions.	arn:aws:ec2:$region::snapshot/*	arn:aws:ec2:$region::snapshot/$snapshot-id	ec2:Owner	ec2:ParentVolume	ec2:Region	ec2:SnapshotTime	ec2:ResourceTag/$tag-key	ec2:VolumeSize	Global Conditions
+- ec2:RunInstances 	Launches the specified number of instances using an AMI for which you have permissions.	arn:aws:ec2:$region:$account:subnet/*	arn:aws:ec2:$region:$account:subnet/$subnet-id	ec2:AvailabilityZone	ec2:Region	ec2:ResourceTag/$tag-key	ec2:Vpc	Global Conditions
+- ec2:RunInstances 	Launches the specified number of instances using an AMI for which you have permissions.	arn:aws:ec2:$region:$account:volume/*	ec2:AvailabilityZone	ec2:Encrypted	ec2:ParentSnapshot	ec2:Region	ec2:ResourceTag/$tag-key	ec2:VolumeIops	ec2:VolumeSize	ec2:VolumeType	Global Conditions
+- ec2:StartInstances 	Starts an Amazon EBS-backed AMI that you've previously stopped.	arn:aws:ec2:$region:$account:instance/*	arn:aws:ec2:$region:$account:instance/$instance-id	ec2:AvailabilityZone	ec2:EbsOptimized	ec2:InstanceProfile	ec2:InstanceType	ec2:PlacementGroup	ec2:Region	ec2:ResourceTag/$tag-key	ec2:RootDeviceType	ec2:Tenancy	Global Conditions
+- ec2:StopInstances 	Stops an Amazon EBS-backed instance.	arn:aws:ec2:$region:$account:instance/*	arn:aws:ec2:$region:$account:instance/$instance-id	ec2:AvailabilityZone	ec2:EbsOptimized	ec2:InstanceProfile	ec2:InstanceType	ec2:PlacementGroup	ec2:Region	ec2:ResourceTag/$tag-key	ec2:RootDeviceType	ec2:Tenancy	Global Conditions
+- ec2:TerminateInstances 	Shuts down one or more instances.	arn:aws:ec2:$region:$account:instance/*	arn:aws:ec2:$region:$account:instance/$instance-id	ec2:AvailabilityZone	ec2:EbsOptimized	ec2:InstanceProfile	ec2:InstanceType	ec2:PlacementGroup	ec2:Region	ec2:ResourceTag/$tag-key	ec2:RootDeviceType	ec2:Tenancy	Global Conditions
+- ec2:AllocateAddress 	Acquires an Elastic IP address.	*	Global Conditions
+- ec2:AllocateHosts 	Allocates a Dedicated host to your account.	*	Global Conditions
+- ec2:AssignPrivateIpAddresses 	Assigns one or more secondary private IP addresses to the specified network interface.	*	Global Conditions
+- ec2:AssociateAddress 	Associates an Elastic IP address with an instance or a network interface.	*	Global Conditions
+- ec2:AssociateDhcpOptions 	Associates a set of DHCP options (that you've previously created) with the specified VPC, or associates no DHCP options with the VPC.	*	Global Conditions
+- ec2:AssociateRouteTable 	Associates a subnet with a route table.	*	Global Conditions
+- ec2:AttachInternetGateway 	Attaches an Internet gateway to a VPC, enabling connectivity between the Internet and the VPC.	*	Global Conditions
+- ec2:AttachNetworkInterface 	Attaches a network interface to an instance.	*	Global Conditions
+- ec2:AttachVpnGateway 	Attaches a virtual private gateway to a VPC.	*	Global Conditions
+- ec2:BundleInstance 	Bundles an Amazon instance store-backed Windows instance.	*	Global Conditions
+- ec2:CancelBundleTask 	Cancels a bundling operation for an instance store-backed Windows instance.	*	Global Conditions
+- ec2:CancelConversionTask 	Cancels an active conversion task.	*	Global Conditions
+- ec2:CancelExportTask 	Cancels an active export task.	*	Global Conditions
+- ec2:CancelImportTask 	Cancels an in-process import virtual machine or import snapshot task.	*	Global Conditions
+- ec2:CancelReservedInstancesListing 	Cancels the specified Reserved Instance listing in the Reserved Instance Marketplace.	*	Global Conditions
+- ec2:CancelSpotFleetRequests 	Cancels the specified Spot fleet requests.	*	Global Conditions
+- ec2:CancelSpotInstanceRequests 	Cancels one or more Spot instance requests.	*	Global Conditions
+- ec2:ConfirmProductInstance 	Determines whether a product code is associated with an instance.	*	Global Conditions
+- ec2:CopyImage 	Initiates the copy of an AMI from the specified source region to the current region.	*	Global Conditions
+- ec2:CopySnapshot 	Copies a point-in-time snapshot of an EBS volume and stores it in Amazon S3.	*	Global Conditions
+- ec2:CreateCustomerGateway 	Provides information to AWS about your VPN customer gateway device.	*	Global Conditions
+- ec2:CreateDhcpOptions 	Creates a set of DHCP options for your VPC.	*	Global Conditions
+- ec2:CreateFlowLogs 	Creates one or more flow logs to capture IP traffic for a specific network interface, subnet, or VPC.	*	Global Conditions
+- ec2:CreateImage 	Creates an Amazon EBS-backed AMI from an Amazon EBS-backed instance that is either running or stopped.	*	Global Conditions
+- ec2:CreateInstanceExportTask 	Exports a running or stopped instance to an S3 bucket.	*	Global Conditions
+- ec2:CreateInternetGateway 	Creates an Internet gateway for use with a VPC.	*	Global Conditions
+- ec2:CreateKeyPair 	Creates a 2048-bit RSA key pair with the specified name.	*	Global Conditions
+- ec2:CreateNatGateway 	Creates a NAT gateway in the specified subnet.	*	Global Conditions
+- ec2:CreateNetworkAcl 	Creates a network ACL in a VPC.	*	Global Conditions
+- ec2:CreateNetworkAclEntry 	Creates an entry (a rule) in a network ACL with the specified rule number.	*	Global Conditions
+- ec2:CreateNetworkInterface 	Creates a network interface in the specified subnet..	*	Global Conditions
+- ec2:CreatePlacementGroup 	Creates a placement group that you launch cluster instances into.	*	Global Conditions
+- ec2:CreateReservedInstancesListing 	Creates a listing for Amazon EC2 Reserved Instances to be sold in the Reserved Instance Marketplace.	*	Global Conditions
+- ec2:CreateRoute 	Creates a route in a route table within a VPC.	*	Global Conditions
+- ec2:CreateRouteTable 	Creates a route table for the specified VPC.	*	Global Conditions
+- ec2:CreateSecurityGroup 	Creates a security group.	*	Global Conditions
+- ec2:CreateSnapshot 	Creates a snapshot of an EBS volume and stores it in Amazon S3.	*	Global Conditions
+- ec2:CreateSpotDatafeedSubscription 	Creates a data feed for Spot instances, enabling you to view Spot instance usage logs.	*	Global Conditions
+- ec2:CreateSubnet 	CreateSubnet	*	Global Conditions
+- ec2:CreateVpc 	Creates a VPC with the specified CIDR block.	*	Global Conditions
+- ec2:CreateVpcEndpoint 	Creates a VPC endpoint for a specified AWS service.	*	Global Conditions
+- ec2:CreateVpnConnection 	Creates a VPN connection between an existing virtual private gateway and a VPN customer gateway	*	Global Conditions
+- ec2:CreateVpnConnectionRoute 	Creates a static route associated with a VPN connection between an existing virtual private gateway and a VPN customer gateway.	*	Global Conditions
+- ec2:CreateVpnGateway 	Creates a virtual private gateway.	*	Global Conditions
+- ec2:DeleteFlowLogs 	Deletes one or more flow logs.	*	Global Conditions
+- ec2:DeleteKeyPair 	Deletes the specified key pair, by removing the public key from Amazon EC2.	*	Global Conditions
+- ec2:DeleteNatGateway 	Deletes the specified NAT gateway.	*	Global Conditions
+- ec2:DeleteNetworkInterface 	Deletes the specified network interface.	*	Global Conditions
+- ec2:DeletePlacementGroup 	Deletes the specified placement group.	*	Global Conditions
+- ec2:DeleteSnapshot 	Deletes the specified snapshot.	*	Global Conditions
+- ec2:DeleteSpotDatafeedSubscription 	Deletes the data feed for Spot instances.	*	Global Conditions
+- ec2:DeleteSubnet 	Deletes the specified subnet.	*	Global Conditions
+- ec2:DeleteVpc 	Deletes the specified VPC.	*	Global Conditions
+- ec2:DeleteVpcEndpoints 	Deletes one or more specified VPC endpoints.	*	Global Conditions
+- ec2:DeleteVpnConnection 	Deletes the specified VPN connection.	*	Global Conditions
+- ec2:DeleteVpnConnectionRoute 	Deletes the specified static route associated with a VPN connection between an existing virtual private gateway and a VPN customer gateway.	*	Global Conditions
+- ec2:DeleteVpnGateway 	Deletes the specified virtual private gateway.	*	Global Conditions
+- ec2:DeregisterImage 	Deregisters the specified AMI.	*	Global Conditions
+ec2:DescribeAccountAttributes 	Describes attributes of your AWS account.	*	Global Conditions
+ec2:DescribeAddresses 	Describes one or more of your Elastic IP addresses.	*	Global Conditions
+ec2:DescribeAvailabilityZones 	Describes one or more of the Availability Zones that are available to you.	*	Global Conditions
+ec2:DescribeBundleTasks 	Describes one or more of your bundling tasks.	*	Global Conditions
+ec2:DescribeClassicLinkInstances 	Describes one or more of your linked EC2-Classic instances.	*	Global Conditions
+ec2:DescribeConversionTasks 	Describes one or more of your linked EC2-Classic instances..	*	Global Conditions
+ec2:DescribeCustomerGateways 	Describes one or more of your VPN customer gateways.	*	Global Conditions
+ec2:DescribeDhcpOptions 	Describes one or more of your VPN customer gateways.	*	Global Conditions
+ec2:DescribeExportTasks 	Describes one or more of your export tasks.	*	Global Conditions
+ec2:DescribeHosts 	Describes one or more of your Dedicated hosts.	*	Global Conditions
+ec2:DescribeIdentityIdFormat 	Describes the ID format settings for resources for the specified IAM user, IAM role, or root user.	*	Global Conditions
+ec2:DescribeIdFormat 	Describes the ID format settings for your resources on a per-region basis, for example, to view which resource types are enabled for longer IDs.	*	Global Conditions
+ec2:DescribeImageAttribute 	Describes the specified attribute of the specified AMI.	*	Global Conditions
+ec2:DescribeImages 	Describes one or more of the images (AMIs, AKIs, and ARIs) available to you.	*	Global Conditions
+ec2:DescribeImportImageTasks 	Displays details about an import virtual machine or import snapshot tasks that are already created.	*	Global Conditions
+ec2:DescribeImportSnapshotTasks 	Describes your import snapshot tasks.	*	Global Conditions
+ec2:DescribeInstanceAttribute 	Describes the specified attribute of the specified instance.	*	Global Conditions
+ec2:DescribeInstances 	Describes one or more of your instances.	*	Global Conditions
+ec2:DescribeInstanceStatus 	Describes the status of one or more instances.	*	Global Conditions
+ec2:DescribeInternetGateways 	Describes one or more of your Internet gateways.	*	Global Conditions
+ec2:DescribeFlowLogs 	Describes one or more flow logs.	*	Global Conditions
+ec2:DescribeKeyPairs 	Describes one or more of your key pairs.	*	Global Conditions
+ec2:DescribeMovingAddresses 	Describes your Elastic IP addresses that are being moved to the EC2-VPC platform, or that are being restored to the EC2-Classic platform.	*	Global Conditions
+ec2:DescribeNatGateways 	Describes one or more of the your NAT gateways.	*	Global Conditions
+ec2:DescribeNetworkAcls 	Describes one or more of your network ACLs.	*	Global Conditions
+ec2:DescribeNetworkInterfaceAttribute 	Describes a network interface attribute.	*	Global Conditions
+ec2:DescribeNetworkInterfaces 	Describes one or more of your network interfaces.	*	Global Conditions
+ec2:DescribePlacementGroups 	Describes one or more of your placement groups.	*	Global Conditions
+ec2:DescribePrefixLists 	Describes available AWS services in a prefix list format, which includes the prefix list name and prefix list ID of the service and the IP address range for the service.	*	Global Conditions
+ec2:DescribeRegions 	Describes one or more regions that are currently available to you.	*	Global Conditions
+ec2:DescribeReservedInstances 	Describes one or more of the Reserved Instances that you purchased.	*	Global Conditions
+ec2:DescribeReservedInstancesListings 	Describes your account's Reserved Instance listings in the Reserved Instance Marketplace.	*	Global Conditions
+ec2:DescribeReservedInstancesModifications	Describes the modifications made to your Reserved Instances.	*	Global Conditions
+ec2:DescribeReservedInstancesOfferings 	Describes Reserved Instance offerings that are available for purchase.	*	Global Conditions
+ec2:DescribeRouteTables 	Describes one or more of your route tables.	*	Global Conditions
+ec2:DescribeScheduledInstanceAvailability 	Finds available schedules that meet the specified criteria.	*	Global Conditions
+ec2:DescribeScheduledInstances 	Describes one or more of your Scheduled Instances.	*	Global Conditions
+ec2:DescribeSecurityGroupReferences 	[EC2-VPC only] Describes the VPCs on the other side of a VPC peering connection that are referencing the security groups you've specified in this request.	*	Global Conditions
+ec2:DescribeSecurityGroups 	Describes one or more of your security groups.	*	Global Conditions
+ec2:DescribeStaleSecurityGroups 	[EC2-VPC only] Describes the stale security group rules for security groups in a specified VPC.	*	Global Conditions
+ec2:DescribeSnapshotAttribute 	Describes the specified attribute of the specified snapshot.	*	Global Conditions
+ec2:DescribeSnapshots 	Describes one or more of the EBS snapshots available to you.	*	Global Conditions
+ec2:DescribeSpotDatafeedSubscription 	Describes the data feed for Spot instances.	*	Global Conditions
+ec2:DescribeSpotFleetInstances 	Describes the running instances for the specified Spot fleet.	*	Global Conditions
+ec2:DescribeSpotFleetRequestHistory 	Describes the events for the specified Spot fleet request during the specified time.	*	Global Conditions
+ec2:DescribeSpotFleetRequests 	Describes your Spot fleet requests.	*	Global Conditions
+ec2:DescribeSpotInstanceRequests 	Describes the Spot instance requests that belong to your account.	*	Global Conditions
+ec2:DescribeSpotPriceHistory 	Describes the Spot price history.	*	Global Conditions
+ec2:DescribeSubnets 	Describes one or more of your subnets.	*	Global Conditions
+ec2:DescribeTags 	Describes one or more of the tags for your EC2 resources.	*	Global Conditions
+ec2:DescribeVolumeAttribute 	Describes the specified attribute of the specified volume.	*	Global Conditions
+ec2:DescribeVolumes 	Describes the specified EBS volumes.	*	Global Conditions
+ec2:DescribeVolumeStatus 	Describes the status of the specified volumes.	*	Global Conditions
+ec2:DescribeVpcAttribute 	Describes the specified attribute of the specified VPC.	*	Global Conditions
+ec2:DescribeVpcClassicLink 	Describes the ClassicLink status of one or more VPCs.	*	Global Conditions
+ec2:DescribeVpcClassicLinkDnsSupport 	Describes the ClassicLink DNS support status of one or more VPCs.	*	Global Conditions
+ec2:DescribeVpcEndpoints 	Describes one or more of your VPC endpoints.	*	Global Conditions
+ec2:DescribeVpcEndpointServices 	Describes all supported AWS services that can be specified when creating a VPC endpoint.	*	Global Conditions
+ec2:DescribeVpcPeeringConnections 	Describes one or more of your VPC peering connections.	*	Global Conditions
+ec2:DescribeVpcs 	Describes one or more of your VPCs.	*	Global Conditions
+ec2:DescribeVpnConnections 	Describes one or more of your VPN connections.	*	Global Conditions
+ec2:DescribeVpnGateways 	Describes one or more of your virtual private gateways.	*	Global Conditions
+- ec2:DetachInternetGateway 	Detaches an Internet gateway from a VPC, disabling connectivity between the Internet and the VPC.	*	Global Conditions
+- ec2:DetachNetworkInterface 	Detaches a network interface from an instance.	*	Global Conditions
+- ec2:DetachVpnGateway 	Detaches a virtual private gateway from a VPC.	*	Global Conditions
+- ec2:DisableVgwRoutePropagation 	Disables a virtual private gateway (VGW) from propagating routes to a specified route table of a VPC.	*	Global Conditions
+- ec2:DisableVpcClassicLinkDnsSupport 	Disables ClassicLink DNS support for a VPC.	*	Global Conditions
+- ec2:DisassociateAddress 	Disassociates an Elastic IP address from the instance or network interface it's associated with.	*	Global Conditions
+- ec2:DisassociateRouteTable 	Disassociates a subnet from a route table.	*	Global Conditions
+- ec2:EnableVgwRoutePropagation 	Enables a virtual private gateway (VGW) to propagate routes to the specified route table of a VPC.	*	Global Conditions
+- ec2:EnableVolumeIO 	Enables I/O operations for a volume that had I/O operations disabled because the data on the volume was potentially inconsistent.	*	Global Conditions
+- ec2:EnableVpcClassicLinkDnsSupport 	Enables a VPC to support DNS hostname resolution for ClassicLink.	*	Global Conditions
+- ec2:GetConsoleOutput 	Gets the console output for the specified instance.	*	Global Conditions
+- ec2:GetPasswordData 	Retrieves the encrypted administrator password for an instance running Windows.	*	Global Conditions
+- ec2:ImportImage 	Import single or multi-volume disk images or EBS snapshots into an Amazon Machine Image (AMI).	*	Global Conditions
+- ec2:ImportInstance 	Creates an import instance task using metadata from the specified disk image.	*	Global Conditions
+- ec2:ImportKeyPair 	Imports the public key from an RSA key pair that you created with a third-party tool.	*	Global Conditions
+- ec2:ImportSnapshot 	Imports a disk into an EBS snapshot.	*	Global Conditions
+- ec2:ImportVolume 	Creates an import volume task using metadata from the specified disk image.	*	Global Conditions
+- ec2:ModifyHosts 	Modify the auto-placement setting of a Dedicated host.	*	Global Conditions
+- ec2:ModifyIdentityIdFormat 	Modifies the ID format of a resource for the specified IAM user, IAM role, or root user.	*	Global Conditions
+- ec2:ModifyIdFormat 	Modifies the ID format for the specified resource on a per-region basis.	*	Global Conditions
+- ec2:ModifyImageAttribute 	Modifies the specified attribute of the specified AMI.	*	Global Conditions
+- ec2:ModifyInstanceAttribute 	Modifies the specified attribute of the specified instance.	*	Global Conditions
+- ec2:ModifyInstancePlacement 	Set the instance affinity value for a specific stopped instance and modify the instance tenancy setting.	*	Global Conditions
+- ec2:ModifyNetworkInterfaceAttribute 	Modifies the specified network interface attribute.	*	Global Conditions
+- ec2:ModifyReservedInstances 	Modifies the Availability Zone, instance count, instance type, or network platform (EC2-Classic or EC2-VPC) of your Reserved Instances.	*	Global Conditions
+- ec2:ModifySnapshotAttribute 	Adds or removes permission settings for the specified snapshot.	*	Global Conditions
+- ec2:ModifySpotFleetRequest 	Modifies the specified Spot fleet request.	*	Global Conditions
+- ec2:ModifySubnetAttribute 	Modifies a subnet attribute.	*	Global Conditions
+- ec2:ModifyVolumeAttribute 	Modifies a volume attribute.	*	Global Conditions
+- ec2:ModifyVpcAttribute 	Modifies the specified attribute of the specified VPC.	*	Global Conditions
+- ec2:ModifyVpcEndpoint 	Modifies attributes of a specified VPC endpoint.	*	Global Conditions
+- ec2:ModifyVpcPeeringConnectionOptions 	Modifies the VPC peering connection options on one side of a VPC peering connection.	*	Global Conditions
+- ec2:MonitorInstances 	Enables monitoring for a running instance.	*	Global Conditions
+- ec2:MoveAddressToVpc 	Moves an Elastic IP address from the EC2-Classic platform to the EC2-VPC platform.	*	Global Conditions
+- ec2:PurchaseReservedInstancesOffering 	Purchases a Reserved Instance for use with your account.	*	Global Conditions
+- ec2:PurchaseScheduledInstances 	Purchases one or more Scheduled Instances with the specified schedule.	*	Global Conditions
+- ec2:RegisterImage 	Registers an AMI.	*	Global Conditions
+- ec2:ReleaseAddress 	Releases the specified Elastic IP address.	*	Global Conditions
+- ec2:ReleaseHosts 	When you no longer want to use a Dedicated host it can be released.	*	Global Conditions
+- ec2:ReplaceNetworkAclAssociation 	Changes which network ACL a subnet is associated with.	*	Global Conditions
+- ec2:ReplaceNetworkAclEntry 	Replaces an entry (rule) in a network ACL.	*	Global Conditions
+- ec2:ReplaceRoute 	Replaces an existing route within a route table in a VPC.	*	Global Conditions
+- ec2:ReplaceRouteTableAssociation 	Changes the route table associated with a given subnet in a VPC.	*	Global Conditions
+- ec2:ReportInstanceStatus 	Submits feedback about the status of an instance.	*	Global Conditions
+- ec2:RequestSpotFleet 	Creates a Spot fleet request.	*	Global Conditions
+- ec2:RequestSpotInstances 	Creates a Spot instance request.	*	Global Conditions
+- ec2:ResetImageAttribute 	Resets an attribute of an AMI to its default value.	*	Global Conditions
+- ec2:ResetInstanceAttribute 	Resets an attribute of an instance to its default value.	*	Global Conditions
+- ec2:ResetNetworkInterfaceAttribute 	Resets a network interface attribute.	*	Global Conditions
+- ec2:ResetSnapshotAttribute 	Resets permission settings for the specified snapshot.	*	Global Conditions
+- ec2:RestoreAddressToClassic 	Restores an Elastic IP address that was previously moved to the EC2-VPC platform back to the EC2-Classic platform.	*	Global Conditions
+- ec2:RunScheduledInstances 	Launches the specified Scheduled Instances.	*	Global Conditions
+- ec2:UnassignPrivateIpAddresses 	Unassigns one or more secondary private IP addresses from a network interface.	*	Global Conditions
+- ec2:UnmonitorInstances 	Disables monitoring for a running instance.	*	Global Conditions

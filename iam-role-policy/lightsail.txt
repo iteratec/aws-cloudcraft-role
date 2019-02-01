@@ -1,0 +1,48 @@
+Amazon Lightsail (lightsail) : https://docs.aws.amazon.com/de_de/lightsail/2016-11-28/api-reference/API_GetActiveNames.html
+- lightsail:AllocateStaticIp 	Allocates a static IP address.	???	Global Conditions
+- lightsail:AttachStaticIp 	Attaches a static IP address to a specific Amazon Lightsail instance.	???	Global Conditions
+- lightsail:CloseInstancePublicPorts 	Closes the public ports on a specific Amazon Lightsail instance.	???	Global Conditions
+- lightsail:CreateDomain 	Creates a domain resource for the specified domain (e.	???	Global Conditions
+- lightsail:CreateDomainEntry 	Creates one of the following entry records associated with the domain: A record, CNAME record, TXT record, or MX record.	???	Global Conditions
+- lightsail:CreateInstanceSnapshot 	Creates a snapshot of a specific virtual private server, or instance.	???	Global Conditions
+- lightsail:CreateInstances 	Creates one or more Amazon Lightsail virtual private servers, or instances.	???	Global Conditions
+- lightsail:CreateInstancesFromSnapshot 	Uses a specific snapshot as a blueprint for creating one or more new instances that are based on that identical configuration.	???	Global Conditions
+- lightsail:CreateKeyPair 	Creates sn SSH key pair.	???	Global Conditions
+- lightsail:DeleteDomain 	Deletes the specified domain recordset and all of its domain records.	???	Global Conditions
+- lightsail:DeleteDomainEntry 	Deletes a specific domain entry.	???	Global Conditions
+- lightsail:DeleteInstance 	Deletes a specific Amazon Lightsail virtual private server, or instance.	???	Global Conditions
+- lightsail:DeleteInstanceSnapshot 	Deletes a specific snapshot of a virtual private server (or instance).	???	Global Conditions
+- lightsail:DeleteKeyPair 	Deletes a specific SSH key pair.	???	Global Conditions
+- lightsail:DetachStaticIp 	Detaches a static IP from the Amazon Lightsail instance to which it is attached.	???	Global Conditions
+- lightsail:DownloadDefaultKeyPair 	Downloads the default SSH key pair from the user's account.	???	Global Conditions
+lightsail:GetActiveNames 	Returns the names of all active (not deleted) resources.	???	Global Conditions
+lightsail:GetBlueprints 	Returns the list of available instance images, or blueprints.	???	Global Conditions
+lightsail:GetBundles 	Returns the list of bundles that are available for purchase.	???	Global Conditions
+lightsail:GetDomain 	Returns information about a specific domain recordset.	???	Global Conditions
+lightsail:GetDomains 	Returns a list of all domains in the user's account.	???	Global Conditions
+lightsail:GetInstance 	Returns information about a specific Amazon Lightsail instance, which is a virtual private server.	???	Global Conditions
+- lightsail:GetInstanceAccessDetails 	Returns temporary SSH keys you can use to connect to a specific virtual private server, or instance.	???	Global Conditions
+- lightsail:GetInstanceMetricData 	Returns the data points for the specified Amazon Lightsail instance metric, given an instance name.	???	Global Conditions
+- lightsail:GetInstancePortStates 	Returns the port states for a specific virtual private server, or instance.	???	Global Conditions
+- lightsail:GetInstanceSnapshot 	Returns information about a specific instance snapshot.	???	Global Conditions
+- lightsail:GetInstanceSnapshots 	Returns all instance snapshots for the user's account.	???	Global Conditions
+- lightsail:GetInstanceState 	Returns the state of a specific instance.	???	Global Conditions
+lightsail:GetInstances 	Returns information about all Amazon Lightsail virtual private servers, or instances.	???	Global Conditions
+- lightsail:GetKeyPair 	Returns information about a specific key pair.	???	Global Conditions
+- lightsail:GetKeyPairs 	Returns information about all key pairs in the user's account.	???	Global Conditions
+- lightsail:GetOperation 	Returns information about a specific operation.	???	Global Conditions
+- lightsail:GetOperations 	Returns information about all operations.	???	Global Conditions
+- lightsail:GetOperationsForResource 	Gets operations for a specific resource (e.	???	Global Conditions
+lightsail:GetRegions 	Returns a list of all valid regions for Amazon Lightsail.	???	Global Conditions
+- lightsail:GetStaticIp 	Returns information about a specific static IP.	???	Global Conditions
+lightsail:GetStaticIps 	Returns information about all static IPs in the user's account.	???	Global Conditions
+- lightsail:ImportKeyPair 	Imports a public SSH key from a specific key pair.	???	Global Conditions
+- lightsail:IsVpcPeered 	Returns a Boolean value indicating whether your Lightsail VPC is peered.	???	Global Conditions
+- lightsail:OpenInstancePublicPorts 	Adds public ports to an Amazon Lightsail instance.	???	Global Conditions
+- lightsail:PeerVpc 	Tries to peer the Lightsail VPC with the user's default VPC.	???	Global Conditions
+- lightsail:RebootInstance 	Restarts a specific instance.	???	Global Conditions
+- lightsail:ReleaseStaticIp 	Deletes a specific static IP from your account.	???	Global Conditions
+- lightsail:StartInstance 	Starts a specific Amazon Lightsail instance from a stopped state.	???	Global Conditions
+- lightsail:StopInstance 	Stops a specific Amazon Lightsail instance that is currently running.	???	Global Conditions
+- lightsail:UnpeerVpc 	Attempts to unpeer the Lightsail VPC from the user's default VPC.	???	Global Conditions
+- lightsail:UpdateDomainEntry 	Updates a domain recordset after it is created.	???	Global Conditions

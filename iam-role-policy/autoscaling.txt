@@ -1,0 +1,104 @@
+Auto Scaling (autoscaling) : https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_DescribeAccountLimits.html
+autoscaling:DescribeAccountLimits 	Describes the current Auto Scaling resource limits for your AWS account.	*	Global Conditions
+autoscaling:DescribeAdjustmentTypes 	Describes the policy adjustment types for use with API_PutScalingPolicy.	*	Global Conditions
+autoscaling:DescribeAutoScalingGroups 	Describes one or more Auto Scaling groups.	*	Global Conditions
+autoscaling:DescribeAutoScalingInstances 	Describes one or more Auto Scaling instances.	*	Global Conditions
+autoscaling:DescribeAutoScalingNotificationTypes	Describes the notification types that are supported by Auto Scaling.	*	Global Conditions
+autoscaling:DescribeLaunchConfigurations 	Describes one or more launch configurations.	*	Global Conditions
+autoscaling:DescribeLifecycleHooks 	Describes the lifecycle hooks for the specified Auto Scaling group.	*	Global Conditions
+autoscaling:DescribeLifecycleHookTypes 	Describes the available types of lifecycle hooks.	*	Global Conditions
+autoscaling:DescribeLoadBalancers 	Describes the load balancers for the specified Auto Scaling group.	*	Global Conditions
+autoscaling:DescribeLoadBalancerTargetGroups	Describes the target groups for the specified Auto Scaling group.	*	Global Conditions
+autoscaling:DescribeMetricCollectionTypes 	Describes the available CloudWatch metrics for Auto Scaling.	*	Global Conditions
+autoscaling:DescribeNotificationConfigurations	Describes the notification actions associated with the specified Auto Scaling group.	*	Global Conditions
+autoscaling:DescribePolicies 	Describes the policies for the specified Auto Scaling group.	*	Global Conditions
+autoscaling:DescribeScalingActivities 	Describes one or more scaling activities for the specified Auto Scaling group.	*	Global Conditions
+autoscaling:DescribeScalingProcessTypes 	Describes the scaling process types for use with API_ResumeProcesses.	*	Global Conditions
+autoscaling:DescribeScheduledActions 	Describes the actions scheduled for your Auto Scaling group that haven't run.	*	Global Conditions
+autoscaling:DescribeTags 	Describes the specified tags.	*	Global Conditions
+autoscaling:DescribeTerminationPolicyTypes	Describes the termination policies supported by Auto Scaling.	*	Global Conditions
+- autoscaling:AttachInstances 	Attaches one or more EC2 instances to the specified Auto Scaling group.	arn:aws:autoscaling:$region:$account:autoScalingGroup:$uuid:autoScalingGroupName/$name
+- autoscaling:ResourceTag/$key	Global Conditions
+- autoscaling:AttachLoadBalancers 	Attaches one or more load balancers to the specified Auto Scaling group.	arn:aws:autoscaling:$region:$account:autoScalingGroup:$uuid:autoScalingGroupName/$name
+- autoscaling:LoadBalancerNames
+- autoscaling:ResourceTag/$key	Global Conditions
+- autoscaling:AttachLoadBalancerTargetGroups	Attaches one or more target groups to the specified Auto Scaling group.	arn:aws:autoscaling:$region:$account:autoScalingGroup:$uuid:autoScalingGroupName/$name
+- autoscaling:ResourceTag/$key
+- autoscaling:TargetGroupARNs	Global Conditions
+- autoscaling:CompleteLifecycleAction 	Completes the lifecycle action for the specified token or instance with the specified result.	arn:aws:autoscaling:$region:$account:autoScalingGroup:$uuid:autoScalingGroupName/$name
+- autoscaling:ResourceTag/$key	Global Conditions
+- autoscaling:CreateAutoScalingGroup 	Creates an Auto Scaling group with the specified name and attributes.	arn:aws:autoscaling:$region:$account:autoScalingGroup:*:autoScalingGroupName/$name
+- autoscaling:LaunchConfigurationName
+- autoscaling:LoadBalancerNames
+- autoscaling:MaxSize
+- autoscaling:MinSize
+- autoscaling:ResourceTag/$key
+- autoscaling:TargetGroupARNs
+- autoscaling:VPCZoneIdentifiers	aws:RequestTag/$key	aws:TagKeys	Global Conditions
+- autoscaling:CreateLaunchConfiguration 	Creates a launch configuration.	arn:aws:autoscaling:$region:$account:launchConfiguration:*:launchConfigurationName/$name
+- autoscaling:ImageId
+- autoscaling:InstanceId
+- autoscaling:SpotPrice	Global Conditions
+- autoscaling:CreateOrUpdateTags 	Creates or updates tags for the specified Auto Scaling group.	arn:aws:autoscaling:$region:$account:autoScalingGroup:$uuid:autoScalingGroupName/$name
+- autoscaling:ResourceTag/$key	aws:RequestTag/$key	aws:TagKeys	Global Conditions
+- autoscaling:DeleteAutoScalingGroup 	Deletes the specified Auto Scaling group.	arn:aws:autoscaling:$region:$account:autoScalingGroup:$uuid:autoScalingGroupName/$name
+- autoscaling:ResourceTag/$key	Global Conditions
+- autoscaling:DeleteLaunchConfiguration 	Deletes the specified launch configuration.	arn:aws:autoscaling:$region:$account:launchConfiguration:$uuid:launchConfigurationName/$name	Global Conditions
+- autoscaling:DeleteLifecycleHook 	Deletes the specified lifecycle hook.	arn:aws:autoscaling:$region:$account:autoScalingGroup:$uuid:autoScalingGroupName/$name
+- autoscaling:ResourceTag/$key	Global Conditions
+- autoscaling:DeleteNotificationConfiguration 	Deletes the specified notification.	arn:aws:autoscaling:$region:$account:autoScalingGroup:$uuid:autoScalingGroupName/$name
+- autoscaling:ResourceTag/$key	Global Conditions
+- autoscaling:DeletePolicy 	Deletes the specified Auto Scaling policy.	arn:aws:autoscaling:$region:$account:autoScalingGroup:$uuid:autoScalingGroupName/$name
+- autoscaling:ResourceTag/$key	Global Conditions
+- autoscaling:DeleteScheduledAction 	Deletes the specified scheduled action.	arn:aws:autoscaling:$region:$account:autoScalingGroup:$uuid:autoScalingGroupName/$name
+- autoscaling:ResourceTag/$key	Global Conditions
+- autoscaling:DeleteTags 	Deletes the specified tags.	arn:aws:autoscaling:$region:$account:autoScalingGroup:$uuid:autoScalingGroupName/$name
+- autoscaling:ResourceTag/$key	aws:RequestTag/$key	aws:TagKeys	Global Conditions
+- autoscaling:DetachInstances 	Removes one or more instances from the specified Auto Scaling group.	arn:aws:autoscaling:$region:$account:autoScalingGroup:$uuid:autoScalingGroupName/$name
+- autoscaling:ResourceTag/$key	Global Conditions
+- autoscaling:DetachLoadBalancers 	Removes one or more load balancers from the specified Auto Scaling group.	arn:aws:autoscaling:$region:$account:autoScalingGroup:$uuid:autoScalingGroupName/$name
+- autoscaling:LoadBalancerNames
+- autoscaling:ResourceTag/$key	Global Conditions
+- autoscaling:DetachLoadBalancerTargetGroups	Detaches one or more target groups from the specified Auto Scaling group.	arn:aws:autoscaling:$region:$account:autoScalingGroup:$uuid:autoScalingGroupName/$name
+- autoscaling:ResourceTag/$key
+- autoscaling:TargetGroupARNs	Global Conditions
+- autoscaling:DisableMetricsCollection 	Disables monitoring of the specified metrics for the specified Auto Scaling group.	arn:aws:autoscaling:$region:$account:autoScalingGroup:$uuid:autoScalingGroupName/$name
+- autoscaling:ResourceTag/$key	Global Conditions
+- autoscaling:EnableMetricsCollection 	Enables monitoring of the specified metrics for the specified Auto Scaling group.	arn:aws:autoscaling:$region:$account:autoScalingGroup:$uuid:autoScalingGroupName/$name
+- autoscaling:ResourceTag/$key	Global Conditions
+- autoscaling:EnterStandby 	Moves the specified instances into Standby mode.	arn:aws:autoscaling:$region:$account:autoScalingGroup:$uuid:autoScalingGroupName/$name
+- autoscaling:ResourceTag/$key	Global Conditions
+- autoscaling:ExecutePolicy 	Executes the specified policy.	arn:aws:autoscaling:$region:$account:autoScalingGroup:$uuid:autoScalingGroupName/$name
+- autoscaling:ResourceTag/$key	Global Conditions
+- autoscaling:ExitStandby 	Moves the specified instances out of Standby mode.	arn:aws:autoscaling:$region:$account:autoScalingGroup:$uuid:autoScalingGroupName/$name
+- autoscaling:ResourceTag/$key	Global Conditions
+- autoscaling:PutLifecycleHook 	Creates or updates a lifecycle hook for the specified Auto Scaling Group.	arn:aws:autoscaling:$region:$account:autoScalingGroup:$uuid:autoScalingGroupName/$name
+- autoscaling:ResourceTag/$key	Global Conditions
+- autoscaling:PutNotificationConfiguration 	Configures an Auto Scaling group to send notifications when specified events take place.	arn:aws:autoscaling:$region:$account:autoScalingGroup:$uuid:autoScalingGroupName/$name
+- autoscaling:ResourceTag/$key	Global Conditions
+- autoscaling:PutScalingPolicy 	Creates or updates a policy for an Auto Scaling group.	arn:aws:autoscaling:$region:$account:autoScalingGroup:$uuid:autoScalingGroupName/$name
+- autoscaling:ResourceTag/$key	Global Conditions
+- autoscaling:PutScheduledUpdateGroupAction	Creates or updates a scheduled scaling action for an Auto Scaling group.	arn:aws:autoscaling:$region:$account:autoScalingGroup:$uuid:autoScalingGroupName/$name
+- autoscaling:MaxSize
+- autoscaling:MinSize
+- autoscaling:ResourceTag/$key	Global Conditions
+- autoscaling:RecordLifecycleActionHeartbeat	Records a heartbeat for the lifecycle action associated with the specified token or instance.	arn:aws:autoscaling:$region:$account:autoScalingGroup:$uuid:autoScalingGroupName/$name
+- autoscaling:ResourceTag/$key	Global Conditions
+- autoscaling:ResumeProcesses 	Resumes the specified suspended Auto Scaling processes, or all suspended process, for the specified Auto Scaling group.	arn:aws:autoscaling:$region:$account:autoScalingGroup:$uuid:autoScalingGroupName/$name
+- autoscaling:ResourceTag/$key	Global Conditions
+- autoscaling:SetDesiredCapacity 	Sets the size of the specified Auto Scaling group.	arn:aws:autoscaling:$region:$account:autoScalingGroup:$uuid:autoScalingGroupName/$name
+- autoscaling:ResourceTag/$key	Global Conditions
+- autoscaling:SetInstanceHealth 	Sets the health status of the specified instance.	arn:aws:autoscaling:$region:$account:autoScalingGroup:$uuid:autoScalingGroupName/$name
+- autoscaling:ResourceTag/$key	Global Conditions
+- autoscaling:SetInstanceProtection 	Updates the instance protection settings of the specified instances.	arn:aws:autoscaling:$region:$account:autoScalingGroup:$uuid:autoScalingGroupName/$name
+- autoscaling:ResourceTag/$key	Global Conditions
+- autoscaling:SuspendProcesses 	Suspends the specified Auto Scaling processes, or all processes, for the specified Auto Scaling group.	arn:aws:autoscaling:$region:$account:autoScalingGroup:$uuid:autoScalingGroupName/$name
+- autoscaling:ResourceTag/$key	Global Conditions
+- autoscaling:TerminateInstanceInAutoScalingGroup	Terminates the specified instance and optionally adjusts the desired group size.	arn:aws:autoscaling:$region:$account:autoScalingGroup:$uuid:autoScalingGroupName/$name
+- autoscaling:ResourceTag/$key	Global Conditions
+- autoscaling:UpdateAutoScalingGroup 	Updates the configuration for the specified Auto Scaling group.	arn:aws:autoscaling:$region:$account:autoScalingGroup:$uuid:autoScalingGroupName/$name
+- autoscaling:LaunchConfigurationName
+- autoscaling:MaxSize
+- autoscaling:MinSize
+- autoscaling:ResourceTag/$key
+- autoscaling:VPCZoneIdentifiers	Global Conditions

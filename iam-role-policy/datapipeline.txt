@@ -1,0 +1,22 @@
+AWS Data Pipeline (datapipeline) : 	https://docs.aws.amazon.com/de_de/datapipeline/latest/APIReference/API_DescribeObjects.html
+- datapipeline:ActivatePipeline 	Validates the specified pipeline and starts processing pipeline tasks.	*	datapipeline:Tag/$tag-key	datapipeline:PipelineCreator	Global Conditions
+- datapipeline:AddTags 	Adds or modifies tags for the specified pipeline.	*	datapipeline:Tag/$tag-key	datapipeline:PipelineCreator	Global Conditions
+- datapipeline:CreatePipeline 	Creates a new, empty pipeline.	*	datapipeline:Tag/$tag-key	Global Conditions
+- datapipeline:DeactivatePipeline 	Deactivates the specified running pipeline.	*	datapipeline:Tag/$tag-key	datapipeline:PipelineCreator	Global Conditions
+- datapipeline:DeletePipeline 	Deletes a pipeline, its pipeline definition, and its run history.	*	datapipeline:Tag/$tag-key	datapipeline:PipelineCreator	Global Conditions
+datapipeline:DescribeObjects 	Gets the object definitions for a set of objects associated with the pipeline.	*	datapipeline:Tag/$tag-key	datapipeline:PipelineCreator	Global Conditions
+datapipeline:DescribePipelines 	Retrieves metadata about one or more pipelines.	*	datapipeline:Tag/$tag-key	datapipeline:PipelineCreator	Global Conditions
+- datapipeline:EvaluateExpression 	Task runners call EvaluateExpression to evaluate a string in the context of the specified object.	*	datapipeline:Tag/$tag-key	datapipeline:PipelineCreator	Global Conditions
+- datapipeline:GetAccountLimits 	???	*	datapipeline:Tag/$tag-key	datapipeline:PipelineCreator	Global Conditions
+- datapipeline:GetPipelineDefinition 	Gets the definition of the specified pipeline.	*	datapipeline:Tag/$tag-key	datapipeline:PipelineCreator	Global Conditions
+datapipeline:ListPipelines 	Lists the pipeline identifiers for all active pipelines that you have permission to access.	*	datapipeline:Tag/$tag-key	datapipeline:PipelineCreator	Global Conditions
+- datapipeline:PollForTask 	Task runners call PollForTask to receive a task to perform from AWS Data Pipeline.	*	datapipeline:workerGroup	Global Conditions
+- datapipeline:PutAccountLimits 	???	*	datapipeline:Tag/$tag-key	datapipeline:PipelineCreator	Global Conditions
+- datapipeline:PutPipelineDefinition 	Adds tasks, schedules, and preconditions to the specified pipeline.	*	datapipeline:Tag/$tag-key	datapipeline:PipelineCreator	Global Conditions
+- datapipeline:QueryObjects 	Queries the specified pipeline for the names of objects that match the specified set of conditions.	*	datapipeline:Tag/$tag-key	datapipeline:PipelineCreator	Global Conditions
+- datapipeline:RemoveTags 	Removes existing tags from the specified pipeline.	*	datapipeline:Tag/$tag-key	datapipeline:PipelineCreator	Global Conditions
+- datapipeline:ReportTaskProgress 	Task runners call ReportTaskProgress when assigned a task to acknowledge that it has the task.	*	Global Conditions
+- datapipeline:ReportTaskRunnerHeartbeat 	Task runners call ReportTaskRunnerHeartbeat every 15 minutes to indicate that they are operational.	*	datapipeline:workerGroup	Global Conditions
+- datapipeline:SetStatus 	Requests that the status of the specified physical or logical pipeline objects be updated in the specified pipeline.	*	datapipeline:Tag/$tag-key	datapipeline:PipelineCreator	Global Conditions
+- datapipeline:SetTaskStatus 	Task runners call SetTaskStatus to notify AWS Data Pipeline that a task is completed and provide information about the final status.	*	datapipeline:Tag/$tag-key	datapipeline:PipelineCreator	Global Conditions
+- datapipeline:ValidatePipelineDefinition 	Validates the specified pipeline definition to ensure that it is well formed and can be run without error.	*	datapipeline:Tag/$tag-key	datapipeline:PipelineCreator	Global Conditions

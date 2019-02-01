@@ -1,0 +1,25 @@
+AWS Device Farm (devicefarm) : https://docs.aws.amazon.com/de_de/devicefarm/latest/APIReference/API_ListDevicePools.html
+- devicefarm:CreateDevicePool 	Creates a device pool.	*	Global Conditions
+- devicefarm:CreateProject 	Creates a new project.	*	Global Conditions
+- devicefarm:CreateUpload 	Uploads an app or test scripts.	*	Global Conditions
+devicefarm:GetDevice 	Gets information about a unique device type.	*	Global Conditions
+devicefarm:GetDevicePool 	Gets information about a device pool.	*	Global Conditions
+devicefarm:GetDevicePoolCompatibility 	Gets information about compatibility with a device pool.	*	Global Conditions
+- devicefarm:GetJob 	Gets information about a job.	*	Global Conditions
+- devicefarm:GetProject 	Gets information about a project.	*	Global Conditions
+- devicefarm:GetRun 	Gets information about a run.	*	Global Conditions
+- devicefarm:GetSuite 	Gets information about a suite.	*	Global Conditions
+- devicefarm:GetTest 	Gets information about a test.	*	Global Conditions
+- devicefarm:GetUpload 	Gets information about an upload.	*	Global Conditions
+- devicefarm:ListArtifacts 	Gets information about artifacts.	*	Global Conditions
+devicefarm:ListDevicePools 	Gets information about device pools.	*	Global Conditions
+devicefarm:ListDevices 	Gets information about unique device types.	*	Global Conditions
+- devicefarm:ListJobs 	Gets information about jobs.	*	Global Conditions
+devicefarm:ListProjects 	Gets information about projects.	*	Global Conditions
+- devicefarm:ListRuns 	Gets information about runs.	*	Global Conditions
+- devicefarm:ListSamples 	Gets information about samples.	*	Global Conditions
+- devicefarm:ListSuites 	Gets information about suites.	*	Global Conditions
+- devicefarm:ListTests 	Gets information about tests.	*	Global Conditions
+- devicefarm:ListUniqueProblems 	Gets information about unique problems.	*	Global Conditions
+- devicefarm:ListUploads 	Gets information about uploads.	*	Global Conditions
+- devicefarm:ScheduleRun 	Schedules a run.	*	Global Conditions

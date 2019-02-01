@@ -1,0 +1,31 @@
+Amazon EC2 Container Service (ecs) : https://docs.aws.amazon.com/de_de/AmazonECS/latest/APIReference/API_DescribeClusters.html
+- ecs:CreateCluster 	Creates a new Amazon ECS cluster.	*	Global Conditions
+- ecs:CreateService 	Runs and maintains a desired number of tasks from a specified task definition.	*	Global Conditions
+- ecs:DeleteCluster 	Deletes the specified cluster.	arn:aws:ecs:$region:$account:cluster/$cluster-name	Global Conditions
+- ecs:DeleteService 	Deletes a specified service within a cluster.	*	Global Conditions
+- ecs:DeregisterContainerInstance 	Deregisters an Amazon ECS container instance from the specified cluster.	arn:aws:ecs:$region:$account:cluster/$cluster-name	Global Conditions
+- ecs:DeregisterTaskDefinition 	Deregisters the specified task definition by family and revision.	*	Global Conditions
+ecs:DescribeClusters 	Describes one or more of your clusters.	arn:aws:ecs:$region:$account:cluster/$cluster-name	Global Conditions
+ecs:DescribeContainerInstances 	Describes Amazon EC2 Container Service container instances.	arn:aws:ecs:$region:$account:container-instance/$container-instance-id	ecs:cluster	Global Conditions
+ecs:DescribeServices 	Describes the specified services running in your cluster.	*	Global Conditions
+ecs:DescribeTaskDefinition 	Describes a task definition.	*	Global Conditions
+ecs:DescribeTasks 	Describes a specified task or tasks.	arn:aws:ecs:$region:$account:task/$task-id	ecs:cluster	Global Conditions
+- ecs:DiscoverPollEndpoint 	Returns an endpoint for the Amazon EC2 Container Service agent to poll for updates.	*	Global Conditions
+ecs:ListClusters 	Returns a list of existing clusters.	*	Global Conditions
+ecs:ListContainerInstances 	Returns a list of container instances in a specified cluster.	arn:aws:ecs:$region:$account:cluster/$cluster-name	Global Conditions
+ecs:ListServices 	Lists the services that are running in a specified cluster.	*	Global Conditions
+ecs:ListTaskDefinitionFamilies 	Returns a list of task definition families that are registered to your account (which may include task definition families that no longer have any ACTIVE task definition revisions).	*	Global Conditions
+ecs:ListTaskDefinitions 	Returns a list of task definitions that are registered to your account.	*	Global Conditions
+ecs:ListTasks 	Returns a list of tasks for a specified cluster.	arn:aws:ecs:$region:$account:container-instance/$container-instance-id	ecs:cluster	Global Conditions
+- ecs:Poll 	???	arn:aws:ecs:$region:$account:container-instance/$container-instance-id	ecs:cluster	Global Conditions
+- ecs:RegisterContainerInstance 	Registers an EC2 instance into the specified cluster.	arn:aws:ecs:$region:$account:cluster/$cluster-name	Global Conditions
+- ecs:RegisterTaskDefinition 	Registers a new task definition from the supplied family and containerDefinitions.	*	Global Conditions
+- ecs:RunTask 	Start a task using random placement and the default Amazon ECS scheduler.	arn:aws:ecs:$region:$account:task-definition/$task-definition-family-name:$task-definition-revision-number	ecs:cluster	Global Conditions
+- ecs:StartTask 	Starts a new task from the specified task definition on the specified container instance or instances.	arn:aws:ecs:$region:$account:task-definition/$task-definition-family-name:$task-definition-revision-number	ecs:cluster	ecs:container-instances	Global Conditions
+- ecs:StopTask 	Stops a running task.	arn:aws:ecs:$region:$account:task/$task-id	ecs:cluster	Global Conditions
+- ecs:StartTelemetrySession 	???	arn:aws:ecs:$region:$account:container-instance/$container-instance-id	ecs:cluster	Global Conditions
+- ecs:SubmitContainerStateChange 	Sent to acknowledge that a container changed states.	arn:aws:ecs:$region:$account:cluster/$cluster-name	Global Conditions
+- ecs:SubmitTaskStateChange 	Sent to acknowledge that a task changed states.	arn:aws:ecs:$region:$account:cluster/$cluster-name	Global Conditions
+- ecs:UpdateContainerAgent 	Updates the Amazon ECS container agent on a specified container instance.	arn:aws:ecs:$region:$account:container-instance/$container-instance-id	ecs:cluster	Global Conditions
+- ecs:UpdateService 	Modifies the desired count, deployment configuration, or task definition used in a service.	*	Global Conditions
+- ecs:UpdateContainerInstancesState 	Modifies the status of an Amazon ECS container instance.	arn:aws:ecs:$region:$account:container-instance/$container-instance-id	ecs:cluster	Global Conditions

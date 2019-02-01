@@ -1,0 +1,17 @@
+Amazon CloudWatch (cloudwatch) : https://docs.aws.amazon.com/de_de/AmazonCloudWatch/latest/APIReference/API_DeleteAlarms.html
+- cloudwatch:DeleteAlarms 	Deletes all specified alarms.	*	Global Conditions
+- cloudwatch:DeleteDashboards 	Deletes all dashboards that you specify.	*	Global Conditions
+cloudwatch:DescribeAlarmHistory 	Retrieves history for the specified alarm.	*	Global Conditions
+cloudwatch:DescribeAlarms 	Retrieves alarms with the specified names.	*	Global Conditions
+cloudwatch:DescribeAlarmsForMetric 	Retrieves all alarms for a single metric.	*	Global Conditions
+- cloudwatch:DisableAlarmActions 	Disables actions for the specified alarms.	*	Global Conditions
+- cloudwatch:EnableAlarmActions 	Enables actions for the specified alarms.	*	Global Conditions
+- cloudwatch:GetDashboard 	Displays the details of the dashboard that you specify.	*	Global Conditions
+- cloudwatch:GetMetricData 	???	*	Global Conditions
+- cloudwatch:GetMetricStatistics 	Gets statistics for the specified metric.	*	Global Conditions
+cloudwatch:ListDashboards 	Returns a list of the dashboards for your account.	*	Global Conditions
+cloudwatch:ListMetrics 	Returns a list of valid metrics stored for the AWS account owner.	*	Global Conditions
+- cloudwatch:PutDashboard 	Creates a dashboard if it does not already exist, or updates an existing dashboard.	*	Global Conditions
+- cloudwatch:PutMetricAlarm 	Creates or updates an alarm and associates it with the specified Amazon CloudWatch metric.	*	Global Conditions
+- cloudwatch:PutMetricData 	Publishes metric data points to Amazon CloudWatch.	*	Global Conditions
+- cloudwatch:SetAlarmState 	Temporarily sets the state of an alarm for testing purposes.	*	Global Conditions

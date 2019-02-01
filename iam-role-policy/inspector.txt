@@ -1,0 +1,38 @@
+Amazon Inspector (inspector) : https://docs.aws.amazon.com/de_de/inspector/latest/APIReference/Welcome.html
+- inspector:AddAttributesToFindings 	???	???	Global Conditions
+- inspector:AttachAssessmentAndRulesPackage	???	???	Global Conditions
+- inspector:CreateApplication 	???	???	Global Conditions
+- inspector:CreateAssessment 	???	???	Global Conditions
+- inspector:CreateResourceGroup 	???	???	Global Conditions
+- inspector:DeleteApplication 	???	???	Global Conditions
+- inspector:DeleteAssessment 	???	???	Global Conditions
+- inspector:DeleteRun 	???	???	Global Conditions
+inspector:DescribeApplication 	???	???	Global Conditions
+inspector:DescribeAssessment 	???	???	Global Conditions
+inspector:DescribeCrossAccountAccessRole	???	???	Global Conditions
+inspector:DescribeFinding 	???	???	Global Conditions
+inspector:DescribeResourceGroup 	???	???	Global Conditions
+inspector:DescribeRulesPackage 	???	???	Global Conditions
+inspector:DescribeRun 	???	???	Global Conditions
+inspector:DetachAssessmentAndRulesPackage	???	???	Global Conditions
+- inspector:GetAssessmentTelemetry 	???	???	Global Conditions
+inspector:ListApplications 	???	???	Global Conditions
+inspector:ListAssessmentAgents 	???	???	Global Conditions
+inspector:ListAssessments 	???	???	Global Conditions
+inspector:ListAttachedAssessments 	???	???	Global Conditions
+inspector:ListAttachedRulesPackages 	???	???	Global Conditions
+inspector:ListFindings 	???	???	Global Conditions
+inspector:ListRulesPackages 	???	???	Global Conditions
+inspector:ListRuns 	???	???	Global Conditions
+inspector:ListTagsForResource 	???	???	Global Conditions
+- inspector:LocalizeText 	???	???	Global Conditions
+- inspector:PreviewAgentsForResourceGroup	???	???	Global Conditions
+- inspector:RegisterCrossAccountAccessRole	???	???	Global Conditions
+- inspector:RemoveAttributesFromFindings 	???	???	Global Conditions
+- inspector:RetireRulesPackage 	???	???	Global Conditions
+- inspector:RunAssessment 	???	???	Global Conditions
+- inspector:SetTagsForResource 	???	???	Global Conditions
+- inspector:StartDataCollection 	???	???	Global Conditions
+- inspector:StopDataCollection 	???	???	Global Conditions
+- inspector:UpdateApplication 	???	???	Global Conditions
+- inspector:UpdateAssessment 	???	???	Global Conditions

@@ -1,0 +1,22 @@
+Amazon DynamoDB Accelerator (dax) : https://docs.aws.amazon.com/de_de/amazondynamodb/latest/APIReference/API_dax_DescribeClusters.html
+- dax:CreateCluster 	Creates a DAX cluster.	???	???	Global Conditions
+- dax:CreateParameterGroup 	Creates a new parameter group.	???	???	Global Conditions
+- dax:CreateSubnetGroup 	Creates a new subnet group.	???	???	Global Conditions
+- dax:DecreaseReplicationFactor 	Removes one or more nodes from a DAX cluster.	???	???	Global Conditions
+- dax:DeleteCluster 	Deletes a previously provisioned DAX cluster.	???	???	Global Conditions
+- dax:DeleteParameterGroup 	Deletes the specified parameter group.	???	???	Global Conditions
+- dax:DeleteSubnetGroup 	Deletes a subnet group.	???	???	Global Conditions
+dax:DescribeClusters 	Returns information about all provisioned DAX clusters if no cluster identifier is specified, or about a specific DAX cluster if a cluster identifier is supplied.	???	???	Global Conditions
+dax:DescribeDefaultParameters 	Returns the default system parameter information for the DAX caching software.	???	???	Global Conditions
+dax:DescribeEvents 	Returns events related to DAX clusters and parameter groups.	???	???	Global Conditions
+dax:DescribeParameterGroups 	Returns a list of parameter group descriptions.	???	???	Global Conditions
+dax:DescribeParameters 	Returns the detailed parameter list for a particular parameter group.	???	???	Global Conditions
+dax:DescribeSubnetGroups 	Returns a list of subnet group descriptions.	???	???	Global Conditions
+- dax:IncreaseReplicationFactor 	Adds one or more nodes to a DAX cluster.	???	???	Global Conditions
+- dax:ListTags 	List all of the tags for a DAX cluster.	???	???	Global Conditions
+- dax:RebootNode 	Reboots a single node of a DAX cluster.	???	???	Global Conditions
+- dax:TagResource 	Associates a set of tags with a DAX resource.	???	???	Global Conditions
+- dax:UntagResource 	Removes the association of tags from a DAX resource.	???	???	Global Conditions
+- dax:UpdateCluster 	Modifies the settings for a DAX cluster.	???	???	Global Conditions
+- dax:UpdateParameterGroup 	Modifies the parameters of a parameter group.	???	???	Global Conditions
+- dax:UpdateSubnetGroup 	Modifies an existing subnet group.	???	???	Global Conditions

@@ -1,0 +1,29 @@
+Amazon CloudSearch (cloudsearch) :
+- cloudsearch:BuildSuggesters 	Indexes the search suggestions.	???	???	Global Conditions
+- cloudsearch:CreateDomain 	Creates a new search domain.	???	???	Global Conditions
+- cloudsearch:DefineAnalysisScheme 	Configures an analysis scheme that can be applied to a text or text-array field to define language-specific text processing options.	???	???	Global Conditions
+- cloudsearch:DefineExpression 	Configures an Expression for the search domain.	???	???	Global Conditions
+- cloudsearch:DefineIndexField 	Configures an IndexField for the search domain.	???	???	Global Conditions
+- cloudsearch:DefineIndexFields 	???	???	???	Global Conditions
+- cloudsearch:DefineSuggester 	Configures a suggester for a domain.	???	???	Global Conditions
+- cloudsearch:DeleteAnalysisScheme 	Deletes an analysis scheme.	???	???	Global Conditions
+- cloudsearch:DeleteDomain 	Permanently deletes a search domain and all of its data.	???	???	Global Conditions
+- cloudsearch:DeleteExpression 	Removes an Expression from the search domain.	???	???	Global Conditions
+- cloudsearch:DeleteIndexField 	Removes an IndexField from the search domain.	???	???	Global Conditions
+- cloudsearch:DeleteSuggester 	Deletes a suggester.	???	???	Global Conditions
+- cloudsearch:DescribeAnalysisSchemes 	Gets the analysis schemes configured for a domain.	arn:aws:cloudsearch:$region:$account:domain/$domain-name	Global Conditions
+cloudsearch:DescribeAvailabilityOptions 	Gets the availability options configured for a domain.	arn:aws:cloudsearch:$region:$account:domain/$domain-name	Global Conditions
+cloudsearch:DescribeDomains 	Gets information about the search domains owned by this account.	arn:aws:cloudsearch:$region:$account:domain/$domain-name	Global Conditions
+- cloudsearch:DescribeExpressions 	Gets the expressions configured for the search domain.	arn:aws:cloudsearch:$region:$account:domain/$domain-name	Global Conditions
+- cloudsearch:DescribeIndexFields 	Gets information about the index fields configured for the search domain.	arn:aws:cloudsearch:$region:$account:domain/$domain-name	Global Conditions
+cloudsearch:DescribeScalingParameters 	Gets the scaling parameters configured for a domain.	arn:aws:cloudsearch:$region:$account:domain/$domain-name	Global Conditions
+- cloudsearch:DescribeServiceAccessPolicies	Gets information about the access policies that control access to the domain's document and search endpoints.	arn:aws:cloudsearch:$region:$account:domain/$domain-name	Global Conditions
+- cloudsearch:DescribeSuggesters 	Gets the suggesters configured for a domain.	arn:aws:cloudsearch:$region:$account:domain/$domain-name	Global Conditions
+- cloudsearch:document 	???	arn:aws:cloudsearch:$region:$account:domain/$domain-name	Global Conditions
+- cloudsearch:IndexDocuments 	Tells the search domain to start indexing its documents using the latest indexing options.	???	???	Global Conditions
+cloudsearch:ListDomainNames 	Lists all search domains owned by an account.	???	???	Global Conditions
+- cloudsearch:search 	???	arn:aws:cloudsearch:$region:$account:domain/$domain-name	Global Conditions
+- cloudsearch:suggest 	???	arn:aws:cloudsearch:$region:$account:domain/$domain-name	Global Conditions
+- cloudsearch:UpdateAvailabilityOptions 	Configures the availability options for a domain.	???	???	Global Conditions
+- cloudsearch:UpdateScalingParameters 	Configures scaling parameters for a domain.	???	???	Global Conditions
+- cloudsearch:UpdateServiceAccessPolicies 	Configures the access rules that control access to the domain's document and search endpoints.	???	???	Global Conditions

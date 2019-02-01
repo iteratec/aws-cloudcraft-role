@@ -1,0 +1,26 @@
+AWS Config (config) : https://docs.aws.amazon.com/de_de/config/latest/APIReference/API_DescribeComplianceByConfigRule.html
+- config:DeleteConfigRule 	Deletes the specified AWS Config rule and all of its evaluation results.	???	Global Conditions
+- config:DeleteDeliveryChannel 	Deletes the delivery channel.	???	Global Conditions
+- config:DeliverConfigSnapshot 	Schedules delivery of a configuration snapshot to the Amazon S3 bucket in the specified delivery channel.	???	Global Conditions
+config:DescribeComplianceByConfigRule 	Indicates whether the specified AWS Config rules are compliant.	???	Global Conditions
+config:DescribeComplianceByResource 	Indicates whether the specified AWS resources are compliant.	???	Global Conditions
+config:DescribeConfigRuleEvaluationStatus 	Returns status information for each of your AWS managed Config rules.	???	Global Conditions
+config:DescribeConfigRules 	Returns details about your AWS Config rules.	???	Global Conditions
+config:DescribeConfigurationRecorderStatus	Returns the current status of the specified configuration recorder.	???	Global Conditions
+config:DescribeConfigurationRecorders 	Returns the name of one or more specified configuration recorders.	???	Global Conditions
+config:DescribeDeliveryChannelStatus 	Returns the current status of the specified delivery channel.	???	Global Conditions
+config:DescribeDeliveryChannels 	Returns details about the specified delivery channel.	???	Global Conditions
+- config:GetComplianceDetailsByConfigRule 	Returns the evaluation results for the specified AWS Config rule.	???	Global Conditions
+- config:GetComplianceDetailsByResource 	Returns the evaluation results for the specified AWS resource.	???	Global Conditions
+- config:GetComplianceSummaryByConfigRule	Returns the number of AWS Config rules that are compliant and noncompliant, up to a maximum of 25 for each.	???	Global Conditions
+- config:GetComplianceSummaryByResourceType	Returns the number of resources that are compliant and the number that are noncompliant.	???	Global Conditions
+- config:GetResourceConfigHistory 	Returns a list of configuration items for the specified resource.	???	Global Conditions
+- config:GetResources 	???	???	Global Conditions
+- config:GetTagKeys 	???	???	Global Conditions
+config:ListDiscoveredResources 	Accepts a resource type and returns a list of resource identifiers for the resources of that type.	???	Global Conditions
+- config:PutConfigRule 	Adds or updates an AWS Config rule for evaluating whether your AWS resources comply with your desired configurations.	???	Global Conditions
+- config:PutConfigurationRecorder 	Creates a new configuration recorder to record the selected resource configurations.	???	Global Conditions
+- config:PutDeliveryChannel 	Creates a delivery channel object to deliver configuration information to an Amazon S3 bucket and Amazon SNS topic.	???	Global Conditions
+- config:PutEvaluations 	Used by an AWS Lambda function to deliver evaluation results to AWS Config.	???	Global Conditions
+- config:StartConfigurationRecorder 	Starts recording configurations of the AWS resources you have selected to record in your AWS account.	???	Global Conditions
+- config:StopConfigurationRecorder 	Stops recording configurations of the AWS resources you have selected to record in your AWS account.	???	Global Conditions

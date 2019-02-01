@@ -1,0 +1,7 @@
+AWS Import/Export (importexport) : 
+- importexport:CreateJob 	This action initiates the process of scheduling an upload or download of your data.	*	Global Conditions
+- importexport:UpdateJob 	You use this action to change the parameters specified in the original manifest file by supplying a new manifest file.	*	Global Conditions
+- importexport:CancelJob 	This action cancels a specified job.	*	Global Conditions
+importexport:ListJobs 	This action returns the jobs associated with the requester.	*	Global Conditions
+- importexport:GetStatus 	This action returns information about a job, including where the job is in the processing pipeline, the status of the results, and the signature value associated with the job.	*	Global Conditions
+- importexport:GetShippingLabel 	This action generates a pre-paid shipping label that you will use to ship your device to AWS for processing.	*	Global Conditions

@@ -1,0 +1,59 @@
+Elastic Load Balancing (elasticloadbalancing) : https://docs.aws.amazon.com/de_de/elasticloadbalancing/2012-06-01/APIReference/API_DescribeInstanceHealth.html
+
+- elasticloadbalancing:AddTags 	Classic Load Balancer: Adds the specified tags to the specified load balancer.	arn:aws:elasticloadbalancing:$region:$account:loadbalancer/$load-balancer-name	Global Conditions
+- elasticloadbalancing:AddTags 	Application Load Balancer: Adds the specified tags to the specified resource.	*	Global Conditions
+- elasticloadbalancing:ApplySecurityGroupsToLoadBalancer	Classic Load Balancer: Associates one or more security groups with your load balancer in a virtual private cloud (VPC).	arn:aws:elasticloadbalancing:$region:$account:loadbalancer/$load-balancer-name	Global Conditions
+- elasticloadbalancing:AttachLoadBalancerToSubnets	Classic Load Balancer: Adds one or more subnets to the set of configured subnets for the specified load balancer.	arn:aws:elasticloadbalancing:$region:$account:loadbalancer/$load-balancer-name	Global Conditions
+- elasticloadbalancing:ConfigureHealthCheck	Classic Load Balancer: Specifies the health check settings to use when evaluating the health state of your back-end instances.	arn:aws:elasticloadbalancing:$region:$account:loadbalancer/$load-balancer-name	Global Conditions
+- elasticloadbalancing:CreateAppCookieStickinessPolicy	Classic Load Balancer: Generates a stickiness policy with sticky session lifetimes that follow that of an application-generated cookie.	arn:aws:elasticloadbalancing:$region:$account:loadbalancer/$load-balancer-name	Global Conditions
+- elasticloadbalancing:CreateListener 	Application Load Balancer: Creates a listener for the specified Application Load Balancer.	*	Global Conditions
+- elasticloadbalancing:CreateLBCookieStickinessPolicy	Classic Load Balancer: Generates a stickiness policy with sticky session lifetimes controlled by the lifetime of the browser (user-agent) or a specified expiration period.	arn:aws:elasticloadbalancing:$region:$account:loadbalancer/$load-balancer-name	Global Conditions
+- elasticloadbalancing:CreateLoadBalancer 	Classic Load Balancer: Creates a load balancer.	arn:aws:elasticloadbalancing:$region:$account:loadbalancer/$load-balancer-name	Global Conditions
+- elasticloadbalancing:CreateLoadBalancer 	Application Load Balancer: Creates an Application Load Balancer.	*	Global Conditions
+- elasticloadbalancing:CreateLoadBalancerListeners	Classic Load Balancer: Creates one or more listeners for the specified load balancer.	arn:aws:elasticloadbalancing:$region:$account:loadbalancer/$load-balancer-name	Global Conditions
+- elasticloadbalancing:CreateLoadBalancerPolicy	Classic Load Balancer: Creates a policy with the specified attributes for the specified load balancer.	arn:aws:elasticloadbalancing:$region:$account:loadbalancer/$load-balancer-name	Global Conditions
+- elasticloadbalancing:CreateRule 	Application Load Balancer: Creates a rule for the specified listener.	*	Global Conditions
+- elasticloadbalancing:CreateTargetGroup 	Application Load Balancer: Creates a target group.	*	Global Conditions
+- elasticloadbalancing:DeleteListener 	Application Load Balancer: Deletes the specified listener.	*	Global Conditions
+- elasticloadbalancing:DeleteLoadBalancer 	Classic Load Balancer: Deletes the specified load balancer.	arn:aws:elasticloadbalancing:$region:$account:loadbalancer/$load-balancer-name	Global Conditions
+- elasticloadbalancing:DeleteLoadBalancer 	Application Load Balancer: Deletes the specified Application Load Balancer and its attached listeners.	*	Global Conditions
+- elasticloadbalancing:DeleteLoadBalancerListeners	Classic Load Balancer: Deletes the specified listeners from the specified load balancer.	arn:aws:elasticloadbalancing:$region:$account:loadbalancer/$load-balancer-name	Global Conditions
+- elasticloadbalancing:DeleteLoadBalancerPolicy	Classic Load Balancer: Deletes the specified policy from the specified load balancer.	arn:aws:elasticloadbalancing:$region:$account:loadbalancer/$load-balancer-name	Global Conditions
+- elasticloadbalancing:DeleteRule 	Application Load Balancer: Deletes the specified rule.	*	Global Conditions
+- elasticloadbalancing:DeleteTargetGroup 	Application Load Balancer: Deletes the specified target group.	*	Global Conditions
+- elasticloadbalancing:DeregisterInstancesFromLoadBalancer	Classic Load Balancer: Deregisters the specified instances from the specified load balancer.	arn:aws:elasticloadbalancing:$region:$account:loadbalancer/$load-balancer-name	Global Conditions
+- elasticloadbalancing:DeregisterTargets 	Application Load Balancer: Deregisters the specified targets from the specified target group.	*	Global Conditions
+elasticloadbalancing:DescribeInstanceHealth	Classic Load Balancer: Describes the state of the specified instances with respect to the specified load balancer.	*	Global Conditions
+elasticloadbalancing:DescribeListeners 	Application Load Balancer: Describes the specified listeners or the listeners for the specified Application Load Balancer.	*	Global Conditions
+elasticloadbalancing:DescribeLoadBalancerAttributes	Classic Load Balancer: Describes the attributes for the specified load balancer.	*	Global Conditions
+elasticloadbalancing:DescribeLoadBalancerAttributes	Application Load Balancer: Describes the attributes for the specified Application Load Balancer.	*	Global Conditions
+elasticloadbalancing:DescribeLoadBalancerPolicyTypes	Classic Load Balancer: Describes the specified load balancer policy types or all load balancer policy types.	*	Global Conditions
+elasticloadbalancing:DescribeLoadBalancerPolicies	Classic Load Balancer: Describes the specified policies.	*	Global Conditions
+elasticloadbalancing:DescribeLoadBalancers	Classic Load Balancer: Describes the specified the load balancers.	*	Global Conditions
+elasticloadbalancing:DescribeLoadBalancers	Application Load Balancer: Describes the specified Application Load Balancers or all of your Application Load Balancers.	*	Global Conditions
+elasticloadbalancing:DescribeRules 	Application Load Balancer: Describes the specified rules or the rules for the specified listener.	*	Global Conditions
+elasticloadbalancing:DescribeSSLPolicies 	Application Load Balancer: Describes the specified policies or all policies used for SSL negotiation.	*	Global Conditions
+elasticloadbalancing:DescribeTags 	Classic Load Balancer: Describes the tags associated with the specified load balancers.	*	Global Conditions
+elasticloadbalancing:DescribeTags 	Application Load Balancer: Describes the tags for the specified resources.	*	Global Conditions
+elasticloadbalancing:DescribeTargetGroupAttributes	Application Load Balancer: Describes the attributes for the specified target group.	*	Global Conditions
+elasticloadbalancing:DescribeTargetGroups 	Application Load Balancer: Describes the specified target groups or all of your target groups.	*	Global Conditions
+elasticloadbalancing:DescribeTargetHealth 	Application Load Balancer: Describes the health of the specified targets or all of your targets.	*	Global Conditions
+- elasticloadbalancing:DetachLoadBalancerFromSubnets	Classic Load Balancer: Removes the specified subnets from the set of configured subnets for the load balancer.	arn:aws:elasticloadbalancing:$region:$account:loadbalancer/$load-balancer-name	Global Conditions
+- elasticloadbalancing:DisableAvailabilityZonesForLoadBalancer	Classic Load Balancer: Removes the specified Availability Zones from the set of Availability Zones for the specified load balancer.	arn:aws:elasticloadbalancing:$region:$account:loadbalancer/$load-balancer-name	Global Conditions
+- elasticloadbalancing:EnableAvailabilityZonesForLoadBalancer	Classic Load Balancer: Adds the specified Availability Zones to the set of Availability Zones for the specified load balancer.	arn:aws:elasticloadbalancing:$region:$account:loadbalancer/$load-balancer-name	Global Conditions
+- elasticloadbalancing:ModifyListener 	Application Load Balancer: Modifies the specified properties of the specified listener.	*	Global Conditions
+- elasticloadbalancing:ModifyLoadBalancerAttributes	Classic Load Balancer: Modifies the attributes of the specified load balancer.	arn:aws:elasticloadbalancing:$region:$account:loadbalancer/$load-balancer-name	Global Conditions
+- elasticloadbalancing:ModifyLoadBalancerAttributes	Application Load Balancer: Modifies the specified attributes of the specified Application Load Balancer.	*	Global Conditions
+- elasticloadbalancing:ModifyRule 	Application Load Balancer: Modifies the specified rule.	*	Global Conditions
+- elasticloadbalancing:ModifyTargetGroup 	Application Load Balancer: Modifies the health checks used when evaluating the health state of the targets in the specified target group.	*	Global Conditions
+- elasticloadbalancing:ModifyTargetGroupAttributes	Application Load Balancer: Modifies the specified attributes of the specified target group.	*	Global Conditions
+- elasticloadbalancing:RegisterTargets 	Application Load Balancer: Registers the specified targets with the specified target group.	*	Global Conditions
+- elasticloadbalancing:RegisterInstancesWithLoadBalancer	Classic Load Balancer: Adds the specified instances to the specified load balancer.	arn:aws:elasticloadbalancing:$region:$account:loadbalancer/$load-balancer-name	Global Conditions
+- elasticloadbalancing:RemoveTags 	Classic Load Balancer: Removes one or more tags from the specified load balancer.	arn:aws:elasticloadbalancing:$region:$account:loadbalancer/$load-balancer-name	Global Conditions
+- elasticloadbalancing:RemoveTags 	Application Load Balancer: Removes the specified tags from the specified resource.	*	Global Conditions
+- elasticloadbalancing:SetLoadBalancerListenerSSLCertificate	Classic Load Balancer: Sets the certificate that terminates the specified listener's SSL connections.	arn:aws:elasticloadbalancing:$region:$account:loadbalancer/$load-balancer-name	Global Conditions
+- elasticloadbalancing:SetLoadBalancerPoliciesForBackendServer	Classic Load Balancer: Replaces the set of policies associated with the specified port on which the back-end server is listening with a new set of policies.	arn:aws:elasticloadbalancing:$region:$account:loadbalancer/$load-balancer-name	Global Conditions
+- elasticloadbalancing:SetLoadBalancerPoliciesOfListener	Classic Load Balancer: Replaces the current set of policies for the specified load balancer port with the specified set of policies.	arn:aws:elasticloadbalancing:$region:$account:loadbalancer/$load-balancer-name	Global Conditions
+- elasticloadbalancing:SetRulePriorities 	Application Load Balancer: Sets the priorities of the specified rules.	*	Global Conditions
+- elasticloadbalancing:SetSecurityGroups 	Application Load Balancer: Associates the specified security groups with the specified load balancer.	*	Global Conditions
+- elasticloadbalancing:SetSubnets 	Application Load Balancer: Enables the Availability Zone for the specified subnets for the specified load balancer.	*	Global Conditions

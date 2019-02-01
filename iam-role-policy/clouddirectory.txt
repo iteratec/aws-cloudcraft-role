@@ -1,0 +1,64 @@
+Amazon Cloud Directory (clouddirectory) : https://docs.aws.amazon.com/directoryservice/latest/APIReference/API_AddFacetToObject.html
+- clouddirectory:AddFacetToObject	Adds a new Facet to an object.	*	Global Conditions
+- clouddirectory:ApplySchema	Copies the input published schema into the Directory with the same name and version as that of the published schema .	*	Global Conditions
+- clouddirectory:AttachObject	Attaches an existing object to another object.	*	Global Conditions
+- clouddirectory:AttachPolicy	Attaches a policy object to a regular object.	*	Global Conditions
+- clouddirectory:AttachToIndex	Attaches the specified object to the specified index.	*	Global Conditions
+- clouddirectory:AttachTypedLink	Attaches a typed link to a specified source and target object.	*	Global Conditions
+- clouddirectory:BatchRead	Performs all the read operations in a batch.	*	Global Conditions
+- clouddirectory:BatchWrite	Performs all the write operations in a batch.	*	Global Conditions
+- clouddirectory:CreateDirectory	Creates a Directory by copying the published schema into the directory.	*	Global Conditions
+- clouddirectory:CreateFacet	Creates a new Facet in a schema.	*	Global Conditions
+- clouddirectory:CreateIndex	Creates an index object.	*	Global Conditions
+- clouddirectory:CreateObject	Creates an object in a Directory.	*	Global Conditions
+- clouddirectory:CreateSchema	Creates a new schema in a development state.	*	Global Conditions
+- clouddirectory:CreateTypedLinkFacet	Creates a TypedLinkFacet.	*	Global Conditions
+- clouddirectory:DeleteDirectory	Deletes a directory.	*	Global Conditions
+- clouddirectory:DeleteFacet	Deletes a given Facet.	*	Global Conditions
+- clouddirectory:DeleteObject	Deletes an object and its associated attributes.	*	Global Conditions
+- clouddirectory:DeleteSchema	Deletes a given schema.	*	Global Conditions
+- clouddirectory:DeleteTypedLinkFacet	Deletes a TypedLinkFacet.	*	Global Conditions
+- clouddirectory:DetachFromIndex	Detaches the specified object from the specified index.	*	Global Conditions
+- clouddirectory:DetachObject	Detaches a given object from the parent object.	*	Global Conditions
+- clouddirectory:DetachPolicy	Detaches a policy from an object.	*	Global Conditions
+- clouddirectory:DetachTypedLink	Detaches a typed link from a specified source and target object.	*	Global Conditions
+- clouddirectory:DisableDirectory	Disables the specified directory.	*	Global Conditions
+- clouddirectory:EnableDirectory	Enables the specified directory.	*	Global Conditions
+- clouddirectory:GetAppliedSchemaVersion	Returns current applied schema version ARN, including the minor version in use.	*	Global Conditions
+- clouddirectory:GetDirectory	Retrieves metadata about a directory.	*	Global Conditions
+- clouddirectory:GetFacet	Gets details of the Facet, such as facet name, attributes, Rules, or ObjectType.	*	Global Conditions
+- clouddirectory:GetObjectAttributes	Retrieves attributes within a facet that are associated with an object.	*	Global Conditions
+- clouddirectory:GetObjectInformation	Retrieves metadata about an object.	*	Global Conditions
+- clouddirectory:GetSchemaAsJson	Retrieves a JSON representation of the schema.	*	Global Conditions
+- clouddirectory:GetTypedLinkFacetInformation	Returns the identity attribute order for a specific TypedLinkFacet.	*	Global Conditions
+- clouddirectory:ListAppliedSchemaArns	Lists schemas applied to a directory.	*	Global Conditions
+- clouddirectory:ListAttachedIndices	Lists indices attached to the specified object.	*	Global Conditions
+- clouddirectory:ListDevelopmentSchemaArns	Retrieves each Amazon Resource Name (ARN) of schemas in the development state.	*	Global Conditions
+- clouddirectory:ListDirectories	Lists directories created within an account.	*	Global Conditions
+- clouddirectory:ListFacetAttributes	Retrieves attributes attached to the facet.	*	Global Conditions
+- clouddirectory:ListFacetNames	Retrieves the names of facets that exist in a schema.	*	Global Conditions
+- clouddirectory:ListIncomingTypedLinks	Returns a paginated list of all the incoming TypedLinkSpecifier information for an object.	*	Global Conditions
+- clouddirectory:ListIndex	Lists objects and indexed values attached to the index.	*	Global Conditions
+- clouddirectory:ListObjectAttributes	Lists all attributes that are associated with an object.	*	Global Conditions
+- clouddirectory:ListObjectChildren	Returns a paginated list of child objects that are associated with a given object.	*	Global Conditions
+- clouddirectory:ListObjectParentPaths	Retrieves all available parent paths for any object type such as node, leaf node, policy node, and index node objects.	*	Global Conditions
+- clouddirectory:ListObjectParents	Lists parent objects that are associated with a given object in pagination fashion.	*	Global Conditions
+- clouddirectory:ListObjectPolicies	Returns policies attached to an object in pagination fashion.	*	Global Conditions
+- clouddirectory:ListOutgoingTypedLinks	Returns a paginated list of all the outgoing TypedLinkSpecifier information for an object.	*	Global Conditions
+- clouddirectory:ListPolicyAttachments	Returns all of the ObjectIdentifiers to which a given policy is attached.	*	Global Conditions
+- clouddirectory:ListPublishedSchemaArns	Retrieves each published schema Amazon Resource Name (ARN).	*	Global Conditions
+- clouddirectory:ListTagsForResource	Returns tags for a resource.	*	Global Conditions
+- clouddirectory:ListTypedLinkFacetAttributes	Returns a paginated list of all attribute definitions for a particular TypedLinkFacet.	*	Global Conditions
+- clouddirectory:ListTypedLinkFacetNames	Returns a paginated list of TypedLink facet names for a particular schema.	*	Global Conditions
+- clouddirectory:LookupPolicy	Lists all policies from the root of the Directory to the object specified.	*	Global Conditions
+- clouddirectory:PublishSchema	Publishes a development schema with a version.	*	Global Conditions
+- clouddirectory:PutSchemaFromJson	Allows a schema to be updated using JSON upload.	*	Global Conditions
+- clouddirectory:RemoveFacetFromObject	Removes the specified facet from the specified object.	*	Global Conditions
+- clouddirectory:TagResource	An API operation for adding tags to a resource.	*	Global Conditions
+- clouddirectory:UntagResource	An API operation for removing tags from a resource.	*	Global Conditions
+- clouddirectory:UpdateFacet	.	*	Global Conditions
+- clouddirectory:UpdateObjectAttributes	Updates a given object's attributes.	*	Global Conditions
+- clouddirectory:UpdateSchema	Updates the schema name with a new name.	*	Global Conditions
+- clouddirectory:UpdateTypedLinkFacet	Updates a TypedLinkFacet.	*	Global Conditions
+- clouddirectory:UpgradeAppliedSchema	Upgrades a single directory in-place using the PublishedSchemaArn with schema updates found in MinorVersion.	*	Global Conditions
+- clouddirectory:UpgradePublishedSchema	Upgrades a published schema under a new minor version revision using the current contents of DevelopmentSchemaArn.	*	Global Conditions

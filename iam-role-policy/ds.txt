@@ -1,0 +1,34 @@
+AWS Directory Service (ds) : https://docs.aws.amazon.com/de_de/directoryservice/latest/devguide/API_DescribeConditionalForwarders.html
+- ds:ConnectDirectory	Creates an AD Connector to connect to an on-premises directory.	*	???	Global Conditions
+- ds:CreateAlias	Creates an alias for a directory and assigns the alias to the directory.	*	???	Global Conditions
+- ds:CreateComputer	Creates a computer account in the specified directory, and joins the computer to the directory.	*	???	Global Conditions
+- ds:CreateConditionalForwarder	Creates a conditional forwarder associated with your AWS directory.	*	???	Global Conditions
+- ds:CreateDirectory	Creates a Simple AD directory.	*	???	Global Conditions
+- ds:CreateMicrosoftAD	Creates a Microsoft AD in the AWS cloud.	*	???	Global Conditions
+- ds:CreateSnapshot	Creates a snapshot of a Simple AD or Microsoft AD directory in the AWS cloud.	*	???	Global Conditions
+- ds:CreateTrust	AWS Directory Service for Microsoft Active Directory allows you to configure trust relationships.	*	???	Global Conditions
+- ds:DeleteConditionalForwarder	Deletes a conditional forwarder that has been set up for your AWS directory.	*	???	Global Conditions
+- ds:DeleteDirectory	Deletes an AWS Directory Service directory.	*	???	Global Conditions
+- ds:DeleteSnapshot	Deletes a directory snapshot.	*	???	Global Conditions
+- ds:DeleteTrust	Deletes an existing trust relationship between your Microsoft AD in the AWS cloud and an external domain.	*	???	Global Conditions
+- ds:DeregisterEventTopic	Removes the specified directory as a publisher to the specified SNS topic.	*	???	Global Conditions
+ds:DescribeConditionalForwarders	Obtains information about the conditional forwarders for this account.	*	???	Global Conditions
+ds:DescribeDirectories	Obtains information about the directories that belong to this account.	*	???	Global Conditions
+ds:DescribeEventTopics	Obtains information about which SNS topics receive status messages from the specified directory.	*	???	Global Conditions
+ds:DescribeSnapshots	Obtains information about the directory snapshots that belong to this account.	*	???	Global Conditions
+ds:DescribeTrusts	Obtains information about the trust relationships for this account.	*	???	Global Conditions
+ds:ListIpRoutes Lists the address blocks that you have added to a directory.
+ds:ListLogSubscriptions Lists the active log subscriptions for the AWS account.
+ds:ListSchemaExtensions Lists all schema extensions applied to a Microsoft AD Directory.
+ds:ListTagsForResource Lists all tags on a directory.
+- ds:DisableRadius	Disables multi-factor authentication (MFA) with the Remote Authentication Dial In User Service (RADIUS) server for an AD Connector directory.	*	???	Global Conditions
+- ds:DisableSso	Disables single-sign on for a directory.	*	???	Global Conditions
+- ds:EnableRadius	Enables multi-factor authentication (MFA) with the Remote Authentication Dial In User Service (RADIUS) server for an AD Connector directory.	*	???	Global Conditions
+- ds:EnableSso	Enables single-sign on for a directory.	*	???	Global Conditions
+- ds:GetDirectoryLimits	Obtains directory limit information for the current region.	*	???	Global Conditions
+- ds:GetSnapshotLimits	Obtains the manual snapshot limits for a directory.	*	???	Global Conditions
+- ds:RegisterEventTopic	Associates a directory with an SNS topic.	*	???	Global Conditions
+- ds:RestoreFromSnapshot	Restores a directory using an existing directory snapshot.	*	???	Global Conditions
+- ds:UpdateConditionalForwarder	Updates a conditional forwarder that has been set up for your AWS directory.	*	???	Global Conditions
+- ds:UpdateRadius	Updates the Remote Authentication Dial In User Service (RADIUS) server information for an AD Connector directory.	*	???	Global Conditions
+- ds:VerifyTrust	AWS Directory Service for Microsoft Active Directory allows you to configure and verify trust relationships.	*	???	Global Conditions

@@ -1,0 +1,3 @@
+AWS Budgets (budgets) : https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions
+- budgets:ViewBudget 	Allow or deny IAM users permission to view Budgets. Note that to allow IAM users to view budgets, you must also allow aws-portal:ViewBilling.	*	Global Conditions
+- budgets:ModifyBudget 	Allow or deny IAM users permission to modify Budgets. Note that to allow IAM users to view and modify budgets, you must also allow aws-portal:ViewBilling.	*	Global Conditions
