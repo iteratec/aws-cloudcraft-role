@@ -72,7 +72,6 @@ resource "aws_iam_role_policy" "cloudcraft_role_policy" {
         "autoscaling:DescribeScheduledActions",
         "autoscaling:DescribeTags",
         "autoscaling:DescribeTerminationPolicyTypes",
-          "autoscaling-plans:Describe*",
         "aws-portal:ViewUsage",
         "batch:DescribeComputeEnvironments",
         "batch:DescribeJobDefinitions",
