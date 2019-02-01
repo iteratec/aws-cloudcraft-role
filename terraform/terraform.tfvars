@@ -1,5 +1,5 @@
 # aws_account_alias
-aws_account_alias = "unknown"
+#aws_account_alias = 
 
 # default region to use
 aws_region = "eu-central-1"
