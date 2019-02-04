@@ -1,0 +1,18 @@
+# Reduzierte Rechte aufgrund der Mail von Philip Barwikowski vom 1.2.2019
+- "acm:DescribeCertificate",                # war bereits entfernt, da nicht von CloudCraft supported
+"application-autoscaling:DescribeScalingActivities",
+"autoscaling:DescribeScalingActivities",
+- "aws-portal:ViewUsage",                   # war bereits entfernt, da nicht von CloudCraft supported
+"cloudwatch:DescribeAlarmHistory",
+- "config:DescribeComplianceByConfigRule",  # war bereits entfernt, da nicht von CloudCraft supported
+- "config:DescribeComplianceByResource",    # war bereits entfernt, da nicht von CloudCraft supported
+- "dms:DescribeReplicationTasks",           # war bereits entfernt, da nicht von CloudCraft supported
+"elasticache:DescribeEvents",
+"elasticloadbalancing:DescribeInstanceHealth",
+- "inspector:DescribeFinding",              # war bereits entfernt, da nicht von CloudCraft supported
+"rds:DescribeCertificates",
+"rds:DescribeDBLogFiles",
+"rds:DescribeEvents",
+"route53domains:ViewBilling",
+"s3:ListBucketMultipartUploads",
+- "snowball:DescribeJob",                   # war bereits entfernt, da nicht von CloudCraft supported

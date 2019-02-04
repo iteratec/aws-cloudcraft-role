@@ -33,9 +33,7 @@ Resources:
             Statement:
               - Effect: "Allow"
                 Action:
-                  - apigateway:GET
                   - application-autoscaling:DescribeScalableTargets
-                  - application-autoscaling:DescribeScalingActivities
                   - application-autoscaling:DescribeScalingPolicies
                   - autoscaling:DescribeAccountLimits
                   - autoscaling:DescribeAdjustmentTypes
@@ -50,16 +48,15 @@ Resources:
                   - autoscaling:DescribeMetricCollectionTypes
                   - autoscaling:DescribeNotificationConfigurations
                   - autoscaling:DescribePolicies
-                  - autoscaling:DescribeScalingActivities
                   - autoscaling:DescribeScalingProcessTypes
                   - autoscaling:DescribeScheduledActions
                   - autoscaling:DescribeTags
                   - autoscaling:DescribeTerminationPolicyTypes
+                  - apigateway:GET
                   - cloudfront:GetCloudFrontOriginAccessIdentity
                   - cloudfront:GetDistribution
                   - cloudfront:ListCloudFrontOriginAccessIdentities
                   - cloudfront:ListDistributions
-                  - cloudwatch:DescribeAlarmHistory
                   - cloudwatch:DescribeAlarms
                   - cloudwatch:DescribeAlarmsForMetric
                   - cloudwatch:ListDashboards
@@ -143,7 +140,6 @@ Resources:
                   - elasticache:DescribeCacheSecurityGroups
                   - elasticache:DescribeCacheSubnetGroups
                   - elasticache:DescribeEngineDefaultParameters
-                  - elasticache:DescribeEvents
                   - elasticache:DescribeReplicationGroups
                   - elasticache:DescribeReservedCacheNodes
                   - elasticache:DescribeReservedCacheNodesOfferings
@@ -154,7 +150,6 @@ Resources:
                   - elasticfilesystem:DescribeMountTargetSecurityGroups
                   - elasticfilesystem:DescribeFileSystems
                   - elasticfilesystem:DescribeMountTargets
-                  - elasticloadbalancing:DescribeInstanceHealth
                   - elasticloadbalancing:DescribeListeners
                   - elasticloadbalancing:DescribeLoadBalancerAttributes
                   - elasticloadbalancing:DescribeLoadBalancerAttributes
@@ -185,14 +180,12 @@ Resources:
                   - lambda:ListFunctions
                   - lambda:ListVersionsByFunction
                   - rds:DescribeAccountAttributes
-                  - rds:DescribeCertificates
                   - rds:DescribeDBClusterParameterGroups
                   - rds:DescribeDBClusterParameters
                   - rds:DescribeDBClusters
                   - rds:DescribeDBClusterSnapshotAttributes
                   - rds:DescribeDBEngineVersions
                   - rds:DescribeDBInstances
-                  - rds:DescribeDBLogFiles
                   - rds:DescribeDBParameterGroups
                   - rds:DescribeDBParameters
                   - rds:DescribeDBSecurityGroups
@@ -203,7 +196,6 @@ Resources:
                   - rds:DescribeEngineDefaultClusterParameters
                   - rds:DescribeEngineDefaultParameters
                   - rds:DescribeEventCategories
-                  - rds:DescribeEvents
                   - rds:DescribeEventSubscriptions
                   - rds:DescribeOptionGroupOptions
                   - rds:DescribeOptionGroups
@@ -254,10 +246,8 @@ Resources:
                   - route53domains:ListDomains
                   - route53domains:ListOperations
                   - route53domains:ListTagsForDomain
-                  - route53domains:ViewBilling
                   - s3:ListAllMyBuckets
                   - s3:ListBucket
-                  - s3:ListBucketMultipartUploads
                   - s3:ListBucketVersions
                   - sns:GetSubscriptionAttributes
                   - sns:GetTopicAttributes
